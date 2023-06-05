@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Noto+Sans+JP:wght@100&display=swap');
 
 :root {
-    --main-background-color: #f7f7f7;
+    --main-background-color: #snow;
     --main-text-color: #726e75;
     --alt-background-color: black;
     --alt-text-color: #aad922;
@@ -12,7 +12,6 @@ body {
     background-color: var(--main-background-color, black);
     color: var(--main-text-color, green);
     font-family: 'Noto Sans JP', sans-serif;
-    margin: 30px;
 }
 
 footer {
@@ -38,8 +37,8 @@ ul {
     list-style-type: none;
 }
 
-.accordion-toggle {
-    background-color: var(--main-text-color, green);
+/* .accordion-toggle {
+    background-color: gray;
     display: block;
     padding: 10px;
     margin: -10px -15px;
@@ -49,17 +48,17 @@ ul {
 
 .accordion-toggle.collapsed {
     background-color: var(--main-background-color, black);
-}
+} */
 
 .accordion-button:not(.collapsed) {
-    color: var(--main-text-color, green);
-    background-color: var(--main-background-color, black);
+    background-color: gray;
 }
 
 .card {
-    background-color: var(--buttons-highlights-color);
-    color: white;
-    border: 1px solid var(--buttons-highlights-color);
+    /* background-color: var(--buttons-highlights-color); */
+    background-color: var(--alt-text-color);
+    color: gray;
+    border: 1px solid var(--alt-text-color);
     border-radius: 5px;
     margin: 10px;
     padding: 10px;
