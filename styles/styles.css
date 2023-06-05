@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Noto+Sans+JP:wght@100&display=swap');
+
+:root {
+    --main-background-color: #283d3b;
+    --main-text-color: white;
+    --fun-background-color: #f15025;
+    --alt-text-color: #black;
+    --buttons-highlights-colour: #aad922;
+}
+
+body {
+    background-color: var(--main-background-color, darkslategrey);
+    color: var(--main-text-color, white);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.2rem;
+    margin: 10px;
+}
