@@ -21,10 +21,12 @@ footer {
 
 h1 {
     color: var(--alt-text-color, red);
+    font-size: 2em;
 }
 
 h2 {
     color: var(--alt-text-color, red);
+    font-size: 1.5em;
 }
 
 span {
@@ -34,11 +36,6 @@ span {
 
 ul {
     list-style-type: none;
-}
-
-h5 {
-    color: var(--main-text-color, black);
-    font-weight: bolder;
 }
 
 .card {
