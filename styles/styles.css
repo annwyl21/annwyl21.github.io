@@ -1,20 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Noto+Sans+JP:wght@100&display=swap');
 
 :root {
-    --main-background-color: #283d3b;
-    --main-text-color: white;
-    --fun-background-color: #f15025;
-    --alt-text-color: #black;
-    --buttons-highlights-colour: #aad922;
+    --main-background-color: #f7f7f7;
+    --main-text-color: #726e75;
+    --alt-background-color: black;
+    --alt-text-color: #aad922;
+    --buttons-highlights-color: #f15025;
 }
 
 body {
-    background-color: var(--main-background-color, darkslategrey);
-    color: var(--main-text-color, white);
+    background-color: var(--main-background-color, black);
+    color: var(--main-text-color, green);
     font-family: 'Noto Sans JP', sans-serif;
-    margin: 10px;
+    margin: 30px;
 }
 
 footer {
     font-size: small;
 }
+
+h1 {
+    color: var(--alt-text-color, red);
+}
+
+h2 {
+    color: var(--alt-text-color, red);
+}
+
+span {
+    color: var(--buttons-highlights-color, red);
+    font-weight: bolder;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h5 {
+    color: var(--main-text-color, black);
+    font-weight: bolder;
+}
+
+.card {
+    background-color: var(--buttons-highlights-color);
+    color: white;
+    border: 1px solid var(--buttons-highlights-color);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.card-img-top {
+    border-radius: 50%;
+}
+
