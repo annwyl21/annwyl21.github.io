@@ -9,8 +9,8 @@
 }
 
 body {
-    background-color: var(--main-background-color, black);
-    color: var(--main-text-color, green);
+    background-color: var(--main-background-color, white);
+    color: var(--main-text-color, gray);
     font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -19,17 +19,17 @@ footer {
 }
 
 h1 {
-    color: var(--alt-text-color, red);
+    color: var(--alt-text-color, lightgreen);
     font-size: 2em;
 }
 
 h2 {
-    color: var(--alt-text-color, red);
+    color: var(--alt-text-color, lightgreen);
     font-size: 1.5em;
 }
 
 span {
-    color: var(--buttons-highlights-color, red);
+    color: var(--buttons-highlights-color, orange);
     font-weight: bolder;
 }
 
@@ -47,19 +47,22 @@ ul {
 }
 
 .accordion-toggle.collapsed {
-    background-color: var(--main-background-color, black);
+    background-color: var(--main-background-color);
 } */
 
+#project-accordion {
+    background-color: var(--main-background-color, white);
+    color: var(--main-text-color, gray);
+}
+
 .accordion-button:not(.collapsed) {
-    background-color: gray;
+    background-color: var(--main-text-color, gray);
 }
 
 .card {
-    /* background-color: var(--buttons-highlights-color); */
-    background-color: var(--alt-text-color);
-    color: gray;
-    border: 1px solid var(--alt-text-color);
-    border-radius: 5px;
+    background-color: var(--alt-text-color, lightgreen);
+    color: var(--main-text-color, gray);
+    border: 1px solid var(--alt-text-color, lightgreen);
     margin: 10px;
     padding: 10px;
 }
