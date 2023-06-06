@@ -71,3 +71,16 @@ ul {
     border-radius: 50%;
 }
 
+.btn-primary:link  {
+    background-color: var(--buttons-highlights-color, orange);
+    color: var(--main-background-color, white);
+    font-weight: bolder;
+    border: 1px solid var(--buttons-highlights-color, orange);
+}
+
+.btn-primary:visited {
+    background-color: var(--buttons-highlights-color, orange);
+    color: var(--main-background-color, white);
+    font-weight: bolder;
+    border: 1px solid var(--buttons-highlights-color, orange);
+}
