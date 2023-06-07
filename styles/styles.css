@@ -95,3 +95,11 @@ img {
 .btn {
     margin: 10px;
 }
+
+a:link {
+    color: var(--main-background-color, white);
+}
+
+a:visited {
+    color: var(--main-background-color, white);
+}
