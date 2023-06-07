@@ -89,6 +89,9 @@ ul {
 }
 
 img {
-    margin: 10px;
     border-radius: 5%;
+}
+
+.btn {
+    margin: 10px;
 }
