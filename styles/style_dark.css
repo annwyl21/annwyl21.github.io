@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Noto+Sans+JP:wght@100&display=swap');
+
+:root {
+    --dark-background-color: #5f464b;
+    --main-text-color: white;
+    --alt-background-color: #4a5240;
+    --alt-text-color: #f15025;
+    --buttons-highlights-color: #aad922;
+}
+
+body {
+    background-color: var(--main-background-color, black);
+    color: var(--main-text-color, white);
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+footer {
+    font-size: small;
+}
+
+h1 {
+    color: var(--alt-text-color, orange);
+    font-size: 2em;
+}
+
+h2 {
+    color: var(--alt-text-color, orange);
+    font-size: 1.5em;
+}
+
+span {
+    color: var(--buttons-highlights-color, lightgreen);
+    font-weight: bolder;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.accordion-item {
+    background-color: var(--main-background-color, black);
+    color: var(--main-text-color, white);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--main-background-color, black);
+}
+
+.accordion-button {
+    background-color: var(--alt-background-color, grey);
+}
+
+.card {
+    background-color: var(--alt-text-color, orange);
+    color: var(--main-text-color, white);
+    border: 1px solid var(--alt-text-color, orange);
+    margin: 10px;
+    padding: 10px;
+}
+
+.card-img-top {
+    /* margin & border-radius here is important to counter-act the img css styling below */
+    margin: 0%; 
+    border-radius: 50%;
+}
+
+.btn-primary:link  {
+    background-color: var(--buttons-highlights-color, lightgreen);
+    color: var(--main-background-color, black);
+    font-weight: bolder;
+    border: 1px solid var(--buttons-highlights-color, lightgreen);
+}
+
+.btn-primary:visited {
+    background-color: var(--buttons-highlights-color, lightgreen);
+    color: var(--main-background-color, black);
+    font-weight: bolder;
+    border: 1px solid var(--buttons-highlights-color, lightgreen);
+}
+
+.btn-info:link  {
+    background-color: var(--alt-text-color, orange);
+    color: var(--main-background-color, black);
+    font-weight: bolder;
+    border: 1px solid var(--alt-text-color, orange);
+}
+
+.btn-info:visited {
+    background-color: var(--alt-text-color, orange);
+    color: var(--main-background-color, black);
+    font-weight: bolder;
+    border: 1px solid var(--alt-text-color, orange);
+}
+
+img {
+    border-radius: 5%;
+}
+
+.btn {
+    margin: 10px;
+}

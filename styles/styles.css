@@ -37,13 +37,17 @@ ul {
     list-style-type: none;
 }
 
-#project-accordion {
+.accordion-item {
     background-color: var(--main-background-color, white);
     color: var(--main-text-color, gray);
 }
 
 .accordion-button:not(.collapsed) {
     background-color: var(--main-text-color, gray);
+}
+
+.accordion-button {
+    background-color: var(--main-background-color, white);
 }
 
 .card {
@@ -94,12 +98,4 @@ img {
 
 .btn {
     margin: 10px;
-}
-
-a:link {
-    color: var(--main-background-color, white);
-}
-
-a:visited {
-    color: var(--main-background-color, white);
 }
