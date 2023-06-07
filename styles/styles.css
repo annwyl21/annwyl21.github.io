@@ -99,3 +99,9 @@ img {
 .btn {
     margin: 10px;
 }
+
+#themeButton, .submit {
+    background-color: var(--alt-text-color, orange);
+    border-color: var(--alt-text-color, orange);
+    color: var(--main-text-color, white);
+}

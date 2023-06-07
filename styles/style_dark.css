@@ -65,6 +65,7 @@ ul {
 }
 
 .btn-primary:link  {
+    /* background-color: linear-gradient(to right, var(--buttons-highlights-color, lightgreen), var(--alt-text-color, orange)); */
     background-color: var(--buttons-highlights-color, lightgreen);
     color: var(--main-background-color, black);
     font-weight: bolder;
@@ -98,4 +99,10 @@ img {
 
 .btn {
     margin: 10px;
+}
+
+#themeButton, .submit {
+    background-color: var(--alt-text-color, orange);
+    border-color: var(--alt-text-color, orange);
+    color: var(--main-text-color, white);
 }
