@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Noto+Sans+JP:wght@100&display=swap');
+/* DARK THEME COLOUR SCHEME */
 
 :root {
     --dark-background-color: #5f464b;
@@ -11,21 +11,14 @@
 body {
     background-color: var(--main-background-color, black);
     color: var(--main-text-color, white);
-    font-family: 'Noto Sans JP', sans-serif;
-}
-
-footer {
-    font-size: small;
 }
 
 h1 {
     color: var(--alt-text-color, orange);
-    font-size: 2em;
 }
 
 h2 {
     color: var(--alt-text-color, orange);
-    font-size: 1.5em;
 }
 
 h6 {
@@ -34,18 +27,11 @@ h6 {
 
 span {
     color: var(--buttons-highlights-color, lightgreen);
-    font-weight: bolder;
 }
 
 mark {
     background-color: var(--alt-text-color, orange);
     color: var(--main-background-color, black);
-    font-weight: bold;
-    border-radius: 25%;
-}
-
-ul {
-    list-style-type: none;
 }
 
 .accordion-item {
@@ -65,51 +51,31 @@ ul {
     background-color: var(--alt-text-color, orange);
     color: var(--main-text-color, white);
     border: 1px solid var(--alt-text-color, orange);
-    margin: 10px;
-    padding: 10px;
-}
-
-.card-img-top {
-    /* margin & border-radius here is important to counter-act the img css styling below */
-    margin: 0%; 
-    border-radius: 50%;
 }
 
 .btn-primary:link  {
     /* background-color: linear-gradient(to right, var(--buttons-highlights-color, lightgreen), var(--alt-text-color, orange)); */
     background-color: var(--buttons-highlights-color, lightgreen);
     color: var(--main-background-color, black);
-    font-weight: bolder;
     border: 1px solid var(--buttons-highlights-color, lightgreen);
 }
 
 .btn-primary:visited {
     background-color: var(--buttons-highlights-color, lightgreen);
     color: var(--main-background-color, black);
-    font-weight: bolder;
     border: 1px solid var(--buttons-highlights-color, lightgreen);
 }
 
 .btn-info:link  {
     background-color: var(--alt-text-color, orange);
     color: var(--main-background-color, black);
-    font-weight: bolder;
     border: 1px solid var(--alt-text-color, orange);
 }
 
 .btn-info:visited {
     background-color: var(--alt-text-color, orange);
     color: var(--main-background-color, black);
-    font-weight: bolder;
     border: 1px solid var(--alt-text-color, orange);
-}
-
-img {
-    border-radius: 5%;
-}
-
-.btn {
-    margin: 10px;
 }
 
 #themeButton, .submit {
@@ -118,44 +84,13 @@ img {
     color: var(--main-text-color, white);
 }
 
-/* The switch - the box around the slider */
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  /* The slider */
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.slider {
+
     background-color: var(--alt-text-color, orange);
-    -webkit-transition: .4s;
-    transition: .4s;
   }
   
   .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
     background-color: var(--main-text-color, gray);
-    -webkit-transition: .4s;
-    transition: .4s;
   }
   
   input:checked + .slider {
@@ -165,19 +100,3 @@ img {
   input:focus + .slider {
     box-shadow: 0 0 1px var(--alt-text-color, orange);
   }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
-  

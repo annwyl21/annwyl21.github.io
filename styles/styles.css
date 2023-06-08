@@ -1,16 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Noto+Sans+JP:wght@100&display=swap');
 
-:root {
-    --main-background-color: white;
-    --main-text-color: #4a5240;
-    --alt-background-color: #5f464b;
-    --alt-text-color: #aad922;
-    --buttons-highlights-color: #f15025;
-}
-
 body {
-    background-color: var(--main-background-color, white);
-    color: var(--main-text-color, gray);
     font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -19,29 +9,23 @@ footer {
 }
 
 h1 {
-    color: var(--alt-text-color, lightgreen);
     font-size: 2em;
 }
 
 h2 {
-    color: var(--alt-text-color, lightgreen);
     font-size: 1.5em;
 }
 
 h6 {
-    color: var(--alt-text-color, lightgreen);
     font-weight: bold;
 }
 
 mark {
-    background-color: var(--alt-text-color, lightgreen);
-    color: var(--main-background-color, white);
     font-weight: bold;
     border-radius: 25%;
 }
 
 span {
-    color: var(--buttons-highlights-color, orange);
     font-weight: bolder;
 }
 
@@ -49,23 +33,7 @@ ul {
     list-style-type: none;
 }
 
-.accordion-item {
-    background-color: var(--main-background-color, black);
-    color: var(--main-text-color, gray);
-}
-
-.accordion-button:not(.collapsed) {
-    background-color: var(--alt-background-color, black);
-}
-
-.accordion-button {
-    background-color: var(--main-background-color, white);
-}
-
 .card {
-    background-color: var(--alt-text-color, lightgreen);
-    color: var(--main-text-color, gray);
-    border: 1px solid var(--alt-text-color, lightgreen);
     margin: 10px;
     padding: 10px;
 }
@@ -77,31 +45,19 @@ ul {
 }
 
 .btn-primary:link  {
-    background-color: var(--buttons-highlights-color, orange);
-    color: var(--main-background-color, white);
     font-weight: bolder;
-    border: 1px solid var(--buttons-highlights-color, orange);
 }
 
 .btn-primary:visited {
-    background-color: var(--buttons-highlights-color, orange);
-    color: var(--main-background-color, white);
-    font-weight: bolder;
-    border: 1px solid var(--buttons-highlights-color, orange);
+    font-weight: bolder;;
 }
 
 .btn-info:link  {
-    background-color: var(--alt-text-color, green);
-    color: var(--main-background-color, white);
     font-weight: bolder;
-    border: 1px solid var(--alt-text-color, green);
 }
 
 .btn-info:visited {
-    background-color: var(--alt-text-color, green);
-    color: var(--main-background-color, white);
     font-weight: bolder;
-    border: 1px solid var(--alt-text-color, green);
 }
 
 img {
@@ -110,12 +66,6 @@ img {
 
 .btn {
     margin: 10px;
-}
-
-#themeButton, .submit {
-    background-color: var(--alt-text-color, orange);
-    border-color: var(--alt-text-color, orange);
-    color: var(--main-text-color, white);
 }
 
 /* The switch - the box around the slider */
@@ -141,7 +91,6 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--alt-text-color, orange);
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -153,19 +102,10 @@ img {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: var(--main-text-color, gray);
     -webkit-transition: .4s;
     transition: .4s;
   }
-  
-  input:checked + .slider {
-    background-color: var(--alt-text-color, orange);
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px var(--alt-text-color, orange);
-  }
-  
+
   input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);

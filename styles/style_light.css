@@ -1,0 +1,101 @@
+/* LIGHT THEME COLOUR SCHEME */
+
+:root {
+    --main-background-color: white;
+    --main-text-color: #4a5240;
+    --alt-background-color: #5f464b;
+    --alt-text-color: #aad922;
+    --buttons-highlights-color: #f15025;
+}
+
+body {
+    background-color: var(--main-background-color, white);
+    color: var(--main-text-color, gray);
+}
+
+h1 {
+    color: var(--alt-text-color, lightgreen);
+}
+
+h2 {
+    color: var(--alt-text-color, lightgreen);
+}
+
+h6 {
+    color: var(--alt-text-color, lightgreen);
+}
+
+mark {
+    background-color: var(--alt-text-color, lightgreen);
+    color: var(--main-background-color, white);
+}
+
+span {
+    color: var(--buttons-highlights-color, orange);
+}
+
+.accordion-item {
+    background-color: var(--main-background-color, black);
+    color: var(--main-text-color, gray);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--alt-background-color, black);
+}
+
+.accordion-button {
+    background-color: var(--main-background-color, white);
+}
+
+.card {
+    background-color: var(--alt-text-color, lightgreen);
+    color: var(--main-text-color, gray);
+    border: 1px solid var(--alt-text-color, lightgreen);
+}
+
+.btn-primary:link  {
+    background-color: var(--buttons-highlights-color, orange);
+    color: var(--main-background-color, white);
+    border: 1px solid var(--buttons-highlights-color, orange);
+}
+
+.btn-primary:visited {
+    background-color: var(--buttons-highlights-color, orange);
+    color: var(--main-background-color, white);
+    border: 1px solid var(--buttons-highlights-color, orange);
+}
+
+.btn-info:link  {
+    background-color: var(--alt-text-color, green);
+    color: var(--main-background-color, white);
+    border: 1px solid var(--alt-text-color, green);
+}
+
+.btn-info:visited {
+    background-color: var(--alt-text-color, green);
+    color: var(--main-background-color, white);
+    border: 1px solid var(--alt-text-color, green);
+}
+
+#themeButton, .submit {
+    background-color: var(--alt-text-color, orange);
+    border-color: var(--alt-text-color, orange);
+    color: var(--main-text-color, white);
+}
+
+  /* The slider */
+  .slider {
+    background-color: var(--alt-text-color, orange);
+  }
+  
+  .slider:before {
+    background-color: var(--main-text-color, gray);
+  }
+  
+  input:checked + .slider {
+    background-color: var(--alt-text-color, orange);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px var(--alt-text-color, orange);
+  }
