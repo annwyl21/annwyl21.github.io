@@ -7,7 +7,7 @@
     --alt-text-color: #aad922;
     --buttons-highlights-color: #f15025;
 }
-/* #726e75 */
+
 body {
     background-color: var(--main-background-color, white);
     color: var(--main-text-color, gray);
@@ -159,7 +159,7 @@ img {
   }
   
   input:checked + .slider {
-    background-color: var(--alt-text-color, orange));
+    background-color: var(--alt-text-color, orange);
   }
   
   input:focus + .slider {

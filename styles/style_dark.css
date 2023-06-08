@@ -159,7 +159,7 @@ img {
   }
   
   input:checked + .slider {
-    background-color: var(--alt-text-color, orange));
+    background-color: var(--alt-text-color, orange);
   }
   
   input:focus + .slider {
