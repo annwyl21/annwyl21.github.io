@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Noto+Sans+JP:wght@100&display=swap');
 
 :root {
-    --main-background-color: #snow;
-    --main-text-color: #726e75;
-    --alt-background-color: black;
+    --main-background-color: white;
+    --main-text-color: #4a5240;
+    --alt-background-color: #5f464b;
     --alt-text-color: #aad922;
     --buttons-highlights-color: #f15025;
 }
-
+/* #726e75 */
 body {
     background-color: var(--main-background-color, white);
     color: var(--main-text-color, gray);
@@ -28,6 +28,18 @@ h2 {
     font-size: 1.5em;
 }
 
+h6 {
+    color: var(--alt-text-color, lightgreen);
+    font-weight: bold;
+}
+
+mark {
+    background-color: var(--alt-text-color, lightgreen);
+    color: var(--main-background-color, white);
+    font-weight: bold;
+    border-radius: 25%;
+}
+
 span {
     color: var(--buttons-highlights-color, orange);
     font-weight: bolder;
@@ -38,12 +50,12 @@ ul {
 }
 
 .accordion-item {
-    background-color: var(--main-background-color, white);
+    background-color: var(--main-background-color, black);
     color: var(--main-text-color, gray);
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: var(--main-text-color, gray);
+    background-color: var(--alt-background-color, black);
 }
 
 .accordion-button {

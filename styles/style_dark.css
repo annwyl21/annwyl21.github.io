@@ -28,9 +28,20 @@ h2 {
     font-size: 1.5em;
 }
 
+h6 {
+    color: var(--alt-text-color, orange);
+}
+
 span {
     color: var(--buttons-highlights-color, lightgreen);
     font-weight: bolder;
+}
+
+mark {
+    background-color: var(--alt-text-color, orange);
+    color: var(--main-background-color, black);
+    font-weight: bold;
+    border-radius: 25%;
 }
 
 ul {
