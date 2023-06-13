@@ -1,0 +1,8 @@
+# web scraper
+requests
+bs4
+
+numpy
+matplotlib
+wordcloud
+pillow
