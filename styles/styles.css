@@ -32,7 +32,7 @@ ul {
 }
 
 #personal_profile_1 {
-    width: 100%;
+    width: 95%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
