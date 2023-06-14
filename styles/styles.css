@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Noto Sans JP', sans-serif;
+    padding: 20px;
 }
 
 h1 {
@@ -149,7 +150,7 @@ img {
     .app-wrapper {
         max-width: 750px;
         /* margin-left: 20px; */
-        padding: 20px;
+        /* padding: 20px; */
         /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
         border-radius: 10px;
     }
