@@ -4,10 +4,6 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-footer {
-    font-size: small;
-}
-
 h1 {
     font-size: 2em;
 }
@@ -124,4 +120,22 @@ img {
 
 :any-link {
     text-decoration: none;
+}
+
+/* must come last on the page to overwrite bootstrap */
+@media screen and (min-width: 750px) {
+    .app-wrapper {
+        max-width: 750px;
+        /* margin-left: 20px; */
+        padding: 20px;
+        /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+        border-radius: 10px;
+    }
+
+    #page1 {
+        height: 100vh; /* set the height to the full viewport height */
+        display: flex; /* to allow centering using justify-content and align-items */
+        justify-content: flex-start; /* center horizontally */
+        
+    }
 }
