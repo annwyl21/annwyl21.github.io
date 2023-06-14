@@ -30,6 +30,28 @@ ul {
     font-weight: bold;
 }
 
+#personal_profile_1 {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+#personal_profile_1.expanded {
+    white-space: normal;
+  }
+  
+#toggleButton {
+    background-color: #f15025;
+    color: white;
+    font-style: italic;
+    border: 1px solid #f15025;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+  }
+
 .card {
     margin: 10px;
     padding: 10px;
