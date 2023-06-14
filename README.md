@@ -1,6 +1,6 @@
-### annwyl21.github.io
+### [annwyl21.github.io](https://annwyl21.github.io)
 
-Ellen Houghton
+# Ellen Houghton
 
 ![Ellen Houghton CV wordcloud](./images/EllenHoughtonCVwordcloud_oranges.png)
 
