@@ -2,7 +2,6 @@
 
 body {
     font-family: 'Noto Sans JP', sans-serif;
-    padding: 20px;
 }
 
 h1 {
@@ -147,6 +146,11 @@ img {
 
 /* must come last on the page to overwrite bootstrap */
 @media screen and (min-width: 750px) {
+
+    body {
+        padding: 20px;
+    }
+
     .app-wrapper {
         max-width: 750px;
         /* margin-left: 20px; */
