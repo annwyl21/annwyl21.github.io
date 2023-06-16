@@ -30,6 +30,11 @@ ul {
     font-weight: bold;
 }
 
+#wordcloud {
+    font-size: 0.6em;
+    font-style: italic;
+}
+
 #personal_profile_1 {
     width: 95%;
     white-space: nowrap;
