@@ -57,18 +57,16 @@
             <div class="col-sm-9">
                 <h2>Personal Profile</h2>
                 <!-- <button id="toggleButton">Show more</button> -->
-                    <!-- <div id="personal_profile_1"> -->
-                    <p class="text-truncate" id="profile1">I work well on my own initiative and when I developed a passion for coding, I dedicated time to <span>teach myself</span> JavaScript and Python through various online platforms and self-study materials. I am also a team player and enjoyed <span>working with others to deliver</span> a final project. I have joined the <strong>Ladies Of Code</strong>, weekly club that focuses on <mark>Test Driven Development</mark> to help me write better code.</p>
-                    <a href="#" class="toggleText" data-target="#profile1" style="font-weight: bolder; font-style: italic; font-size: 0.8em; color: #4a5240;">Show More</a>
+                    <div id="personal_profile_1">
+                    <p class="text-truncate d-inline-block mb-0" id="profile1" style="max-width: 90%;">I work well on my own initiative and when I developed a passion for coding, I dedicated time to <span>teach myself</span> JavaScript and Python through various online platforms and self-study materials. I am also a team player and enjoyed <span>working with others to deliver</span> a final project. I have joined the <strong>Ladies Of Code</strong>, weekly club that focuses on <mark>Test Driven Development</mark> to help me write better code.</p>
+                    <a href="#" class="toggleText d-inline-block" data-target="#profile1" style="font-weight: bolder; font-style: italic; font-size: 0.8em; color: #4a5240;">show more</a>
                     <br>
-                    <p class="text-truncate" id="profile2">Inspired by my newfound interest in coding, I sought more formalized training through the highly-competitive Get into Tech <span>Bootcamp</span>, a 15-week course. During the course, I continued my autodidactic approach and took advantage of additional, non-compulsory learning opportunities. I experimented with <i>Pytest</i> and <i>github</i> workflows, and <span>completed various extra courses</span> including <i>Linux</i> Command Line Fundamentals, <i>Serverless</i>/ Cloud computing along with <i>Information Security & Risk Management(laws, regulation & compliance),CyberSecurity</i> and finally an Introduction to <i>GDPR</i>.</p>
-                    <a href="#" class="toggleText" data-target="#profile2" style="font-weight: bolder; font-style: italic; font-size: 0.8em; color: #4a5240;">Show More</a>
+                    <p class="text-truncate d-inline-block mb-0" id="profile2" style="max-width: 90%;">Inspired by my newfound interest in coding, I sought more formalized training through the highly-competitive Get into Tech <span>Bootcamp</span>, a 15-week course. During the course, I continued my autodidactic approach and took advantage of additional, non-compulsory learning opportunities. I experimented with <i>Pytest</i> and <i>github</i> workflows, and <span>completed various extra courses</span> including <i>Linux</i> Command Line Fundamentals, <i>Serverless</i>/ Cloud computing along with <i>Information Security & Risk Management(laws, regulation & compliance),CyberSecurity</i> and finally an Introduction to <i>GDPR</i>.</p>
+                    <a href="#" class="toggleText d-inline-block" data-target="#profile2" style="font-weight: bolder; font-style: italic; font-size: 0.8em; color: #4a5240;">show more</a>
                     <br>
-                    <p class="text-truncate" id="profile3">Informed by my previous career in healthcare, I possess a unique perspective and a strong grounding in communication and accessibility. As I transition to a career in technology, I am looking for my first opportunity as a <span>junior software developer</span> where I can grow.</p>
-                    <a href="#" class="toggleText" data-target="#profile3" style="font-weight: bolder; font-style: italic; font-size: 0.8em; color: #4a5240;">Show More</a>
-                    <!-- </div> -->
-                    <br>
-                    <br>
+                    <p class="text-truncate d-inline-block mb-0" id="profile3" style="max-width: 90%;">Informed by my previous career in healthcare, I possess a unique perspective and a strong grounding in communication and accessibility. As I transition to a career in technology, I am looking for my first opportunity as a <span>junior software developer</span> where I can grow.</p>
+                    <a href="#" class="toggleText d-inline-block" data-target="#profile3" style="font-weight: bolder; font-style: italic; font-size: 0.8em; color: #4a5240;">show more</a>
+                    </div>
                     <span class="badge rounded-pill text-bg-secondary">
                     <table>
                         <tr>
@@ -213,33 +211,16 @@
 <!-- <script src="styles/toggleButton.js"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-    // $(document).ready(function(){
-    //     $("#profile1").click(function(){
-    //         $(this).css("white-space", "normal");
-    //     });
-    // });
-    // $(document).ready(function(){
-    //     $("#profile2").click(function(){
-    //         $(this).css("white-space", "normal");
-    //     });
-    // });
-    // $(document).ready(function(){
-    //     $("#profile3").click(function(){
-    //         $(this).css("white-space", "normal");
-    //     });
-    // });
-
-   
-    $(document).ready(function(){
+$(document).ready(function(){
     $(".toggleText").click(function(e){
         e.preventDefault();
         var target = $(this).data("target");
         if($(target).hasClass("text-truncate")) {
-            $(target).removeClass("text-truncate");
-            $(this).text("Show Less");
+            $(target).removeClass("text-truncate").css('max-width', '');
+            $(this).text("show less");
         } else {
-            $(target).addClass("text-truncate");
-            $(this).text("Show More");
+            $(target).addClass("text-truncate").css('max-width', '90%');
+            $(this).text("show more");
         }
     });
 });
