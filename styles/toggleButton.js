@@ -8,4 +8,3 @@ document.getElementById('toggleButton').addEventListener('click', function () {
       text.classList.add('expanded');
     }
   });
-  

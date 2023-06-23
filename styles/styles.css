@@ -35,7 +35,7 @@ ul {
     font-style: italic;
 }
 
-#personal_profile_1 {
+/* #personal_profile_1 {
     width: 95%;
     white-space: nowrap;
     overflow: hidden;
@@ -55,7 +55,14 @@ ul {
     padding: 5px;
     margin: 5px;
     cursor: pointer;
-  }
+  } */
+
+/* #toggleText {
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 0.8em;
+    color: #4a5240;
+} */
 
 .card {
     margin: 10px;
