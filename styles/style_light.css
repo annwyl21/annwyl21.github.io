@@ -58,9 +58,10 @@ span {
 }
 
 .card {
-    background-color: var(--alt-text-color, lightgreen);
+    background: linear-gradient(45deg, #aad922 50%, #f15025 100%);
     color: var(--main-text-color, gray);
-    border: 1px solid var(--alt-text-color, lightgreen);
+    font-weight: bolder;
+    border: 1px solid white;
 }
 
 .btn-primary:link  {

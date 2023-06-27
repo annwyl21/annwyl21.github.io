@@ -53,9 +53,10 @@ mark {
 }
 
 .card {
-    background-color: var(--alt-text-color, orange);
+    background: linear-gradient(45deg, #f15025 50%, #aad922 100%);
     color: var(--main-text-color, white);
-    border: 1px solid var(--alt-text-color, orange);
+    font-weight: bolder;
+    border: 1px solid var(--main-background-color, black);
 }
 
 .btn-primary:link  {
