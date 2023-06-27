@@ -65,15 +65,15 @@ span {
 }
 
 .btn-primary:link  {
-    background-color: var(--buttons-highlights-color, orange);
+    background: linear-gradient(90deg, #d5380d 75%, #f25023 85%);
     color: var(--main-background-color, white);
-    border: 1px solid var(--buttons-highlights-color, orange);
+    border: 0px;
 }
 
 .btn-primary:visited {
-    background-color: var(--buttons-highlights-color, orange);
+    background: linear-gradient(90deg, #d5380d 75%, #f25023 85%);
     color: var(--main-background-color, white);
-    border: 1px solid var(--buttons-highlights-color, orange);
+    border: 0px;
 }
 
 .btn-info:link  {

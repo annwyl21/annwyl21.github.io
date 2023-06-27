@@ -60,16 +60,15 @@ mark {
 }
 
 .btn-primary:link  {
-    /* background-color: linear-gradient(to right, var(--buttons-highlights-color, lightgreen), var(--alt-text-color, orange)); */
-    background-color: var(--buttons-highlights-color, lightgreen);
+    background: linear-gradient(90deg, #87ad1b 75%, #aad922 85%);
     color: var(--main-background-color, black);
-    border: 1px solid var(--buttons-highlights-color, lightgreen);
+    border: 0px;
 }
 
 .btn-primary:visited {
-    background-color: var(--buttons-highlights-color, lightgreen);
+    background: linear-gradient(90deg, #87ad1b 75%, #aad922 85%);
     color: var(--main-background-color, black);
-    border: 1px solid var(--buttons-highlights-color, lightgreen);
+    border: 0px;
 }
 
 .btn-info:link  {
