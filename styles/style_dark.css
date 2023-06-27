@@ -10,6 +10,7 @@
 
 #myBtn {
     color: var(--main-background-color, black);
+    /* display: none; # hides button regardless of screen size, so I have to use colour instead */
 }
 
 body {
