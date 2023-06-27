@@ -60,13 +60,13 @@ mark {
 }
 
 .btn-primary:link  {
-    background: linear-gradient(90deg, #87ad1b 75%, #aad922 85%);
+    background: linear-gradient(90deg, #658115 40%, #aad922 100%);
     color: var(--main-background-color, black);
     border: 0px;
 }
 
 .btn-primary:visited {
-    background: linear-gradient(90deg, #87ad1b 75%, #aad922 85%);
+    background: linear-gradient(90deg, #658115 40%, #aad922 100%);
     color: var(--main-background-color, black);
     border: 0px;
 }
@@ -84,7 +84,7 @@ mark {
 }
 
 #themeButton, .submit {
-    background-color: var(--alt-text-color, orange);
+    background: linear-gradient(90deg, var(--alt-text-color, orange) 40%, white 100%);
     border-color: var(--alt-text-color, orange);
     color: var(--main-text-color, white);
 }

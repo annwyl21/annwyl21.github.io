@@ -65,13 +65,13 @@ span {
 }
 
 .btn-primary:link  {
-    background: linear-gradient(90deg, #d5380d 75%, #f25023 85%);
+    background: linear-gradient(90deg, #a52c0a 40%, #f25023 100%);
     color: var(--main-background-color, white);
     border: 0px;
 }
 
 .btn-primary:visited {
-    background: linear-gradient(90deg, #d5380d 75%, #f25023 85%);
+    background: linear-gradient(90deg, #a52c0a 40%, #f25023 100%);
     color: var(--main-background-color, white);
     border: 0px;
 }
@@ -89,7 +89,8 @@ span {
 }
 
 #themeButton, .submit {
-    background-color: var(--alt-text-color, orange);
+    /* background-color: var(--alt-text-color, orange); */
+    background: linear-gradient(275deg, var(--alt-text-color, green) 40%, #18070a 100%);
     border-color: var(--alt-text-color, orange);
     color: var(--main-text-color, white);
 }
