@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Noto Sans JP', sans-serif;
+    padding: 20px;
 }
 
 h1 {
@@ -59,7 +60,8 @@ ul {
 
 .card {
     margin: 10px;
-    padding: 10px;
+    padding: 15px;
+    width: 18rem !important;
 }
 
 .card-img-top {
@@ -159,26 +161,13 @@ img {
 } */
 
 /* must come last on the page to overwrite bootstrap */
-@media screen and (min-width: 750px) {
+@media screen and (max-width: 450px) {
 
     body {
-        padding: 20px;
+        padding: 2px;
     }
 
-    .app-wrapper {
-        max-width: 769px;
-        /* margin-left: 20px; */
-        /* padding: 20px; */
-        /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
-        border-radius: 10px;
-    }
 
-    #page1 {
-        height: 100vh; /* set the height to the full viewport height */
-        display: flex; /* to allow centering using justify-content and align-items */
-        justify-content: flex-start; /* center horizontally */
-        
-    }
 
     /* more that only applies to the toggle text */
     /* .hidden-content {
