@@ -2,7 +2,11 @@
 
 body {
     font-family: 'Noto Sans JP', sans-serif;
-    padding: 20px;
+    padding: 5% 10%;
+}
+
+#page1 {
+    padding: 10% 10%;
 }
 
 h1 {
@@ -130,6 +134,15 @@ img {
     text-decoration: none;
 }
 
+@media screen and (max-width: 1900px) {
+    body {
+        padding: 3% 10%;
+    }
+
+    #page1 {
+        padding: 3% 10%;
+    }
+}
 
 /* must come last on the page to overwrite bootstrap */
 @media screen and (max-width: 450px) {

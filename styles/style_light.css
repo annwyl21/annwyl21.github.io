@@ -89,7 +89,6 @@ span {
 }
 
 #themeButton, .submit {
-    /* background-color: var(--alt-text-color, orange); */
     background: linear-gradient(275deg, var(--alt-text-color, green) 40%, #18070a 100%);
     border-color: var(--alt-text-color, orange);
     color: var(--main-text-color, white);
