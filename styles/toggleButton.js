@@ -1,10 +1,15 @@
-document.getElementById('toggleButton').addEventListener('click', function () {
-    var text = document.getElementById('personal_profile_1');
-    if (text.classList.contains('expanded')) {
-      this.innerHTML = 'show more';
-      text.classList.remove('expanded');
+  function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "show more"; 
+        moreText.style.display = "none";
     } else {
-      this.innerHTML = 'show less';
-      text.classList.add('expanded');
+        dots.style.display = "none";
+        btnText.innerHTML = "show less"; 
+        moreText.style.display = "inline";
     }
-  });
+}

@@ -36,38 +36,17 @@ ul {
     font-style: italic;
 }
 
-/* #personal_profile_1 {
-    width: 95%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  
-#personal_profile_1.expanded {
-    white-space: normal;
-  }
-  
-#toggleButton {
-    background-color: #f15025;
-    color: white;
-    font-style: italic;
-    border: 1px solid #f15025;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 5px;
-    cursor: pointer;
-  } */
-
 .card {
     margin: 10px;
     padding: 15px;
-    width: 18rem !important;
+    /* width: 18rem !important; this sets the size of the card, currently automatically the width of the table box area, important means that it overrides other css*/
 }
 
 .card-img-top {
     /* margin & border-radius here is important to counter-act the img css styling below */
     margin: 0%; 
     border-radius: 50%;
+    max-width: 200px;
 }
 
 .btn-primary:link  {
@@ -151,29 +130,20 @@ img {
     text-decoration: none;
 }
 
-/* trying to make the toggletext only display for mobiile screens */
-/* .hidden-content {
-    display: none;
-}
-
-.toggleText:active + .profile-current .hidden-content {
-    display: inline;
-} */
-
 /* must come last on the page to overwrite bootstrap */
 @media screen and (max-width: 450px) {
-
     body {
         padding: 2px;
     }
-
-
-
-    /* more that only applies to the toggle text */
-    /* .hidden-content {
-        display: inline;
+    .show-more-less #more {display: none;} /* hides the more text */
+    .show-more-less #myBtn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        text-decoration: none; /* gets rid of the underline */
     }
-    .toggleText {
-        display: none;
-    } */
+    .show-more-less #myBtn:focus {
+        outline: none;
+    }
 }

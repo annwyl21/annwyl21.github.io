@@ -56,12 +56,13 @@
 
         <div class="col-sm-9">
             <h2>Personal Profile</h2>
-            <!-- <button id="toggleButton">Show more</button> -->
-
-            <div id="personal_profile_1">
-                <!-- <p class="text-truncate d-inline-block mb-0 hidden-content profile-current" style="max-width: 90%;"> trying to make truncate text work just for mobiles-->
-                    <p>Since the Jan-Apr 2023, Get into Tech bootcamp I have continued to teach myself new technologies. I have created Docker images and successfully contributed to the <mark>Docker repository</mark>. I have organised myself using a <mark>github project</mark> to create a 'career development plan' which I access everyday. Additionally, I broadened my scope by completing an <mark>online course</mark> focused on meta-prompts, which resulted in my AI project. My symptom logger uses AI to summarize medical symptoms logged to an app, <span>showcasing my ability to apply and adapt my knowledge to meet new challenges by using my knowledge of MySql to create and connect to a PostgreSQL database using a docker image</span>. My journey has also led me to numerous coding <mark>meetups</mark>, where I've begun to build a vibrant and supportive network and joined a weekly coding club focusing on <mark>Test Driven Development</mark>.</p>
-                <!-- <a href="#" class="toggleText d-inline-block" data-target=".profile-current" style="font-weight: bolder; font-style: italic; font-size: 0.8em; color: #4a5240;">show more</a> -->
+            <div id="profile-current" class="show-more-less">
+                <p>
+                    Since the Jan-Apr 2023, Get into Tech bootcamp I have continued to teach myself new technologies
+                    <span id="dots">...</span>
+                    <p id="more">I have created Docker images and successfully contributed to the <mark>Docker repository</mark>. I have organised myself using a <mark>github project</mark> to create a 'career development plan' which I access everyday. Additionally, I broadened my scope by completing an <mark>online course</mark> focused on meta-prompts, which resulted in my AI project. My symptom logger uses AI to summarize medical symptoms logged to an app, <span>showcasing my ability to apply and adapt my knowledge to meet new challenges by using my knowledge of MySql to create and connect to a PostgreSQL database using a docker image</span>. My journey has also led me to numerous coding <mark>meetups</mark>, where I've begun to build a vibrant and supportive network and joined a weekly coding club focusing on <mark>Test Driven Development</mark>.</p>
+                    <a onclick="myFunction()" id="myBtn" style="font-weight: bolder; font-style: italic; font-size: 0.8em; color: #4a5240;">show full paragraph</a>
+                </p>
             </div>
                 <span class="badge rounded-pill text-bg-secondary">
                     <table>
@@ -188,41 +189,6 @@
 <!-- link to Bootstrap Javascript bundle -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 <script src="styles/changeTheme.js"></script>
-<!-- <script src="styles/toggleButton.js"></script> -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-    // this is the old jquery that used to handle the toggle text
-// $(document).ready(function(){
-//     $(".toggleText").click(function(e){
-//         e.preventDefault();
-//         var target = $(this).data("target");
-//         if($(target).hasClass("text-truncate")) {
-//             $(target).removeClass("text-truncate").css('max-width', '');
-//             $(this).text("show less");
-//         } else {
-//             $(target).addClass("text-truncate").css('max-width', '90%');
-//             $(this).text("show more");
-//         }
-//     });
-// });
-
-// this new jquery might work
-// $(document).ready(function(){
-//     $(".toggleText").click(function(e){
-//         e.preventDefault();
-//         var target = $(this).data("target");
-//         var hiddenContent = $(target).find('.hidden-content');
-
-//         if(hiddenContent.is(':visible')) {
-//             hiddenContent.hide();
-//             $(this).text("show more");
-//         } else {
-//             hiddenContent.show();
-//             $(this).text("show less");
-//         }
-//     });
-// });
-
-</script>
+<script src="styles/toggleButton.js"></script>
 </body>
 </html>
