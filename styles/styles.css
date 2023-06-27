@@ -130,6 +130,7 @@ img {
     text-decoration: none;
 }
 
+
 /* must come last on the page to overwrite bootstrap */
 @media screen and (max-width: 450px) {
     body {
@@ -145,5 +146,9 @@ img {
     }
     .show-more-less #myBtn:focus {
         outline: none;
+    }
+
+    #myBtn {
+        color: #4a5240;
     }
 }

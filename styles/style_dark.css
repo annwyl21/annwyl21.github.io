@@ -1,11 +1,15 @@
 /* DARK THEME COLOUR SCHEME */
 
 :root {
-    --dark-background-color: #5f464b;
+    --main-background-color: #18070a;
     --main-text-color: white;
     --alt-background-color: #4a5240;
     --alt-text-color: #f15025;
     --buttons-highlights-color: #aad922;
+}
+
+#myBtn {
+    color: var(--main-background-color, black);
 }
 
 body {

@@ -8,6 +8,10 @@
     --buttons-highlights-color: #f15025;
 }
 
+#myBtn {
+    color: white;
+}
+
 body {
     background-color: var(--main-background-color, white);
     color: var(--main-text-color, gray);
