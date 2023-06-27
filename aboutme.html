@@ -57,7 +57,9 @@
             <div class="col-sm-9">
                 <h2>Personal Profile</h2>
                 <!-- <button id="toggleButton">Show more</button> -->
-                    <div id="personal_profile_1">
+
+                <!-- old personal profile text -->
+                    <!-- <div id="personal_profile_1">
                     <p class="text-truncate d-inline-block mb-0" id="profile1" style="max-width: 90%;">I work well on my own initiative and when I developed a passion for coding, I dedicated time to <span>teach myself</span> JavaScript and Python through various online platforms and self-study materials. I am also a team player and enjoyed <span>working with others to deliver</span> a final project. I have joined a weekly club that focuses on <span>Test Driven Development</span> to help me write better code.</p>
                     <a href="#" class="toggleText d-inline-block" data-target="#profile1" style="font-weight: bolder; font-style: italic; font-size: 0.8em; color: #4a5240;">show more</a>
                     <br>
@@ -66,7 +68,15 @@
                     <br>
                     <p class="text-truncate d-inline-block mb-0" id="profile3" style="max-width: 90%;">Informed by my previous career in healthcare, I possess a unique perspective and a strong grounding in communication and accessibility. As I transition to a career in technology, I am looking for my first opportunity as a <span>junior software developer</span> where I can grow.</p>
                     <a href="#" class="toggleText d-inline-block" data-target="#profile3" style="font-weight: bolder; font-style: italic; font-size: 0.8em; color: #4a5240;">show more</a>
-                    </div>
+                    </div> -->
+
+                <!-- new personal profile text -->
+                <div id="personal_profile_1">
+                    <!-- <p class="text-truncate d-inline-block mb-0 hidden-content profile-current" style="max-width: 90%;"> trying to make truncate text work just for mobiles-->
+                        <p>Since the Jan-Apr 2023, Get into Tech bootcamp I have continued to teach myself new technologies. I have created Docker images and successfully contributed to the <mark>Docker repository</mark>. I have organised myself using a <mark>github project</mark> to create a 'career development plan' which I access everyday. Additionally, I broadened my scope by completing an <mark>online course</mark> focused on meta-prompts, which resulted in my AI project. My symptom logger uses AI to summarize medical symptoms logged to an app, <span>showcasing my ability to apply and adapt my knowledge to meet new challenges by using my knowledge of MySql to create and connect to a PostgreSQL database using a docker image</span>. My journey has also led me to numerous coding <mark>meetups</mark>, where I've begun to build a vibrant and supportive network and joined a weekly coding club focusing on <mark>Test Driven Development</mark>.</p>
+                    <!-- <a href="#" class="toggleText d-inline-block" data-target=".profile-current" style="font-weight: bolder; font-style: italic; font-size: 0.8em; color: #4a5240;">show more</a> -->
+                </div>
+                
                     <span class="badge rounded-pill text-bg-secondary">
                     <table>
                         <tr>
@@ -98,7 +108,7 @@
                 <!-- accordion -->
                 <div class="accordion" id="work-experience-accordion">
 
-                    <div class="accordion-item">
+                    <!-- <div class="accordion-item">
                         <h2 class="accordion-header" id="current">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#current-role" aria-expanded="false" aria-controls="current-role">
                                 <span>Current</span>
@@ -110,7 +120,7 @@
                                 <p>Since the Get into Tech bootcamp I have continued to teach myself new technologies. I have created Docker images and successfully contributed to the <mark>Docker repository</mark>. I have organised myself using a <mark>github project</mark> to create a 'career development plan' which I access everyday. Additionally, I broadened my scope by completing an <mark>online course</mark> focused on meta-prompts, which resulted in my AI project. My symptom logger uses AI to summarize medical symptoms logged to an app, <span>showcasing my ability to apply and adapt my knowledge to meet new challenges by using my knowledge of MySql to create and connect to a PostgreSQL database using a docker image</span>. My journey has also led me to numerous coding <mark>meetups</mark>, where I've begun to build a vibrant and supportive network and joined a weekly coding club focusing on <mark>Test Driven Development</mark>.</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="get-into-tech">
@@ -211,19 +221,40 @@
 <!-- <script src="styles/toggleButton.js"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-$(document).ready(function(){
-    $(".toggleText").click(function(e){
-        e.preventDefault();
-        var target = $(this).data("target");
-        if($(target).hasClass("text-truncate")) {
-            $(target).removeClass("text-truncate").css('max-width', '');
-            $(this).text("show less");
-        } else {
-            $(target).addClass("text-truncate").css('max-width', '90%');
-            $(this).text("show more");
-        }
-    });
-});
+    // this is the old jquery that used to handle the toggle text
+// $(document).ready(function(){
+//     $(".toggleText").click(function(e){
+//         e.preventDefault();
+//         var target = $(this).data("target");
+//         if($(target).hasClass("text-truncate")) {
+//             $(target).removeClass("text-truncate").css('max-width', '');
+//             $(this).text("show less");
+//         } else {
+//             $(target).addClass("text-truncate").css('max-width', '90%');
+//             $(this).text("show more");
+//         }
+//     });
+// });
+
+// this new jquery might work
+// $(document).ready(function(){
+//     $(".toggleText").click(function(e){
+//         e.preventDefault();
+//         var target = $(this).data("target");
+//         var hiddenContent = $(target).find('.hidden-content');
+
+//         if(hiddenContent.is(':visible')) {
+//             hiddenContent.hide();
+//             $(this).text("show more");
+//         } else {
+//             hiddenContent.show();
+//             $(this).text("show less");
+//         }
+//     });
+// });
+
+
+
 
 </script>
 </body>

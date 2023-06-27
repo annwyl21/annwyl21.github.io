@@ -149,6 +149,15 @@ img {
     text-decoration: none;
 }
 
+/* trying to make the toggletext only display for mobiile screens */
+/* .hidden-content {
+    display: none;
+}
+
+.toggleText:active + .profile-current .hidden-content {
+    display: inline;
+} */
+
 /* must come last on the page to overwrite bootstrap */
 @media screen and (min-width: 750px) {
 
@@ -157,7 +166,7 @@ img {
     }
 
     .app-wrapper {
-        max-width: 750px;
+        max-width: 769px;
         /* margin-left: 20px; */
         /* padding: 20px; */
         /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
@@ -170,4 +179,12 @@ img {
         justify-content: flex-start; /* center horizontally */
         
     }
+
+    /* more that only applies to the toggle text */
+    /* .hidden-content {
+        display: inline;
+    }
+    .toggleText {
+        display: none;
+    } */
 }
