@@ -61,13 +61,13 @@ mark {
 }
 
 .btn-primary:link  {
-    background: linear-gradient(90deg, #658115 40%, #aad922 100%);
+    background: linear-gradient(0deg, #658115 40%, #aad922 100%);
     color: var(--main-background-color, black);
     border: 0px;
 }
 
 .btn-primary:visited {
-    background: linear-gradient(90deg, #658115 40%, #aad922 100%);
+    background: linear-gradient(0deg, #658115 40%, #aad922 100%);
     color: var(--main-background-color, black);
     border: 0px;
 }
