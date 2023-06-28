@@ -2,11 +2,11 @@
 
 body {
     font-family: 'Noto Sans JP', sans-serif;
-    padding: 5% 10%;
+    padding: 5% 15%;
 }
 
 #page1 {
-    padding: 10% 10%;
+    padding: 10% 15%;
 }
 
 h1 {
@@ -43,6 +43,7 @@ ul {
 .card {
     margin: 10px;
     padding: 15px;
+    min-height: 430px;
     /* width: 18rem !important; this sets the size of the card, currently automatically the width of the table box area, important means that it overrides other css*/
 }
 
