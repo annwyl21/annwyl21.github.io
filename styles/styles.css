@@ -139,7 +139,7 @@ img {
         padding: 3% 10%;
     }
 
-    #page1 {
+#page1 {
         padding: 3% 10%;
     }
 }
@@ -147,11 +147,12 @@ img {
 /* must come last on the page to overwrite bootstrap */
 @media screen and (max-width: 450px) {
     body {
-        padding: 2px;
+        padding: 3px 3px;
     }
 
+    /* overrides the above larger screen setting */
     #page1 {
-        padding: 0%;
+        padding: 3px 3px;
     }
 
     .show-more-less #more {display: none;} /* hides the more text */
