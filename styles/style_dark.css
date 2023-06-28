@@ -14,7 +14,8 @@
 }
 
 body {
-    background-color: var(--main-background-color, black);
+    background: linear-gradient(180deg, #18070a 50%,  #433538 100%);
+    /* background-color: var(--main-background-color, black); */
     color: var(--main-text-color, white);
 }
 
