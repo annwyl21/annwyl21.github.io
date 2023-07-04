@@ -135,6 +135,10 @@ img {
     text-decoration: none;
 }
 
+#condensed {
+    display: None !important;
+}
+
 @media screen and (max-width: 1900px) {
     body {
         padding: 3% 10%;
@@ -143,10 +147,6 @@ img {
 #page1 {
         padding: 3% 10%;
     }
-}
-
-#condensed {
-    display: None !important;
 }
 
 /* must come last on the page to overwrite bootstrap */
@@ -182,5 +182,13 @@ img {
 
     #bullets {
         display: None !important;
+    }
+
+    h6 {
+        font-weight: lighter;
+    }
+
+    ul {
+        font-weight: lighter;
     }
 }
