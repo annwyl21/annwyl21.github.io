@@ -179,4 +179,8 @@ img {
     #bullets {
         display: None !important;
     }
+
+    #condensed {
+        display: block !important;
+    }
 }
