@@ -1,67 +1,56 @@
-# Sure, here is a potential organization for your skills and tools:
+# **Programming Languages:**
+# - Python
+# - JavaScript
+# - HTML
+# - CSS
+# - SQL
+# - Regular Expressions (Regex)
 
-**Programming Languages:**
-- Python
-- JavaScript
-- HTML
-- CSS
-- SQL
-- Regular Expressions (Regex)
+# **Frameworks & Libraries:**
+# - Pytest
+# - Pextract
+# - Flask
+# - Matplotlib
+# - Pandas
 
-**Frameworks & Libraries:**
-- Pytest
-- Pextract
-- Flask
-- Matplotlib
-- Pandas
+# **Database Management:**
+# - MySQL
+# - PostgreSQL
 
-**Database Management:**
-- MySQL
-- PostgreSQL
+# **Operating Systems:**
+# - Ubuntu
+# - Linux Command Line
 
-**Operating Systems:**
-- Ubuntu
-- Linux Command Line
+# **Version Control & Containerization:**
+# - Git
+# - GitBash
+# - GitHub
+# - GitHub Workflow
+# - Docker
+# - DockerHub
 
-**Version Control & Containerization:**
-- Git
-- GitBash
-- GitHub
-- GitHub Workflow
-- Docker
-- DockerHub
+# **Development Environments/IDEs:**
+# - Visual Studio Code (VSCode)
+# - PyCharm
 
-**Development Environments/IDEs:**
-- Visual Studio Code (VSCode)
-- PyCharm
+# **APIs & AI Engineering:**
+# - Postman
+# - Azure Cognitive API
+# - AI Prompt Engineering
 
-**APIs & AI Engineering:**
-- Postman
-- Azure Cognitive API
-- AI Prompt Engineering
+# **Agile Development:**
+# - Agile
 
-**Agile Development:**
-- Agile
-
-**Collaboration & Communication Tools:**
-- Miro
-- Mimeo
-- Webex
-- Zoom
-- Menti
-- Slack
-- Discord
-- Signal
-- Teams
-
-# **Web Browsers:**
-# - Edge
-# - Chrome
-
-# **Email Client:**
-# - Outlook
-
-# The above classification should be seen as a guideline, some of the tools and skills could fit into multiple categories based on their usage. For example, Linux Command Line can be classified under "Operating Systems", but it can also fit in "Development Tools" if you frequently use command-line tools for your development process. Similarly, Postman could also go under "APIs & AI Engineering" if you use it mainly for testing APIs. It's best to categorize these based on how you've used them in your experience.
+# **Collaboration & Communication Tools:**
+# - Miro
+# - Mimeo
+# - Webex
+# - Zoom
+# - Menti
+# - Slack
+# - Discord
+# - Signal
+# - Teams
 
 # CHATGPT SUGGESTIONS FOR IMPROVEMENT TO MY SKILLSET:
 # As a junior software developer, you already have a solid list of skills and tools. However, there are a few additional areas you might consider gaining some experience in, if you haven't already. Remember, the relevance of these skills can vary significantly depending on the specific role or industry you are targeting.
