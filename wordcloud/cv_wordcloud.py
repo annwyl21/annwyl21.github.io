@@ -25,8 +25,8 @@ def create_CVwordcloud():
     plt.figure()
     plt.imshow(colors, interpolation="bilinear")
     plt.axis('off')
+    plt.savefig('EllenHoughtonCVwordcloudJuly23.png')
     plt.show()
-    #plt.savefig('EllenHoughtonCVwordcloud.png')
 
 ws.web_scraper()
 create_CVwordcloud()
