@@ -145,6 +145,10 @@ img {
     }
 }
 
+#condensed {
+    display: None !important;
+}
+
 /* must come last on the page to overwrite bootstrap */
 @media screen and (max-width: 450px) {
     body {
@@ -170,5 +174,9 @@ img {
 
     #myBtn {
         color: #4a5240;
+    }
+
+    #bullets {
+        display: None !important;
     }
 }
