@@ -58,15 +58,7 @@ ul {
     font-weight: bolder;
 }
 
-.btn-primary:visited {
-    font-weight: bolder;;
-}
-
-.btn-info:link  {
-    font-weight: bolder;
-}
-
-.btn-info:visited {
+.btn-primary:visited, .btn-info:link, .btn-info:visited {
     font-weight: bolder;
 }
 
@@ -184,11 +176,8 @@ img {
         display: None !important;
     }
 
-    h6 {
+    h6, ul {
         font-weight: lighter;
     }
 
-    ul {
-        font-weight: lighter;
-    }
 }
