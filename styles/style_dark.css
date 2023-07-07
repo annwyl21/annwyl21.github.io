@@ -84,6 +84,13 @@ mark {
     border: 1px solid var(--alt-text-color, orange);
 }
 
+#img_switch {
+    background: linear-gradient(0deg, #658115 40%, #aad922 100%);
+    color: var(--main-background-color, black);
+    border: 0px;
+    font-weight: bold;
+}
+
 #themeButton, .submit {
     background: linear-gradient(90deg, var(--alt-text-color, orange) 40%, white 100%);
     border-color: var(--alt-text-color, orange);
