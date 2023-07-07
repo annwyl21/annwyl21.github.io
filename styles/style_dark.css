@@ -36,8 +36,8 @@ span {
 }
 
 mark {
-    background-color: var(--alt-text-color, orange);
-    color: var(--main-background-color, black);
+    background-color: #f151253a;
+    color: var(--main-text-color);
 }
 
 .accordion-item {

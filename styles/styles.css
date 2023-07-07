@@ -22,7 +22,7 @@ h6 {
 }
 
 mark {
-    font-weight: bold;
+    /* font-weight: bold; */
     border-radius: 25%;
 }
 

@@ -31,8 +31,8 @@ h6 {
 }
 
 mark {
-    background-color: var(--alt-text-color, lightgreen);
-    color: var(--main-background-color, white);
+    background-color: #abd92237;
+    color: var(--main-text-color, gray);
 }
 
 span {
