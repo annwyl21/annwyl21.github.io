@@ -13,6 +13,10 @@ h1 {
     font-size: 2rem;
 }
 
+.myname:hover {
+    font-size: smaller;
+}
+
 h2 {
     font-size: 1.5rem;
 }
@@ -35,7 +39,7 @@ ul {
     font-weight: bold;
 }
 
-.github_link:hover {
+.github_link:hover, .btn-primary:hover, .btn-info:hover:hover {
     font-size: larger;
 }
 
