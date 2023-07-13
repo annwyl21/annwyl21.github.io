@@ -35,6 +35,14 @@ mark {
     color: var(--main-text-color, gray);
 }
 
+code {
+    color: var(--main-text-color);
+}
+
+.github_link:any-link {
+    color: var(--alt-text-color);
+}
+
 span {
     color: var(--buttons-highlights-color, orange);
 }

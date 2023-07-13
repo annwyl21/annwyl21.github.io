@@ -40,6 +40,14 @@ mark {
     color: var(--main-text-color);
 }
 
+code {
+    color: var(--main-text-color);
+}
+
+.github_link:any-link {
+    color: var(--alt-text-color);
+}
+
 .accordion-item {
     background-color: var(--main-background-color, black);
     color: var(--main-text-color, white);
