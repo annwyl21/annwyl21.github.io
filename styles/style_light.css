@@ -102,6 +102,13 @@ span {
     color: var(--main-text-color, white);
 }
 
+#img_switch {
+    background: linear-gradient(180deg, #a52c0a 40%, #f25023 100%);
+    color: var(--main-background-color, black);
+    border: 0px;
+    font-weight: bold;
+}
+
   /* The slider */
   .slider {
     background-color: var(--alt-text-color, orange);
