@@ -9,6 +9,7 @@
 # **Frameworks & Libraries:**
 # - Pytest
 # - Pextract
+# - Jest
 # - Flask
 # - Matplotlib
 # - Pandas
