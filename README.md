@@ -21,6 +21,7 @@ I am looking for my first job as a junior software developer.
 **Frameworks & Libraries:**
 - Pytest
 - Pextract
+- Jest
 - Flask
 - Matplotlib
 - Pandas
