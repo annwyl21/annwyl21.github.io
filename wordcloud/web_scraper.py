@@ -12,7 +12,7 @@ def web_scraper():
     my_cv_li = ' '.join(li_elems) #include li elements
     my_cv = my_cv_p + my_cv_li
 
-    with open('./wordcloud/my_cv1.txt', 'w') as f:
+    with open('./wordcloud/my_cv2.txt', 'w') as f:
         f.write(my_cv)
 
 if __name__ == '__main__':
