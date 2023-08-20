@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+	--charcoal: #2c3350;
+	--orange: #D74E09;
+	--tea-green: #c8ffbe;
+	--lightgreen: #EDFFAB;
+	--white: white;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+	font-family: 'Handjet', cursive;
+	font-size: 2rem;
+	text-align: center;
+	margin: 5%;
+	background: black;
+}
+
+h3 {
+	color: var(--tea-green);
+	visibility: hidden;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	border: 5px solid var(--tea-green);
+	border-radius: 4%;
+	background: linear-gradient(0deg, #000000 0%, #2c3e50 74%);
+	max-width: 600px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.elements {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.card {
+	box-shadow: 5px 4px 8px -3px rgba(215, 78, 9, 0.35);
+	border-radius: 5px;
+	margin: 15px;
+}
+
+.detail {
+	padding: 2px 16px;
+}
+
+img {
+	border-radius: 5px 5px 0 0;
+	width: 100%;
+}
+
+#gamesWon {
+	color: var(--tea-green)
+}
+
+.btn {
+	font-family: 'Handjet', cursive;
+	font-size: 1.5rem;
+	font-weight: bold;
+
+	background: linear-gradient(45deg, #f9925f 20%, rgb(215, 78, 9) 100%);
+	border-radius: 12%;
+	padding: 1rem;
+}
+
+.btn:hover {
+	box-shadow: 0 4px 12px 0 rgba(200, 255, 190, 0.35);
+}
+
+.card:hover {
+	box-shadow: 0 4px 20px 0 rgba(200, 255, 190, 0.35);
+}
+
+#footer {
+	color: var(--lightgreen);
+	text-align: left;
+	padding: 0 5%;
+}
+
+p {
+	font-size: 0.6rem;
+}
+
+:any-link {
+	color: var(--tea-green);
+}
+
+#fillSpace {
+	flex-grow: 1;
+}
+
+@media (max-width: 600px) {
+	.card {
+		max-width: 25%;
+	}
+
+	.btn {
+		font-size: small;
+		padding: 5px;
+	}
+
+	.detail {
+		padding: 0;
+	}
+}

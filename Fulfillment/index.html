@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles/style.css">
+	<script src="./scripts/fulfillment.js" defer></script>
+	<title>BrewQueue Dashboard</title>
+</head>
+<body>
+	<!-- Possible dark mode button -->
+	<div class="container">
+		<section class="header">
+			<div class="menu">
+				<div class="logo">
+				<img id="brewQueueLogo" src="./images/coffeeLogo.jpg" alt="coffee cup logo">
+				<h1>BrewQueue</h1>
+				</div>
+				<div id="resetCupCount" class="btn">
+					<h4>reset cup count</h4>
+				</div>
+				<div class="stats">
+					<!-- <img id="coffeeToday" src="./images/coffeeCup.jpg" alt="Todays Best Selling Cup of Coffee"> -->
+					<div class="counts">
+						<h3>Queue: </h3>
+						<h3 id="revealReset">Cup Count: </h3>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="dashboard">
+			<div class="orders">
+				<fieldset>
+					<legend>Order Brew Here</legend>
+					<input type="text" id="textfname" placeholder="&#9749; Add Name...">
+					<table>
+						<td><button class="btn" id="btnCoffee">Coffee</button></td>
+						<td><button class="btn" id="btnTea">Tea +</button></td>
+					</table>
+					<div id="customCards">
+						<!-- insert js custom cards here -->
+					</div>
+					<div id="coffeeCards">
+						<!-- insert js coffee cards here -->
+					</div>
+					<div id="teaCards">
+						<!-- insert js tea cards here -->
+					</div>
+					<button class="btn" id="addOrder">Add Order</button>
+				</fieldset>
+			</div>
+			<div class="queue">
+				<fieldset>
+					<legend>Brew Queue</legend>
+						<div id="brewQueue">
+							<!-- insert coffee orders here -->
+						</div>
+					<br><img id="backgroundImage" src="./images/coffeeMachine.jpg">
+					<br><button class="btn" id="clrq">Clear Queue</button>
+				</fieldset>
+			</div>
+		</section>
+		<section class="footer">
+			Built by Ellen<br><br>
+			Image Credits - from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=751619">Pixabay</a>
+			<br>
+			Coffee Machine - Image by <a href="https://pixabay.com/users/tabble-989840/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=751619">Tabble</a>, 
+			Coffee Logo - Image by <a href="https://pixabay.com/users/cocoparisienne-127419/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2714970">Anja</a>		
+		</section>
+	</div>
+</body>
+</html>

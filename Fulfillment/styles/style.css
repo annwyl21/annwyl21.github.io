@@ -1,0 +1,228 @@
+/* Lexend google font designed to be dyslexia friendly */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Colour Scheme selected to provide a friendly screen for coffee drinkers to see, and be easy to use by baristas but also friendly to types of colour blindness by providing contrast between colours */
+:root {
+	--chocBrown: #862b0d;
+	--cream: #fff9c9;
+	--green: #b5c99a;
+	--orange: #ffc95f;
+	--black: #000000;
+	--grey: #a9a8a8;
+	--white: #ffffff;
+}
+
+/* larger font set initially to support easy legibility on screen */
+html {
+	font-size: 24px;
+}
+
+body {
+	font-family: 'Lexend', sans-serif;
+	background: linear-gradient(180deg, #fff9c9 3%, #ffc95f 100%);
+	margin: 0;
+	height: 100vh !important;
+}
+
+h1 {
+	color: var(--orange);
+	font-size: 2rem;
+	font-family: 'Indie Flower', cursive;
+	display: inline;
+}
+
+h3 {
+	font-weight: 200;
+}
+
+fieldset {
+	display: flex;
+	flex-direction: column;
+	border-radius: 4px;
+	color: var(--chocBrown);
+	border-color: var(--chocBrown);
+	font-weight: 200;
+}
+
+input {
+	padding: 12px;
+	border: none;
+	border-radius: 4px;
+	background-color: var(--chocBrown);
+	accent-color: var(--chocBrown);
+	color: var(--cream);
+	font-family: 'Lexend', sans-serif;
+	font-weight: 200;
+}
+
+input::placeholder {
+	opacity: 0.5;
+	color: var(--cream);
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	
+}
+
+.header {
+	grid-column: span 12;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--chocBrown);
+	padding: 1% 3%;
+}
+
+.logo {
+	display: flex;
+	align-items: flex-start;
+}
+
+.stats {
+	display: flex;
+	flex-direction: row;
+	background-color: var(--cream);
+	color: var(--chocBrown);
+	padding: 1% 1%;
+	border-radius: 20px;
+}
+
+.dashboard {
+	grid-column: span 12;
+	display: flex;
+	justify-content: space-evenly;
+	margin: 5px 0;
+}
+
+.orders {
+	grid-column: 1 / span 6;
+	background-color: var(--cream);
+	padding: 2% 2%;
+	border-radius: 10px;
+}
+
+.queue {
+	grid-column: 7 / span 6;
+	padding: 2% 2%;
+	border-radius: 10px;
+}
+
+.footer {
+	grid-column: span 12;
+	font-size: 0.5rem;
+	font-weight: 200;
+	text-align: right;
+	margin: 5%;
+}
+
+.newOrder {
+	padding: 10px;
+}
+
+.card {
+	border: 1px solid var(--chocBrown);
+	border-radius: 5px;
+	margin: 5px;
+}
+
+.card:hover, .btn:hover {
+	box-shadow: 0 4px 20px 0 rgba(134, 43, 13, 0.35)
+}
+
+.btnCard {
+	border: none;
+	outline: 0;
+	text-align: left;
+	width: 100%;
+	padding: 12px;
+	background: var(--chocBrown);
+	color: var(--cream);
+	font-family: 'Lexend', sans-serif;
+	font-weight: 300;
+	font-size: 1rem;
+}
+
+.btn {
+	border-radius: 5px;
+	background: linear-gradient(225deg, #b5c99a 45%, #a3c873 100%);
+	border: none;
+	font-weight: 500;
+	padding: 18px;
+	font-family: 'Lexend', sans-serif;
+	font-size: 1rem;
+}
+
+.delete {
+	border: none;
+	background: none;
+	font-size: 35px;
+}
+
+:any-link {
+	color: var(--black);
+	text-decoration: none;
+}
+
+#hamburger {
+	max-width: 50px;
+}
+
+#brewQueueLogo {
+	max-width: 100px;
+	border-radius: 50%;
+	/* opacity: 50%; */
+	margin: 0 15px 0 0;
+	/* flip image, rotate 70 deg so the logo so the coffee cup handle is horizontal to the right */
+	-webkit-transform: scaleX(-1); 
+	transform: scaleX(-1) rotate(25deg);
+}
+
+/* #coffeeToday {
+	max-width: 100px;
+	border-radius: 50%;
+	opacity: 50%;
+	align-self: start;
+} */
+
+#brewQueue {
+	color: var(--chocBrown);
+}
+
+#coffeeCards, #teaCards, #otherCards, #customCards {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 5px;
+}
+
+#brewQueue div:nth-child(odd){
+	background-color: var(--orange);
+	border-radius: 5px;
+}
+
+#backgroundImage {
+	max-width: 200px;
+	opacity: 50%;
+	border-radius: 35px;
+}
+
+#resetCupCount {
+	visibility: hidden;
+	font-weight: 500;
+	font-family: 'Lexend', sans-serif;
+	font-size: 1rem;
+	opacity: 0.4;
+}
+
+@media (max-width: 600px) {
+	.orders {
+		grid-column: span 12;
+	}
+
+	.queue {
+		grid-column: span 12;
+	}
+}
