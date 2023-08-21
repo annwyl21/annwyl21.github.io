@@ -1,25 +1,32 @@
-// Content
-let brand = {
-	portfolioIntro: `<p>I have projects on <strong>github</strong> and <strong>dockerhub</strong> to showcase my skills.</p><p>I am looking for a <strong>junior role</strong> with opportunities to learn.</p>`,
-	myPhoto: ""
-}
+let jsonData;
+let brand;
+let project;
+let skills;
 
-let project = {
-	projectName: "test",
-	info: "intro and why I developed it, problem solved, challenges faced, what I enjoyed",
-	detail: "TDD, OOP, what it does",
-	image: "",
-	skills: ""
-}
+(async function() {
+    try {
+        let response = await fetch('./brand.json');
+        brand = await response.json();
 
-let skills = {
-	languages: {
-		Python: 'py',
-		JavaScript: 'js',
-		SQL: 'sql'
-	}
-}
+		response = await fetch('./project.json');
+        project = await response.json();
 
-// Code
-let brandPara = document.getElementById('brand')
-brandPara.innerHTML = brand.portfolioIntro;
+		response = await fetch('./skills.json');
+        skills = await response.json();
+
+        // Once data is fetched, invoke the main function
+        main();
+		console.log(skills.languages)
+
+    } catch (error) {
+        console.error('Error fetching JSON:', error);
+    }
+})();
+
+async function main() {
+    // all my code runs after the fetch is completed using async here
+
+	let brandPara = document.getElementById('brand')
+	brandPara.innerHTML = brand.portfolioIntro;
+
+}

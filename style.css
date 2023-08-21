@@ -144,7 +144,7 @@ nav {
 	border-width: 0;
 }
 
-.hr-v {
+hr {
 	color: var(--red-neverwithdkgrey);
 	width: 3px;
 	background-color: var(--red-neverwithdkgrey);
