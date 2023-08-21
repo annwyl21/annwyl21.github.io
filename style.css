@@ -156,7 +156,7 @@ hr {
 	color: var(--red-neverwithdkgrey);
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 1050px){
 	.container {
 		/* display: grid;
 		grid-template-columns: span 12;
