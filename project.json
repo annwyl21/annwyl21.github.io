@@ -3,7 +3,7 @@
 		"project": "Yahtzee Scorer",
 		"info": "<p>This game project demonstrates how I used <mark>GitHub workflows</mark>, initiating automatic unit tests to continuously ensure the quality of my code. I used <code>pytest</code> and <code>Pexpect</code> for <mark>unit testing</mark>. I also used the <mark>debugger tool</mark> to identify errors swiftly. Additionally, I used a <mark>GitHub project board</mark> to efficiently manage tasks, breaking objectives into manageable, deliverable chunks, keeping the project on track and my goals clear. This project is my first dive into <mark>Test Driven Development</mark>.</p>",
 		"detail": "TDD, OOP, what it does",
-		"image": "",
+		"image": "./images/tdd_yahtzee_small.png",
 		"skills": ["Pytest", "Pexpect", "Python"],
 		"badges": ["TDD", "OOP"]
 	}

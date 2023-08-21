@@ -37,9 +37,19 @@ body {
     gap: 5px;
 }
 
+.title {
+	display: flex;
+}
+
 nav {
+	display: flex;
 	font-size: 20px;
 	font-weight: 500;
+	align-items: center;
+}
+
+.menu {
+	padding: 5px;
 }
 
 .main {
@@ -61,7 +71,7 @@ nav {
 	gap: 5px;
 }
 
-.text-box {
+.project-text-box {
 	padding: 20px;
 	text-align: right;
 }
@@ -175,6 +185,10 @@ hr {
 
 	.main {
 		flex-direction: column;
+	}
+
+	.project-text-box {
+		text-align: left;
 	}
 
 	.section {

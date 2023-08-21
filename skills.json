@@ -1,7 +1,9 @@
 {
-	"languages": {
-		"Python": "py",
-		"JavaScript": "js",
-		"SQL": "sql"
+	"skills": {
+		"languages": {
+			"Python": "py",
+			"JavaScript": "js",
+			"SQL": "sql"
+		}
 	}
 }
