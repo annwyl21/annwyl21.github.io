@@ -3,6 +3,7 @@ let projectsCollection;
 let skills;
 
 let displayProjects = 2;
+let theme = 'light';
 
 (async function() {
     try {
@@ -30,6 +31,15 @@ let displayProjects = 2;
 
 async function main() {
     // all my code runs after the fetch is completed using async here
+
+    // toggle theme button
+    document.getElementById('themeButton').addEventListener('click', function() {
+        if (theme == 'light') {
+            theme = 'dark'
+        } else {
+            theme = 'light'
+        }
+    });
 
     //populate introduction text
 	let brandPara = document.getElementById('brand');
@@ -174,5 +184,23 @@ async function main() {
         }
 
     };
+
+    // generate skills section
+    let mySkills = document.getElementById('mySkills');
+    console.log('test skills', skills.skills.languages);
+
+    for (let skillSet in skills){
+        // create unordered list for each list of skills using title and info
+        let skillHeading = document.createElement('div');
+        mySkills.appendChild(skillHeading);
+        // loop through headings
+        let skillList = document.createElement('ul');
+        skillHeading.appendChild(skillList);
+        // loop through list items
+        let listItem = document.createElement('li');
+        listItem.appendChild(skillHeading);
+        listItem.innerHTML = skillSet.info;
+    }
+
 
 }
