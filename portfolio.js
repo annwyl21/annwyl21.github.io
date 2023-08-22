@@ -12,15 +12,16 @@ let displayProjects = 2;
 		response = await fetch('./project.json');
         let project = await response.json();
         let yahtzee = project.yahtzeeScorerProject;
-        projectsCollection = [yahtzee];
+        let brewqueue = project.brewqueue;
+        let symptomLogger = project.symptomLogger;
+        projectsCollection = [yahtzee, brewqueue, symptomLogger];
 
 		response = await fetch('./skills.json');
         skills = await response.json();
-        console.log('test skills', skills.skills.languages.Python)
+        console.log('test skills', skills.skills.languages)
 
         // Once data is fetched, invoke the main function
         main();
-		
 
     } catch (error) {
         console.error('Error fetching JSON:', error);
@@ -37,8 +38,7 @@ async function main() {
     //generate project section
     let projectSection = document.getElementById('experience');
     // for every project create a project div
-    for (let i=0; i<displayProjects; i++){
-        displayProjects = 3;
+    for (let i=0; i<=displayProjects; i++){
         let myProject = projectsCollection[i];
 
         // create each project div
@@ -48,182 +48,131 @@ async function main() {
 
         // create each project row
         if (i%2==0){
-            // design the row text then cards
+            // even rows text then cards
+            // TEXT BOX
             let projectTextBox = document.createElement('div');
             projectTextBox.classList.add('project-text-box');
             projectDiv.appendChild(projectTextBox);
             // populate text box with project information
-	        projectTextBox.innerHTML = myProject.info;
-            // create horizontal rule
+	        projectTextBox.innerHTML = `<h2>${myProject.projectName}</h2><p>${myProject.info}</p>`;
+            
+            // HORIZONTAL RULE
             let hr = document.createElement('hr');
             projectDiv.appendChild(hr);
-           
-            //now generate the cards on the other side of the hr
+
+            // create project cards div
+            let projectCards = document.createElement('div');
+            projectCards.classList.add('project-cards');
+            projectDiv.appendChild(projectCards);
+
+            // function createCard(cardLocation){
+            //     let card = document.createElement('div');
+            //     let cardClass = 'proj-cd'+ cardLocation;
+            //     card.classList.add(cardClass);
+            //     projectCards.appendChild(card);
+            
+            //     let cardTop = document.createElement('div');
+            //     let cardClassTop = 'card-top'+ cardLocation;
+            //     cardTop.classList.add(cardClassTop);
+            //     card.appendChild(cardTop);
+            
+            //     let cardBottom = document.createElement('div');
+            //     let cardClassBottom = 'card-bottom'+ cardLocation;
+            //     cardBottom.classList.add(cardClassBottom);
+            //     card.appendChild(cardBottom);
+            // }
+
+            // createCard('Back');
+            // let cardTop = document.getElementsByClassName('card-topBack');
+            // for (i=0; i<cardTop.length; i++){
+            //     cardTop.innerHTML = `<img src="${myProject.image}" alt="${myProject.alt}">`;
+            // }
+
+            // let cardBottom = document.getElementsByClassName('card-bottomBack');
+            // for (i=0; i<cardBottom.length; i++){
+            //     cardBottom.innerHTML = `<p>${myProject.alt}</p>`;
+            // }
+
+            // BACK CARD
+            let backCard = document.createElement('div');
+            backCard.classList.add('proj-cd');
+            projectCards.appendChild(backCard);
+
+            let cardTopB = document.createElement('div');
+            cardTopB.classList.add('card-top');
+            backCard.appendChild(cardTopB);
+            cardTopB.innerHTML = `<img src="${myProject.image}" alt="${myProject.alt}">`;
+
+            let cardBottomB = document.createElement('div');
+            cardBottomB.classList.add('card-bottom');
+            backCard.appendChild(cardBottomB);
+            cardBottomB.innerHTML = `<p>${myProject.alt}</p>`;
+
+            // FRONT CARD
+            let frontCard = document.createElement('div');
+            frontCard.classList.add('proj-cd');
+            projectCards.appendChild(frontCard);
+
+            let cardTopF = document.createElement('div');
+            cardTopF.classList.add('card-top');
+            frontCard.appendChild(cardTopF);
+            cardTopF.innerHTML = `<p>${myProject.badges}, ${myProject.detail}</p>`;
+
+            let cardBottomF = document.createElement('div');
+            cardBottomF.classList.add('card-bottom');
+            frontCard.appendChild(cardBottomF);
+            cardBottomF.innerHTML = `<p>${myProject.skills}</p><a href="${myProject.github}">Github</a>`;
 
         }else{
-            // design the row cards then text
+            // odd rows cards then text
+            // create project cards div
+            let projectCards = document.createElement('div');
+            projectCards.classList.add('project-cards');
+            projectDiv.appendChild(projectCards);
+
+            // BACK CARD
+            let backCard = document.createElement('div');
+            backCard.classList.add('proj-cd');
+            projectCards.appendChild(backCard);
+
+            let cardTopB = document.createElement('div');
+            cardTopB.classList.add('card-top');
+            backCard.appendChild(cardTopB);
+            cardTopB.innerHTML = `<img src="${myProject.image}" alt="${myProject.alt}">`;
+
+            let cardBottomB = document.createElement('div');
+            cardBottomB.classList.add('card-bottom');
+            backCard.appendChild(cardBottomB);
+            cardBottomB.innerHTML = `<p>${myProject.alt}</p>`;
+
+            // FRONT CARD
+            let frontCard = document.createElement('div');
+            frontCard.classList.add('proj-cd');
+            projectCards.appendChild(frontCard);
+
+            let cardTopF = document.createElement('div');
+            cardTopF.classList.add('card-top');
+            frontCard.appendChild(cardTopF);
+            cardTopF.innerHTML = `<p>${myProject.badges}, ${myProject.detail}</p>`;
+
+            let cardBottomF = document.createElement('div');
+            cardBottomF.classList.add('card-bottom');
+            frontCard.appendChild(cardBottomF);
+            cardBottomF.innerHTML = `<p>${myProject.skills}</p><a href="${myProject.github}">Github</a>`;
+
+            // HORIZONTAL RULE
+            let hr = document.createElement('hr');
+            projectDiv.appendChild(hr);
+
+            // TEXT BOX
+            let projectTextBox = document.createElement('div');
+            projectTextBox.classList.add('project-text-box');
+            projectDiv.appendChild(projectTextBox);
+            // populate text box with project information
+            projectTextBox.innerHTML = `<h2>${myProject.projectName}</h2><p>${myProject.info}</p>`;
+
         }
 
-        
     };
 
 }
-
-// function createCards(location){
-// 	// create Card and append it to the location
-// 	let card = document.createElement('div');
-// 	card.classList.add('project-cards');
-// 	location.appendChild(card);
-// 	// create card sections
-// 	let top = document.createElement('div');
-// 	top.classList.add('image');
-// 	card.appendChild(top);
-// 	let bottom = document.createElement('div');
-// 	bottom.classList.add('detail');
-// 	card.appendChild(bottom);
-// 	//populate card with image and abbreviations
-// 	top.innerHTML=`${label}`;
-// 	//<img src=${image - "./images/coffeeLogo.jpg"} alt=${name - "coffee cup logo"}></img>
-// 	bottom.innerHTML=`<button class="btnCard" id="${abbrev}" value="${abbrev}">${abbrev}</button>`;
-// };
-
-// //call create cards for items in customisations menu
-// function createCustomiseCards(){
-// 	let customCards = document.getElementById('customCards');
-// 	for (let custom in customAbbrev){
-// 		createCards(customCards, customAbbrev[custom], custom);
-		
-// 		let orderButtonE = document.getElementById(`${custom}`);
-// 		orderButtonE.addEventListener('click', function getOrder(){
-// 			order = order + ' ' + orderButtonE.value;
-// 			document.getElementById('addOrder').innerHTML = `Add Order: ${order}`;
-// 		})
-// 	};
-// };
-
-
-// <!-- project one -->
-// <div class="project-details">
-//     <div class="project-text-box">
-//         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure id facere commodi quidem necessitatibus dolores voluptate consequatur numquam, fuga deserunt amet dicta placeat impedit vero mollitia quas repellat non minus unde suscipit tempora voluptatem beatae! Voluptatum iusto animi eligendi natus at. Similique, tenetur laborum consequatur officiis accusantium expedita, nobis fugiat ullam eligendi atque laudantium cupiditate et accusamus. Dolorum, alias asperiores quaerat qui atque voluptatibus eos veniam nulla? Atque optio, molestiae repudiandae mollitia, aliquid ab natus, unde a eligendi et dignissimos.</p>
-//     </div>
-//     <hr>
-
-//     <div class="project-cards">
-//         <!-- project image card-->
-//         <div class="proj-cd" id="bk-cd">
-//             <div class="card-top">
-//                 <img src="./placeholder.jpg" alt="placeholder">
-//             </div>
-//             <div class="card-bottom">
-//                 placeholder
-//                 <br>
-//             </div>
-//         </div>
-
-//         <!-- sample card skills and info-->
-//         <div class="proj-cd">
-//             <div class="card-top">
-//                 text about project Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam. Accusantium laudantium ducimus fugit molestias fugiat officia rem culpa quae. Deleniti, accusantium quibusdam, cumque rerum dolores eaque sed quod, praesentium fugiat saepe laudantium. Neque qui obcaecati consectetur iusto, adipisci explicabo ad similique temporibus officiis vitae eligendi, quisquam, tempora quam voluptatem!
-//             </div>
-//             <div class="card-bottom">
-//                 info about skills involved Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur magnam perferendis aperiam temporibus autem adipisci?
-//                 <br>
-//             </div>
-//         </div>
-//     </div>
-// </div>
-
-// BACK-UP html
-// <!-- project one -->
-// <div class="project-details">
-//     <div class="text-box">
-//         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure id facere commodi quidem necessitatibus dolores voluptate consequatur numquam, fuga deserunt amet dicta placeat impedit vero mollitia quas repellat non minus unde suscipit tempora voluptatem beatae! Voluptatum iusto animi eligendi natus at. Similique, tenetur laborum consequatur officiis accusantium expedita, nobis fugiat ullam eligendi atque laudantium cupiditate et accusamus. Dolorum, alias asperiores quaerat qui atque voluptatibus eos veniam nulla? Atque optio, molestiae repudiandae mollitia, aliquid ab natus, unde a eligendi et dignissimos.</p>
-//     </div>
-//     <hr>
-//     <div class="project-cards">
-//         <!-- project image card-->
-//         <div class="proj-cd" id="bk-cd">
-//             <div class="card-top">
-//                 <img src="./placeholder.jpg" alt="placeholder">
-//             </div>
-//             <div class="card-bottom">
-//                 placeholder
-//                 <br>
-//             </div>
-//         </div>
-
-//         <!-- sample card skills and info-->
-//         <div class="proj-cd">
-//             <div class="card-top">
-//                 text about project Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam. Accusantium laudantium ducimus fugit molestias fugiat officia rem culpa quae. Deleniti, accusantium quibusdam, cumque rerum dolores eaque sed quod, praesentium fugiat saepe laudantium. Neque qui obcaecati consectetur iusto, adipisci explicabo ad similique temporibus officiis vitae eligendi, quisquam, tempora quam voluptatem!
-//             </div>
-//             <div class="card-bottom">
-//                 info about skills involved Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur magnam perferendis aperiam temporibus autem adipisci?
-//                 <br>
-//             </div>
-//         </div>
-//     </div>
-// </div>
-
-// <!-- project two -->
-// <div class="project-details">
-//     <div class="project-cards">
-//         <!-- project image card-->
-//         <div class="proj-cd" id="bk-cd">
-//             <div class="card-top">
-//                 <img src="./placeholder.jpg" alt="placeholder">
-//             </div>
-//             <div class="card-bottom">
-//                 placeholder
-//                 <br>
-//             </div>
-//         </div>
-
-//         <!-- sample card skills and info-->
-//         <div class="proj-cd">
-//             <div class="card-top">
-//                 text about project Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam. Accusantium laudantium ducimus fugit molestias fugiat officia rem culpa quae. Deleniti, accusantium quibusdam, cumque rerum dolores eaque sed quod, praesentium fugiat saepe laudantium. Neque qui obcaecati consectetur iusto, adipisci explicabo ad similique temporibus officiis vitae eligendi, quisquam, tempora quam voluptatem!
-//             </div>
-//             <div class="card-bottom">
-//                 info about skills involved Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur magnam perferendis aperiam temporibus autem adipisci?
-//                 <br>
-//             </div>
-//         </div>
-//     </div>
-//     <hr>
-//     <div class="right-text-box">
-//         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure id facere commodi quidem necessitatibus dolores voluptate consequatur numquam, fuga deserunt amet dicta placeat impedit vero mollitia quas repellat non minus unde suscipit tempora voluptatem beatae! Voluptatum iusto animi eligendi natus at. Similique, tenetur laborum consequatur officiis accusantium expedita, nobis fugiat ullam eligendi atque laudantium cupiditate et accusamus. Dolorum, alias asperiores quaerat qui atque voluptatibus eos veniam nulla? Atque optio, molestiae repudiandae mollitia, aliquid ab natus, unde a eligendi et dignissimos.</p>
-//     </div>
-// </div>
-
-// <!-- project three -->
-// <div class="project-details">
-//     <div class="text-box">
-//         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure id facere commodi quidem necessitatibus dolores voluptate consequatur numquam, fuga deserunt amet dicta placeat impedit vero mollitia quas repellat non minus unde suscipit tempora voluptatem beatae! Voluptatum iusto animi eligendi natus at. Similique, tenetur laborum consequatur officiis accusantium expedita, nobis fugiat ullam eligendi atque laudantium cupiditate et accusamus. Dolorum, alias asperiores quaerat qui atque voluptatibus eos veniam nulla? Atque optio, molestiae repudiandae mollitia, aliquid ab natus, unde a eligendi et dignissimos.</p>
-//     </div>
-//     <hr>
-//     <div class="project-cards">
-//         <!-- project image card-->
-//         <div class="proj-cd" id="bk-cd">
-//             <div class="card-top">
-//                 <img src="./placeholder.jpg" alt="placeholder">
-//             </div>
-//             <div class="card-bottom">
-//                 placeholder
-//                 <br>
-//             </div>
-//         </div>
-
-//         <!-- sample card skills and info-->
-//         <div class="proj-cd">
-//             <div class="card-top">
-//                 text about project Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam. Accusantium laudantium ducimus fugit molestias fugiat officia rem culpa quae. Deleniti, accusantium quibusdam, cumque rerum dolores eaque sed quod, praesentium fugiat saepe laudantium. Neque qui obcaecati consectetur iusto, adipisci explicabo ad similique temporibus officiis vitae eligendi, quisquam, tempora quam voluptatem!
-//             </div>
-//             <div class="card-bottom">
-//                 info about skills involved Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur magnam perferendis aperiam temporibus autem adipisci?
-//                 <br>
-//             </div>
-//         </div>
-//     </div>
-// </div>
