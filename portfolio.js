@@ -1,6 +1,6 @@
 let brand;
 let projectsCollection;
-let skills;
+let skillsCollection;
 
 let displayProjects = 2;
 let theme = 'light';
@@ -18,8 +18,16 @@ let theme = 'light';
         projectsCollection = [yahtzee, brewqueue, symptomLogger];
 
 		response = await fetch('./skills.json');
-        skills = await response.json();
-        console.log('test skills', skills.skills.languages)
+        let skills = await response.json();
+        let languages = skills.languages;
+        let database = skills.database;
+        let git = skills.git;
+        let libraries = skills.libraries;
+        let ide = skills.ide;
+        let api = skills.api;
+        skillsCollection = [languages, database, git, libraries, ide, api];
+
+        console.log('get data from json', skills.skills.languages)
 
         // Once data is fetched, invoke the main function
         main();
@@ -189,7 +197,8 @@ async function main() {
     let mySkills = document.getElementById('mySkills');
     console.log('test skills', skills.skills.languages);
 
-    for (let skillSet in skills){
+    // NOT WORKING YET
+    for (let skillDetails in skillsCollection){
         // create unordered list for each list of skills using title and info
         let skillHeading = document.createElement('div');
         mySkills.appendChild(skillHeading);
@@ -199,7 +208,7 @@ async function main() {
         // loop through list items
         let listItem = document.createElement('li');
         listItem.appendChild(skillHeading);
-        listItem.innerHTML = skillSet.info;
+        listItem.innerHTML = skillDetails.info;
     }
 
 
