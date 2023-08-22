@@ -4,7 +4,90 @@
 		"info": "<p>This game project demonstrates how I used <mark>GitHub workflows</mark>, initiating automatic unit tests to continuously ensure the quality of my code. I used <code>pytest</code> and <code>Pexpect</code> for <mark>unit testing</mark>. I also used the <mark>debugger tool</mark> to identify errors swiftly. Additionally, I used a <mark>GitHub project board</mark> to efficiently manage tasks, breaking objectives into manageable, deliverable chunks, keeping the project on track and my goals clear. This project is my first dive into <mark>Test Driven Development</mark>.</p>",
 		"detail": "TDD, OOP, what it does",
 		"image": "./images/tdd_yahtzee_small.png",
+		"alt": "Screenshot of Test Driven Development for my Yahtzee Score Calculator",
 		"skills": ["Pytest", "Pexpect", "Python"],
-		"badges": ["TDD", "OOP"]
+		"badges": ["TDD", "OOP"],
+		"github": "https://github.com/annwyl21/yahtzee"
+	},
+
+	"brewqueue": {
+		"project": "BrewQueue",
+		"info": "<p>An order management system (to-do list)created using JavaScript. I successfully debugged critical issues, including an off-by-1 error and unpredictable card creation anomolies, using browser debugging tools to pinpoint a variable declaration oversight that JavaScript gracefully handled without explicit error, a contrast to typical Python behaviour.</p>",
+		"detail": "JavaScript, local Storage",
+		"image": "",
+		"alt": "",
+		"skills": ["JavaScript", "CSS", "HTML"],
+		"badges": []
+	},
+
+	"symptomLogger": {
+		"project": "Symptom Tracker",
+		"info": "<p>The <i>current</i> project utilizes a <mark>metaprompt</mark> prefix in API requests to the <mark>text-davinci-003 AI model</mark>, summarizing user-logged symptoms. These symptoms timestamped and stored in a Postgres database, can be summarized on demand. A <mark>bubbleplot</mark> illustrates the frequency of symptoms over time and throughout the day, with bubble size signifying reported pain levels.</p><p>To develop this application, I acquired knowledge in <mark>NLP and the NLTK</mark>, creating a preliminary summarizing tool to establish a benchmark for the API/metaprompt development. Finally, I adapted my knowledge of mysql to create and connect to a <mark>PostgreSQL database</mark> using a docker image.</p>",
+		"detail": "",
+		"image": "./images/bubbleplot_symptoms_small.png",
+		"alt": "Bubble plot dynamically generated to display frequency of symptoms over time and when they occur throughout the day, with a reported pain scale represented by bubble size.",
+		"skills": ["JavaScript DOM", "JavaScript node.js"],
+		"badges": [],
+		"github": "https://github.com/annwyl21/symptom_record"
+	},
+
+	"debtComparisonCalculator": {
+		"project": "Debt Comparison Calculator",
+		"info": "<p>Available on Dockerhub and as a serverless container app on Azure, my simple debt comparison calculator <mark>creates 3 debt objects</mark> and calculates how long it will take to repay 3 debts, <mark>comparing 3 specific repayment methods</mark>; stack, snowball & avalanche.</p>",
+		"detail": "",
+		"image": "./images/debt_comparison_small.png",
+		"alt": "Debt Repayment Methods Comparison Results",
+		"skills": ["JavaScript DOM", "JavaScript node.js"],
+		"badges": [],
+		"github": "https://github.com/annwyl21/debt_comparison",
+		"docker": "https://hub.docker.com/r/annwyl21/debt_comparison",
+		"azure": "http://debt-comparison.wittyflower-04a4021a.westus2.azurecontainerapps.io"
+	},
+
+	"rps": {
+		"project": "Rock, Paper Scissors",
+		"info": "<p>Logic for the traditional Rock, Paper, Scissors Game behind my JavaScript front-end.</p>",
+		"detail": "",
+		"image": "./RockPaperScissors/Assignment_5_Ellen_2of3.html",
+		"alt": "Rock, Paper, Scissors",
+		"skills": ["JavaScript DOM", "JavaScript node.js"],
+		"badges": []
+	},
+
+	"weatherApi": {
+		"project": "Weather API",
+		"info": "<p>This project <mark>connects to a MET office API</mark>, a weather object is created with the retrieved weather forecast data which is then used to display customised information in the app.</p>",
+		"detail": "",
+		"image": "./images/weather_forecast_results_small.jpg",
+		"alt": "Weather Forecast Results",
+		"skills": [],
+		"badges": [],
+		"github": "https://github.com/annwyl21/weather_forecast"
+	},
+
+	"sentenceTranslation": {
+		"project": "Sentence Translation",
+		"info": "<p>This project takes user input, <mark>connects to the Azure Cognitive API</mark> to identify the language of the input and translate into 5 given languages; spanish, dutch, french, german & english.</p>",
+		"detail": "",
+		"image": "",
+		"alt": "",
+		"skills": [],
+		"badges": [],
+		"github": "https://github.com/annwyl21/sentence_translation"
+	},
+
+	"heathrowHeatmaps": {
+		"project": "Visualising Heathrow Weather",
+		"info": "<p>This project uses data downloaded from MET office into pandas to <mark>create heatmaps</mark> using Matplotlib, NumPy & Seaborn libraries. A heatmap to show 10 years of weather data, displaying the total rainfall in mm at Heathrow Airport.A heatmap to show 20 years of weather data, displaying the mean daily min temperature at Heathrow Airport.A heatmap to show 70 years of weather data, displaying the mean daily max temperature at Heathrow Airport.",
+		"detail": "",
+		"image": "./images/heathrow_rainfall_heatmap_decade_small.jpg",
+		"alt": "Heatmap displaying a decade of rainfall (total rainfall in mm)",
+		"image1": "./images/heathrow_min_temp_heatmap_small.jpg",
+		"alt1": "Heatmap displaying 20yrs of weather data (mean daily min temp)",
+		"image2": "./images/heathrow_heatmap_1950_2020_small.jpg",
+		"alt2": "Heatmap displaying 70yrs of weather data (mean daily max temp)",
+		"skills": ["Data Visualisation", "Python"],
+		"badges": [],
+		"github": "https://github.com/annwyl21/heatmap_weather"
 	}
 }

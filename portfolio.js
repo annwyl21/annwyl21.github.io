@@ -2,6 +2,8 @@ let brand;
 let projectsCollection;
 let skills;
 
+let displayProjects = 2;
+
 (async function() {
     try {
         let response = await fetch('./brand.json');
@@ -35,7 +37,8 @@ async function main() {
     //generate project section
     let projectSection = document.getElementById('experience');
     // for every project create a project div
-    for (let i=0; i<projectsCollection.length; i++){
+    for (let i=0; i<displayProjects; i++){
+        displayProjects = 3;
         let myProject = projectsCollection[i];
 
         // create each project div
