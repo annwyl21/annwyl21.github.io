@@ -19,15 +19,15 @@ let theme = 'light';
 
 		response = await fetch('./skills.json');
         let skills = await response.json();
-        let languages = skills.languages;
-        let database = skills.database;
-        let git = skills.git;
-        let libraries = skills.libraries;
-        let ide = skills.ide;
-        let api = skills.api;
+        let languages = skills.knowledge.languages;
+        let database = skills.knowledge.database;
+        let git = skills.knowledge.git;
+        let libraries = skills.knowledge.libraries;
+        let ide = skills.knowledge.ide;
+        let api = skills.knowledge.api;
         skillsCollection = [languages, database, git, libraries, ide, api];
 
-        console.log('get data from json', skills.skills.languages)
+        console.log('get data from json', skills.knowledge.languages)
 
         // Once data is fetched, invoke the main function
         main();
@@ -195,20 +195,26 @@ async function main() {
 
     // generate skills section
     let mySkills = document.getElementById('mySkills');
-    console.log('test skills', skills.skills.languages);
+    console.log('skills', skillsCollection[1].info);
 
-    // NOT WORKING YET
-    for (let skillDetails in skillsCollection){
+    // NOT WORKING YET - each time a line is created it needs a unique identifier, possibly
+    for (let i=0; i<skillsCollection.length; i++){
         // create unordered list for each list of skills using title and info
         let skillHeading = document.createElement('div');
         mySkills.appendChild(skillHeading);
-        // loop through headings
+        mySkills.innerHTML = `<p>${skillsCollection[i].title}</p>`;
         let skillList = document.createElement('ul');
         skillHeading.appendChild(skillList);
-        // loop through list items
-        let listItem = document.createElement('li');
-        listItem.appendChild(skillHeading);
-        listItem.innerHTML = skillDetails.info;
+
+        let skillDetail = skillsCollection[i].info;
+        for(let x=0; x<skillDetail.length; x++){
+            // loop through list items
+            let listItem = document.createElement('li');
+            skillList.appendChild(listItem);
+            listItem.innerHTML = skillDetail[x];  
+        }
+                
+
     }
 
 
