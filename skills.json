@@ -1,9 +1,29 @@
 {
 	"skills": {
-		"languages": {
-			"Python": "py",
-			"JavaScript": "js",
-			"SQL": "sql"
+		"Programming Languages": {
+			"info": ["Python", "JavaScript", "HTML", "CSS", "SQL", "Regex"],
+			"abbrev": ["py", "js", "html", "css", "sql", "regex"]
+		},
+
+		"Database Management": {
+			"info": ["MySQL", "PostgrSQL", "Mongo DB"]
+		},
+
+		"Version Control & Containerization": {
+			"info": ["Git", "Docker", "Gitbash", "Ubuntu", "Github", "Github Workflow", "Dockerhub"]
+		},
+
+		"Frameworks & Libraries": {
+			"info": ["Pytest", "Pextract", "Jest", "Flask", "Matplotlib", "Pandas", "NumPy", "NLTK", "Bootstrap", "Beautiful Soup"]
+		},
+
+		"Development Environments/ IDE's": {
+			"info": ["Visual Studio Code (VS Code)", "PyCharm", "Jupyter Notebook"]
+		},
+
+		"API's & AI Engineering": {
+			"info": ["Postman", "Azure Cognitive API", "AI Prompt Engineering"]
 		}
+		
 	}
 }
