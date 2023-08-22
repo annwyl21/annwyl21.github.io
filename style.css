@@ -26,6 +26,7 @@ body {
     'header header header'
     'main main aside'
     'section section aside'
+	'seeMore seeMore aside'
     'footer footer footer'
     ;
 }
@@ -67,6 +68,7 @@ nav {
 
 #mySkills {
 	align-self: flex-start;
+	padding-left: 50px;
 }
 
 .section {
@@ -123,6 +125,13 @@ nav {
 
 .proj-cd:hover ~.proj-cd {
 	left: 150px;
+}
+
+.seeMore {
+	grid-area: seeMore;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .footer {
@@ -249,6 +258,7 @@ input:focus + .slider {
 		'header header header'
 		'main main main'
 		'section section section'
+		'SeeMore SeeMore seeMore'
 		'footer footer footer'
 		'aside aside aside'
 		;

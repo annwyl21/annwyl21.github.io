@@ -2,7 +2,7 @@ let brand;
 let projectsCollection;
 let skillsCollection;
 
-let displayProjects = 2;
+let displayProjects = 10;
 let theme = 'light';
 
 (async function() {
@@ -197,12 +197,11 @@ async function main() {
     let mySkills = document.getElementById('mySkills');
     console.log('skills', skillsCollection[1].info);
 
-    // NOT WORKING YET - each time a line is created it needs a unique identifier, possibly
     for (let i=0; i<skillsCollection.length; i++){
         // create unordered list for each list of skills using title and info
         let skillHeading = document.createElement('div');
+        mySkills.innerHTML += `<p>${skillsCollection[i].title}:</p>`;
         mySkills.appendChild(skillHeading);
-        mySkills.innerHTML = `<p>${skillsCollection[i].title}</p>`;
         let skillList = document.createElement('ul');
         skillHeading.appendChild(skillList);
 
@@ -210,12 +209,22 @@ async function main() {
         for(let x=0; x<skillDetail.length; x++){
             // loop through list items
             let listItem = document.createElement('li');
-            skillList.appendChild(listItem);
-            listItem.innerHTML = skillDetail[x];  
+            listItem.innerHTML = `${skillDetail[x]}`; 
+            skillList.appendChild(listItem); 
         }
                 
 
-    }
+    };
 
+    let btnSeeMore = document.getElementById('seeMore')
+    btnSeeMore.addEventListener('click', function showProjects(){
+        if (displayProjects == 2){
+            displayProjects = 10;
+            btnSeeMore.innerHTML = "Show Less Projects";
+        }else{
+            displayProjects = 2;
+            btnSeeMore.innerHTML = "See More Projects";
+        }
+    });
 
 }
