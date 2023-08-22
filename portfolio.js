@@ -2,7 +2,6 @@ let brand;
 let projectsCollection;
 let skillsCollection;
 
-let displayProjects = 10;
 let theme = 'light';
 
 (async function() {
@@ -15,7 +14,12 @@ let theme = 'light';
         let yahtzee = project.yahtzeeScorerProject;
         let brewqueue = project.brewqueue;
         let symptomLogger = project.symptomLogger;
-        projectsCollection = [yahtzee, brewqueue, symptomLogger];
+        let debtComparisonCalculator = project.debtComparisonCalculator;
+        let rps = project.rps;
+        let weatherApi = project.weatherApi;
+        let sentenceTranslation = project.sentenceTranslation;
+        let heathrowHeatmaps = project.heathrowHeatmaps;
+        projectsCollection = [yahtzee, brewqueue, symptomLogger, debtComparisonCalculator, rps, weatherApi, sentenceTranslation, heathrowHeatmaps];
 
 		response = await fetch('./skills.json');
         let skills = await response.json();
@@ -56,7 +60,7 @@ async function main() {
     //generate project section
     let projectSection = document.getElementById('experience');
     // for every project create a project div
-    for (let i=0; i<=displayProjects; i++){
+    for (let i=0; i<=projectsCollection.length-1; i++){
         let myProject = projectsCollection[i];
 
         // create each project div
@@ -72,7 +76,7 @@ async function main() {
             projectTextBox.classList.add('project-text-box');
             projectDiv.appendChild(projectTextBox);
             // populate text box with project information
-	        projectTextBox.innerHTML = `<h2>${myProject.projectName}</h2><p>${myProject.info}</p>`;
+	        projectTextBox.innerHTML = `<h2 class="red">${myProject.projectName}</h2><p>${myProject.info}</p>`;
             
             // HORIZONTAL RULE
             let hr = document.createElement('hr');
@@ -156,6 +160,7 @@ async function main() {
             let cardTopB = document.createElement('div');
             cardTopB.classList.add('card-top');
             backCard.appendChild(cardTopB);
+            console.log('test', myProject.projectName, myProject.image)
             cardTopB.innerHTML = `<img src="${myProject.image}" alt="${myProject.alt}">`;
 
             let cardBottomB = document.createElement('div');
@@ -187,7 +192,7 @@ async function main() {
             projectTextBox.classList.add('project-text-box');
             projectDiv.appendChild(projectTextBox);
             // populate text box with project information
-            projectTextBox.innerHTML = `<h2>${myProject.projectName}</h2><p>${myProject.info}</p>`;
+            projectTextBox.innerHTML = `<h2 class="red">${myProject.projectName}</h2><p>${myProject.info}</p>`;
 
         }
 
@@ -213,18 +218,6 @@ async function main() {
             skillList.appendChild(listItem); 
         }
                 
-
     };
-
-    let btnSeeMore = document.getElementById('seeMore')
-    btnSeeMore.addEventListener('click', function showProjects(){
-        if (displayProjects == 2){
-            displayProjects = 10;
-            btnSeeMore.innerHTML = "Show Less Projects";
-        }else{
-            displayProjects = 2;
-            btnSeeMore.innerHTML = "See More Projects";
-        }
-    });
 
 }
