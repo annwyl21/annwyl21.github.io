@@ -13,8 +13,15 @@
 		
 		<div class="header">
 			<div class="title">
+			<!-- toggle theme button -->
+				<div class="toggle-theme">
+					<label class="switch">
+						<input type="checkbox">
+						<span class="slider round" id="themeButton"></span>
+					</label>
+				</div>
 				<hr>
-				<h3 style="padding-left: 5px;">Junior Software Developer</h3>
+				<h3 style="padding-left: 5px;">Junior Software Engineer</h3>
 			</div>
 			<nav>
 				<button class="btn"><a class="menu" href="#skills">Skills</a></button>
@@ -35,13 +42,6 @@
 
 		<!-- Aside Skills Section -->
 		<div class="aside" id="skills">
-			<!-- toggle theme button -->
-			<div class="toggle-theme">
-				<label class="switch">
-					<input type="checkbox">
-					<span class="slider round" id="themeButton"></span>
-				</label>
-			</div>
 			<div id="mySkills">
 			<!-- Insert my skills list here -->
 			</div>
@@ -50,23 +50,32 @@
 		<!-- Project Cards Section -->
 		<div class="section">
 			<fieldset id="experience">
-				<legend>My Projects</legend>
+				<legend>My Projects featuring OOP, TDD, Data Visualisation, AI Engineering, API connections</legend>
 			<!-- Insert my project cards here -->
 			</fieldset>
 		</div>
 
 		<div class="footer">
-			<h1 class="red">Ellen Houghton</h1>
-			<span class="badge rounded-pill text-bg-secondary" style="display: inline-block; background: linear-gradient(135deg, #aad922 50%, #f15025 100%);">
-				<table>
-					<tr>
-						<td><a href="https://www.linkedin.com/in/annwyl21/"><img src="./images/linkedin.png" target="blank" style="max-width: 23px;"alt="Linkedin icons created by Freepik - flaticon.com/free-icons"></a></td>
-						<td><a href="https://github.com/annwyl21"><img src="./images/github-mark.png" target="blank" style="max-width: 23px;" alt="image from Github"></a></td>
-						<td><a href="https://hub.docker.com/repositories/annwyl21"><img src="./images/docker.png" target="blank" style="max-width: 23px;" alt="Linkedin icons created by Freepik - flaticon.com/free-icons"></a></td>
-					</tr>
-				</table>
-			</span>
+			<div class="footer-text">
+			<a class="footer-icon" href="https://github.com/annwyl21" target="_blank"><img src="./images/icons8-github-120.png" alt="github icon by Icons8.com"></a>
+			<a class="footer-icon" href="https://hub.docker.com/repositories/annwyl21" target="_blank"><img src="./images/icons8-docker-144.png" alt="docker icon by Icons8.com"></a>
+			<a class="footer-icon" href="https://www.linkedin.com/in/annwyl21/" target="_blank"><img src="./images/icons8-linked-in-150.png" alt="linked in icon by Icons8.com"></a>
+			</div>
 		</div>
 	</div>
+
+	<script>
+		// toggle theme button
+		let theme = light;
+			document.getElementById('themeButton').addEventListener('click', function() {
+    			if (theme == 'light') {
+        		theme = 'dark'
+        		document.getElementsByTagName('body').style.csstext = "background: var(--dark-grey); color: var(--white);";
+    			} else {
+        		theme = 'light'
+        		document.getElementsByTagName('body').style.csstext = "background: var(--paler-grey); color: var(--dark-grey);"; 
+    			}
+			});
+	</script>
 </body>
 </html>
