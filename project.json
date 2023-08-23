@@ -12,13 +12,28 @@
 
 	"brewqueue": {
 		"projectName": "BrewQueue",
-		"info": "<p>An order management system (to-do list)created using JavaScript. I successfully debugged critical issues, including an off-by-1 error and unpredictable card creation anomolies, using browser debugging tools to pinpoint a variable declaration oversight that JavaScript gracefully handled without explicit error, a contrast to typical Python behaviour.</p>",
-		"detail": "JavaScript, local Storage",
-		"image": "./placeholder.jpg",
-		"alt": "placeholder text",
-		"skills": ["JavaScript", "CSS", "HTML"],
+		"info": "<p>An order management system (to-do list) to manage barrista workflow. Created using JavaScript, I successfully debugged critical issues, including an off-by-1 error and unpredictable card creation anomolies, using browser debugging tools to pinpoint a variable declaration oversight that JavaScript gracefully handled without explicit error, a contrast to typical Python behaviour.</p>",
+		"detail": "This was my Bootcamp project, initially designed using Lucid Chart and created on completion of the JavaScript DOM module.",
+		"image": "./images/BrewQueueSmall.jpg",
+		"alt": "Built to my design in LucidChart",
+		"skills": ["JavaScript", "local storage", "LucidChart", "CSS", "HTML"],
+		"badges": ["JavaScript"],
+		"github": "./Fulfillment/index.html"
+	},
+
+	"heathrowHeatmaps": {
+		"projectName": "Visualising Heathrow Weather",
+		"info": "<p>This project uses data downloaded from MET office into pandas to create heatmaps using Matplotlib, NumPy & Seaborn libraries. A heatmap to show 10 years of weather data, displaying the total rainfall in mm at Heathrow Airport.A heatmap to show 20 years of weather data, displaying the mean daily min temperature at Heathrow Airport.A heatmap to show 70 years of weather data, displaying the mean daily max temperature at Heathrow Airport.",
+		"detail": "placeholder",
+		"image": "./images/heathrow_rainfall_heatmap_decade_small.jpg",
+		"alt": "Heatmap displaying a decade of rainfall (total rainfall in mm)",
+		"image1": "./images/heathrow_min_temp_heatmap_small.jpg",
+		"alt1": "Heatmap displaying 20yrs of weather data (mean daily min temp)",
+		"image2": "./images/heathrow_heatmap_1950_2020_small.jpg",
+		"alt2": "Heatmap displaying 70yrs of weather data (mean daily max temp)",
+		"skills": ["Data Visualisation", "Python"],
 		"badges": [],
-		"github": "https://github.com/annwyl21"
+		"github": "https://github.com/annwyl21/heatmap_weather"
 	},
 
 	"symptomLogger": {
@@ -76,20 +91,6 @@
 		"skills": ["placeholder"],
 		"badges": [],
 		"github": "https://github.com/annwyl21/sentence_translation"
-	},
-
-	"heathrowHeatmaps": {
-		"projectName": "Visualising Heathrow Weather",
-		"info": "<p>This project uses data downloaded from MET office into pandas to create heatmaps using Matplotlib, NumPy & Seaborn libraries. A heatmap to show 10 years of weather data, displaying the total rainfall in mm at Heathrow Airport.A heatmap to show 20 years of weather data, displaying the mean daily min temperature at Heathrow Airport.A heatmap to show 70 years of weather data, displaying the mean daily max temperature at Heathrow Airport.",
-		"detail": "placeholder",
-		"image": "./images/heathrow_rainfall_heatmap_decade_small.jpg",
-		"alt": "Heatmap displaying a decade of rainfall (total rainfall in mm)",
-		"image1": "./images/heathrow_min_temp_heatmap_small.jpg",
-		"alt1": "Heatmap displaying 20yrs of weather data (mean daily min temp)",
-		"image2": "./images/heathrow_heatmap_1950_2020_small.jpg",
-		"alt2": "Heatmap displaying 70yrs of weather data (mean daily max temp)",
-		"skills": ["Data Visualisation", "Python"],
-		"badges": [],
-		"github": "https://github.com/annwyl21/heatmap_weather"
 	}
+
 }

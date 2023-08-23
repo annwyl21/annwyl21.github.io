@@ -19,7 +19,7 @@ let theme = 'light';
         let weatherApi = project.weatherApi;
         let sentenceTranslation = project.sentenceTranslation;
         let heathrowHeatmaps = project.heathrowHeatmaps;
-        projectsCollection = [yahtzee, brewqueue, symptomLogger, debtComparisonCalculator, rps, weatherApi, sentenceTranslation, heathrowHeatmaps];
+        projectsCollection = [yahtzee, brewqueue, heathrowHeatmaps, symptomLogger, debtComparisonCalculator, rps, weatherApi, sentenceTranslation];
 
 		response = await fetch('./skills.json');
         let skills = await response.json();
@@ -79,7 +79,7 @@ async function main() {
             projectDiv.appendChild(projectTextBox);
             // populate text box with project information
 	        projectTextBox.innerHTML = `<h1>${myProject.projectName}</h1><p>${myProject.info}</p>`;
-            projectTextBox.innerHTML += `<button class="btn" ><a href="${myProject.github}">See More at Github Repo</button>`;
+            projectTextBox.innerHTML += `<button class="btn" ><a href="${myProject.github}">See More</button>`;
 
             
             // HORIZONTAL RULE
@@ -129,13 +129,17 @@ async function main() {
             let flipCardFront = document.createElement('div');
             flipCardFront.classList.add('flip-card-front');
             flipCardInner.appendChild(flipCardFront);
-            flipCardFront.innerHTML = `<img class="flip-image" src="${myProject.image}" alt="${myProject.alt}"><br><p>${myProject.alt}</p><p>${myProject.badges}</p>`;
-            
+            flipCardFront.innerHTML = `<img class="flip-image" src="${myProject.image}" alt="${myProject.alt}">`;
+            let textDiv = document.createElement('div');
+            textDiv.style.padding=" 0px 15px";
+            flipCardFront.appendChild(textDiv);
+            textDiv.innerHTML += `<p>${myProject.alt}</p><p>${myProject.badges}</p>`;
+
             // create flip card back & populate
             let flipCardBack = document.createElement('div');
             flipCardBack.classList.add('flip-card-back');
             flipCardInner.appendChild(flipCardBack);
-            flipCardBack.innerHTML = `Built with ${myProject.skills}<br><p>${myProject.detail}</p>`;
+            flipCardBack.innerHTML = `${myProject.detail}<br><p>Built with ${myProject.skills}</p>`;
 
             // HORIZONTAL RULE
             let hr = document.createElement('hr');
@@ -147,7 +151,7 @@ async function main() {
             projectDiv.appendChild(projectTextBox);
             // populate text box with project information
 	        projectTextBox.innerHTML = `<h1>${myProject.projectName}</h1><p>${myProject.info}</p>`;
-
+            projectTextBox.innerHTML += `<button class="btn" ><a href="${myProject.github}">See More</button>`;
         }
 
     };
