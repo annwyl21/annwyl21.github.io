@@ -2,20 +2,21 @@
 
 :root {
 	--pale-grey: #DCDCDD;
-	--paler-grey: #fef9f3;
+	--paler-grey: #efebe5;
 	--light-grey: #C5C3C6;
 	--dark-grey: #46494C;
 	--bright-green: #5FAD41;
 	--red-neverwithdkgrey: #E71D36;
-	--white: #fef9f3;
-	--black: black;
+	--white: white;
+	--black: #000000;
 }
 
 body {
 	background-color: var(--paler-grey);
 	color: var(--dark-grey);
 	font-family: 'Titillium Web', sans-serif;
-	margin: 15px;
+	margin: 0;
+	height: 100vh !important;
 }
 
 .container {
@@ -32,10 +33,11 @@ body {
 }
 
 .badge {
+	display: inline;
 	background-color: var(--bright-green);
 	color: white;
 	font-weight: 700;
-	padding: 4px 4px;
+	padding: 3px 5px;
 	text-align: center;
 	border-radius: 25px;
 	/* add some animation with a timer so they twinkle and draw attention */
@@ -46,6 +48,7 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 5px;
+	margin: 15px;
 }
 
 h1 {
@@ -54,6 +57,7 @@ h1 {
 
 .title {
 	display: flex;
+	gap: 5px;
 }
 
 nav {
@@ -92,6 +96,7 @@ nav {
 	flex-direction: column;
 	justify-content: space-evenly;
 	gap: 5px;
+	margin-left: 15px;
 }
 
 fieldset {
@@ -158,6 +163,16 @@ legend {
 .footer {
 	grid-area: footer;
 	background-color: var(--dark-grey);
+	background-image: url(./images/EllenHoughtonCVwordcloud_oranges.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin: 25px 0 0 0;
+}
+
+.footer-text {
+	background: linear-gradient(to left, rgba(0, 0, 0, 0) 40%, rgba(255, 255, 255, 1) 100%);
+	padding-left: 25px;
 }
 
 .card {
@@ -205,7 +220,7 @@ hr {
 
 /* toggle button from W3 Schools */
 .toggle-theme {
-	align-self: flex-end;
+	align-self: center;
 }
 /* The switch - the box around the slider */
 .switch {
@@ -277,7 +292,7 @@ input:focus + .slider {
 .flip-card {
     background-color: transparent;
     width: 250px;
-    height: 350px;
+    height: 450px;
 	border-radius: 12px;
     border: 1px solid var(--light-grey);
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
@@ -333,6 +348,10 @@ input:focus + .slider {
 		;
 	}
 
+	.header {
+		margin: 3px;
+	}
+
 	.main {
 		flex-direction: column;
 	}
@@ -356,7 +375,6 @@ input:focus + .slider {
 	body {
 		background-color: var(--pale-grey);
 		color: var(--dark-grey);
-		margin: 2px;
 	}
 
 }

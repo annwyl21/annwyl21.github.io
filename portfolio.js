@@ -104,7 +104,12 @@ async function main() {
             let textDiv = document.createElement('div');
             textDiv.style.padding=" 0px 15px";
             flipCardFront.appendChild(textDiv);
-            textDiv.innerHTML += `<p>${myProject.alt}</p><p class="badge">${myProject.badges}</p>`;
+            textDiv.innerHTML += `<p>${myProject.alt}</p>`;
+            let myBadge=myProject.badges;
+            console.log(myBadge);
+            for (let b=0; b<myBadge.length; b++){
+                textDiv.innerHTML += `<p class="badge">${myBadge[b]}</p>`;
+            };
             
             // create flip card back & populate
             let flipCardBack = document.createElement('div');
@@ -133,7 +138,12 @@ async function main() {
             let textDiv = document.createElement('div');
             textDiv.style.padding=" 0px 15px";
             flipCardFront.appendChild(textDiv);
-            textDiv.innerHTML += `<p>${myProject.alt}</p><p>${myProject.badges}</p>`;
+            textDiv.innerHTML += `<p>${myProject.alt}</p>`;
+            let myBadge=myProject.badges;
+            console.log(myBadge);
+            for (let b=0; b<myBadge.length; b++){
+                textDiv.innerHTML += `<p class="badge">${myBadge[b]}</p>`;
+            };
 
             // create flip card back & populate
             let flipCardBack = document.createElement('div');

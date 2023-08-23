@@ -33,7 +33,7 @@
 		"altArray": ["Heatmap displaying a decade of rainfall (total rainfall in mm)", "Heatmap displaying 20yrs of weather data (mean daily min temp)", "Heatmap displaying 70yrs of weather data (mean daily max temp)"],
 		"more-info": ["<p>A heatmap to show 10 years of weather data, displaying the total rainfall in mm at Heathrow Airport.</p>", "<p>A heatmap to show 20 years of weather data, displaying the mean daily min temperature at Heathrow Airport.</p>", "<p>A heatmap to show 70 years of weather data, displaying the mean daily max temperature at Heathrow Airport.</p>"],
 		"skills": ["Data Visualisation", "Python", "Matplotlib", "Pandas", "API"],
-		"badges": ["Python", "Data Visualisation", "API"],
+		"badges": ["Python", "API", "Data Visualisation"],
 		"github": "https://github.com/annwyl21/heatmap_weather",
 		"primaryLink": "https://github.com/annwyl21/heatmap_weather"
 	},

@@ -2,7 +2,7 @@
 	"knowledge": {
 		"languages": {
 			"title": "Programming Languages",
-			"info": ["Python", "JavaScript", "HTML", "CSS", "SQL", "Regex"],
+			"info": ["Python", "JavaScript", "SQL", "Regex", "HTML", "CSS"],
 			"abbrev": ["py", "js", "html", "css", "sql", "regex"]
 		},
 
@@ -18,7 +18,7 @@
 
 		"libraries": {
 			"title": "Frameworks & Libraries",
-			"info": ["Pytest", "Pextract", "Jest", "Flask", "Matplotlib", "Pandas", "NumPy", "NLTK", "Bootstrap", "Beautiful Soup"]
+			"info": ["Pytest", "Pextract", "Jest", "Flask", "Matplotlib", "Pandas", "NumPy", "NLTK", "Bootstrap", "Beautiful Soup (BS4)"]
 		},
 
 		"ide": {
