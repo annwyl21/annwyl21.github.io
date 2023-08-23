@@ -45,13 +45,15 @@ async function main() {
     // all my code runs after the fetch is completed using async here
 
     // toggle theme button
-    document.getElementById('themeButton').addEventListener('click', function() {
-        if (theme == 'light') {
-            theme = 'dark'
-        } else {
-            theme = 'light'
-        }
-    });
+    // document.getElementById('themeButton').addEventListener('click', function() {
+    //     if (theme == 'light') {
+    //         theme = 'dark'
+    //         document.getElementsByTagName('body').style.csstext = "background: var(--dark-grey); color: var(--white);";
+    //     } else {
+    //         theme = 'light'
+    //         document.getElementsByTagName('body').style.csstext = "background: var(--paler-grey); color: var(--dark-grey);"; 
+    //     }
+    // });
 
     //populate introduction text
 	let brandPara = document.getElementById('brand');
@@ -77,6 +79,8 @@ async function main() {
             projectDiv.appendChild(projectTextBox);
             // populate text box with project information
 	        projectTextBox.innerHTML = `<h1>${myProject.projectName}</h1><p>${myProject.info}</p>`;
+            projectTextBox.innerHTML += `<button class="btn" ><a href="${myProject.github}">See More at Github Repo</button>`;
+
             
             // HORIZONTAL RULE
             let hr = document.createElement('hr');
@@ -96,13 +100,17 @@ async function main() {
             let flipCardFront = document.createElement('div');
             flipCardFront.classList.add('flip-card-front');
             flipCardInner.appendChild(flipCardFront);
-            flipCardFront.innerHTML = `<img class="flip-image" src="${myProject.image}" alt="${myProject.alt}"><br><p>${myProject.alt}</p><p>${myProject.badges}</p>`;
+            flipCardFront.innerHTML = `<img class="flip-image" src="${myProject.image}" alt="${myProject.alt}">`;
+            let textDiv = document.createElement('div');
+            textDiv.style.padding=" 0px 15px";
+            flipCardFront.appendChild(textDiv);
+            textDiv.innerHTML += `<p>${myProject.alt}</p><p>${myProject.badges}</p>`;
             
             // create flip card back & populate
             let flipCardBack = document.createElement('div');
             flipCardBack.classList.add('flip-card-back');
             flipCardInner.appendChild(flipCardBack);
-            flipCardBack.innerHTML = `Built with ${myProject.skills}<br><p>${myProject.detail}</p>`;
+            flipCardBack.innerHTML = `${myProject.detail}<br><p>Built with ${myProject.skills}</p>`;
 
         }else{
             // odd rows cards then text
@@ -167,3 +175,14 @@ async function main() {
     };
 
 }
+
+// toggle theme button
+document.getElementById('themeButton').addEventListener('click', function() {
+    if (theme == 'light') {
+        theme = 'dark'
+        document.getElementsByTagName('body').style.csstext = "background: var(--dark-grey); color: var(--white);";
+    } else {
+        theme = 'light'
+        document.getElementsByTagName('body').style.csstext = "background: var(--paler-grey); color: var(--dark-grey);"; 
+    }
+});

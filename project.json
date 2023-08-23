@@ -1,12 +1,12 @@
 {
 	"yahtzeeScorerProject": {
 		"projectName": "Yahtzee Scorer",
-		"info": "<p>This game project demonstrates how I used <mark>GitHub workflows</mark>, initiating automatic unit tests to continuously ensure the quality of my code. I used <code>pytest</code> and <code>Pexpect</code> for <mark>unit testing</mark>. I also used the <mark>debugger tool</mark> to identify errors swiftly. Additionally, I used a <mark>GitHub project board</mark> to efficiently manage tasks, breaking objectives into manageable, deliverable chunks, keeping the project on track and my goals clear. This project is my first dive into <mark>Test Driven Development</mark>.</p>",
-		"detail": "Challenges Overcome & Enjoyment",
+		"info": "<p>Initially designed to contain the logic to score an individual dice roll during a game and return an object with the score possibilities, this scorer also now allows a user to play the game against the computer, tracking the score in a scoreboard object.</p><p>This project demonstrates my understanding of object-oriented programming, ability to code the scoring logic required for yahtzee and the commit history in github will show that I built this project using Test Driven Development - writing the tests before writing the code. and to run a command line gameThis game project demonstrates how I used GitHub workflows, initiating automatic unit tests to continuously ensure the quality of my code.</p><p>I used pytest and Pexpect for unit testing, the debugger tool to identify errors swiftly and a GitHub project board to efficiently manage tasks, breaking objectives into manageable, deliverable chunks, keeping the project on track and my goals clear.</p>",
+		"detail": "This was a big project and I enjoyed the opportunity to dive into TDD and get to grips with the debugger tool.",
 		"image": "./images/tdd_yahtzee_small.png",
 		"alt": "Screenshot of Test Driven Development for my Yahtzee Score Calculator",
-		"skills": ["Pytest", "Pexpect", "Python"],
-		"badges": ["TDD", "OOP"],
+		"skills": ["Pytest", "Pexpect", "Python", "Github Workflow", "Github Projects"],
+		"badges": ["TDD", "OOP", "Github"],
 		"github": "https://github.com/annwyl21/yahtzee"
 	},
 
@@ -23,7 +23,7 @@
 
 	"symptomLogger": {
 		"projectName": "Symptom Tracker",
-		"info": "<p>The <i>current</i> project utilizes a <mark>metaprompt</mark> prefix in API requests to the <mark>text-davinci-003 AI model</mark>, summarizing user-logged symptoms. These symptoms timestamped and stored in a Postgres database, can be summarized on demand. A <mark>bubbleplot</mark> illustrates the frequency of symptoms over time and throughout the day, with bubble size signifying reported pain levels.</p><p>To develop this application, I acquired knowledge in <mark>NLP and the NLTK</mark>, creating a preliminary summarizing tool to establish a benchmark for the API/metaprompt development. Finally, I adapted my knowledge of mysql to create and connect to a <mark>PostgreSQL database</mark> using a docker image.</p>",
+		"info": "<p>The <i>current</i> project utilizes a metaprompt prefix in API requests to the text-davinci-003 AI model, summarizing user-logged symptoms. These symptoms timestamped and stored in a Postgres database, can be summarized on demand. A bubbleplot illustrates the frequency of symptoms over time and throughout the day, with bubble size signifying reported pain levels.</p><p>To develop this application, I acquired knowledge in NLP and the NLTK, creating a preliminary summarizing tool to establish a benchmark for the API/metaprompt development. Finally, I adapted my knowledge of mysql to create and connect to a PostgreSQL database using a docker image.</p>",
 		"detail": "placeholder",
 		"image": "./images/bubbleplot_symptoms_small.png",
 		"alt": "Bubble plot dynamically generated to display frequency of symptoms over time and when they occur throughout the day, with a reported pain scale represented by bubble size.",
@@ -34,7 +34,7 @@
 
 	"debtComparisonCalculator": {
 		"projectName": "Debt Comparison Calculator",
-		"info": "<p>Available on Dockerhub and as a serverless container app on Azure, my simple debt comparison calculator <mark>creates 3 debt objects</mark> and calculates how long it will take to repay 3 debts, <mark>comparing 3 specific repayment methods</mark>; stack, snowball & avalanche.</p>",
+		"info": "<p>Available on Dockerhub and as a serverless container app on Azure, my simple debt comparison calculator creates 3 debt objects and calculates how long it will take to repay 3 debts, comparing 3 specific repayment methods; stack, snowball & avalanche.</p>",
 		"detail": "placeholder",
 		"image": "./placeholder.jpg",
 		"alt": "placeholder text",
@@ -58,7 +58,7 @@
 
 	"weatherApi": {
 		"projectName": "Weather API",
-		"info": "<p>This project <mark>connects to a MET office API</mark>, a weather object is created with the retrieved weather forecast data which is then used to display customised information in the app.</p>",
+		"info": "<p>This project connects to a MET office API, a weather object is created with the retrieved weather forecast data which is then used to display customised information in the app.</p>",
 		"detail": "placeholder",
 		"image": "./images/weather_forecast_results_small.jpg",
 		"alt": "Weather Forecast Results",
@@ -69,7 +69,7 @@
 
 	"sentenceTranslation": {
 		"projectName": "Sentence Translation",
-		"info": "<p>This project takes user input, <mark>connects to the Azure Cognitive API</mark> to identify the language of the input and translate into 5 given languages; spanish, dutch, french, german & english.</p>",
+		"info": "<p>This project takes user input, connects to the Azure Cognitive API to identify the language of the input and translate into 5 given languages; spanish, dutch, french, german & english.</p>",
 		"detail": "placeholder",
 		"image": "./placeholder.jpg",
 		"alt": "placeholder text",
@@ -80,7 +80,7 @@
 
 	"heathrowHeatmaps": {
 		"projectName": "Visualising Heathrow Weather",
-		"info": "<p>This project uses data downloaded from MET office into pandas to <mark>create heatmaps</mark> using Matplotlib, NumPy & Seaborn libraries. A heatmap to show 10 years of weather data, displaying the total rainfall in mm at Heathrow Airport.A heatmap to show 20 years of weather data, displaying the mean daily min temperature at Heathrow Airport.A heatmap to show 70 years of weather data, displaying the mean daily max temperature at Heathrow Airport.",
+		"info": "<p>This project uses data downloaded from MET office into pandas to create heatmaps using Matplotlib, NumPy & Seaborn libraries. A heatmap to show 10 years of weather data, displaying the total rainfall in mm at Heathrow Airport.A heatmap to show 20 years of weather data, displaying the mean daily min temperature at Heathrow Airport.A heatmap to show 70 years of weather data, displaying the mean daily max temperature at Heathrow Airport.",
 		"detail": "placeholder",
 		"image": "./images/heathrow_rainfall_heatmap_decade_small.jpg",
 		"alt": "Heatmap displaying a decade of rainfall (total rainfall in mm)",
