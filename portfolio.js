@@ -76,112 +76,58 @@ async function main() {
             projectTextBox.classList.add('project-text-box');
             projectDiv.appendChild(projectTextBox);
             // populate text box with project information
-	        projectTextBox.innerHTML = `<h2 class="red">${myProject.projectName}</h2><p>${myProject.info}</p>`;
+	        projectTextBox.innerHTML = `<h1>${myProject.projectName}</h1><p>${myProject.info}</p>`;
             
             // HORIZONTAL RULE
             let hr = document.createElement('hr');
             projectDiv.appendChild(hr);
 
-            // create project cards div
+            // create flip card
             let projectCards = document.createElement('div');
-            projectCards.classList.add('project-cards');
+            projectCards.classList.add('flip-card');
             projectDiv.appendChild(projectCards);
 
-            // function createCard(cardLocation){
-            //     let card = document.createElement('div');
-            //     let cardClass = 'proj-cd'+ cardLocation;
-            //     card.classList.add(cardClass);
-            //     projectCards.appendChild(card);
+            // create flip card inner
+            let flipCardInner = document.createElement('div');
+            flipCardInner.classList.add('flip-card-inner');
+            projectCards.appendChild(flipCardInner);
+
+            // create flip card front & populate
+            let flipCardFront = document.createElement('div');
+            flipCardFront.classList.add('flip-card-front');
+            flipCardInner.appendChild(flipCardFront);
+            flipCardFront.innerHTML = `<img class="flip-image" src="${myProject.image}" alt="${myProject.alt}"><br><p>${myProject.alt}</p><p>${myProject.badges}</p>`;
             
-            //     let cardTop = document.createElement('div');
-            //     let cardClassTop = 'card-top'+ cardLocation;
-            //     cardTop.classList.add(cardClassTop);
-            //     card.appendChild(cardTop);
-            
-            //     let cardBottom = document.createElement('div');
-            //     let cardClassBottom = 'card-bottom'+ cardLocation;
-            //     cardBottom.classList.add(cardClassBottom);
-            //     card.appendChild(cardBottom);
-            // }
-
-            // createCard('Back');
-            // let cardTop = document.getElementsByClassName('card-topBack');
-            // for (i=0; i<cardTop.length; i++){
-            //     cardTop.innerHTML = `<img src="${myProject.image}" alt="${myProject.alt}">`;
-            // }
-
-            // let cardBottom = document.getElementsByClassName('card-bottomBack');
-            // for (i=0; i<cardBottom.length; i++){
-            //     cardBottom.innerHTML = `<p>${myProject.alt}</p>`;
-            // }
-
-            // BACK CARD
-            let backCard = document.createElement('div');
-            backCard.classList.add('proj-cd');
-            projectCards.appendChild(backCard);
-
-            let cardTopB = document.createElement('div');
-            cardTopB.classList.add('card-top');
-            backCard.appendChild(cardTopB);
-            cardTopB.innerHTML = `<img src="${myProject.image}" alt="${myProject.alt}">`;
-
-            let cardBottomB = document.createElement('div');
-            cardBottomB.classList.add('card-bottom');
-            backCard.appendChild(cardBottomB);
-            cardBottomB.innerHTML = `<p>${myProject.alt}</p>`;
-
-            // FRONT CARD
-            let frontCard = document.createElement('div');
-            frontCard.classList.add('proj-cd');
-            projectCards.appendChild(frontCard);
-
-            let cardTopF = document.createElement('div');
-            cardTopF.classList.add('card-top');
-            frontCard.appendChild(cardTopF);
-            cardTopF.innerHTML = `<p>${myProject.badges}, ${myProject.detail}</p>`;
-
-            let cardBottomF = document.createElement('div');
-            cardBottomF.classList.add('card-bottom');
-            frontCard.appendChild(cardBottomF);
-            cardBottomF.innerHTML = `<p>${myProject.skills}</p><a href="${myProject.github}">Github</a>`;
+            // create flip card back & populate
+            let flipCardBack = document.createElement('div');
+            flipCardBack.classList.add('flip-card-back');
+            flipCardInner.appendChild(flipCardBack);
+            flipCardBack.innerHTML = `Built with ${myProject.skills}<br><p>${myProject.detail}</p>`;
 
         }else{
             // odd rows cards then text
-            // create project cards div
+
+            // create flip card
             let projectCards = document.createElement('div');
-            projectCards.classList.add('project-cards');
+            projectCards.classList.add('flip-card');
             projectDiv.appendChild(projectCards);
 
-            // BACK CARD
-            let backCard = document.createElement('div');
-            backCard.classList.add('proj-cd');
-            projectCards.appendChild(backCard);
+            // create flip card inner
+            let flipCardInner = document.createElement('div');
+            flipCardInner.classList.add('flip-card-inner');
+            projectCards.appendChild(flipCardInner);
 
-            let cardTopB = document.createElement('div');
-            cardTopB.classList.add('card-top');
-            backCard.appendChild(cardTopB);
-            console.log('test', myProject.projectName, myProject.image)
-            cardTopB.innerHTML = `<img src="${myProject.image}" alt="${myProject.alt}">`;
-
-            let cardBottomB = document.createElement('div');
-            cardBottomB.classList.add('card-bottom');
-            backCard.appendChild(cardBottomB);
-            cardBottomB.innerHTML = `<p>${myProject.alt}</p>`;
-
-            // FRONT CARD
-            let frontCard = document.createElement('div');
-            frontCard.classList.add('proj-cd');
-            projectCards.appendChild(frontCard);
-
-            let cardTopF = document.createElement('div');
-            cardTopF.classList.add('card-top');
-            frontCard.appendChild(cardTopF);
-            cardTopF.innerHTML = `<p>${myProject.badges}, ${myProject.detail}</p>`;
-
-            let cardBottomF = document.createElement('div');
-            cardBottomF.classList.add('card-bottom');
-            frontCard.appendChild(cardBottomF);
-            cardBottomF.innerHTML = `<p>${myProject.skills}</p><a href="${myProject.github}">Github</a>`;
+            // create flip card front & populate
+            let flipCardFront = document.createElement('div');
+            flipCardFront.classList.add('flip-card-front');
+            flipCardInner.appendChild(flipCardFront);
+            flipCardFront.innerHTML = `<img class="flip-image" src="${myProject.image}" alt="${myProject.alt}"><br><p>${myProject.alt}</p><p>${myProject.badges}</p>`;
+            
+            // create flip card back & populate
+            let flipCardBack = document.createElement('div');
+            flipCardBack.classList.add('flip-card-back');
+            flipCardInner.appendChild(flipCardBack);
+            flipCardBack.innerHTML = `Built with ${myProject.skills}<br><p>${myProject.detail}</p>`;
 
             // HORIZONTAL RULE
             let hr = document.createElement('hr');
@@ -192,7 +138,7 @@ async function main() {
             projectTextBox.classList.add('project-text-box');
             projectDiv.appendChild(projectTextBox);
             // populate text box with project information
-            projectTextBox.innerHTML = `<h2 class="red">${myProject.projectName}</h2><p>${myProject.info}</p>`;
+	        projectTextBox.innerHTML = `<h1>${myProject.projectName}</h1><p>${myProject.info}</p>`;
 
         }
 
