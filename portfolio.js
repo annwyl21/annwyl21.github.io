@@ -112,7 +112,7 @@ async function main() {
             let flipCardBack = document.createElement('div');
             flipCardBack.classList.add('flip-card-back');
             flipCardInner.appendChild(flipCardBack);
-            flipCardBack.style.padding="20px";
+            flipCardBack.style.cssText = "padding: 20px; text-align: left;";
             flipCardBack.innerHTML = `${myProject.detail}<br><p>Built with ${myProject.skills}</p>`;
 
         }else{
@@ -147,7 +147,7 @@ async function main() {
             let flipCardBack = document.createElement('div');
             flipCardBack.classList.add('flip-card-back');
             flipCardInner.appendChild(flipCardBack);
-            flipCardBack.style.padding="20px";
+            flipCardBack.style.cssText = "padding: 20px; text-align: left;";
             flipCardBack.innerHTML = `${myProject.detail}<br><p>Built with ${myProject.skills}</p>`;
 
             // HORIZONTAL RULE

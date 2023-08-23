@@ -78,24 +78,24 @@
 
 	"weatherApi": {
 		"projectName": "Weather API",
-		"info": "<p>This project connects to a MET office API, a weather object is created with the retrieved weather forecast data which is then used to display customised information in the app.</p>",
-		"detail": "placeholder",
+		"info": "<p>A weather forecast tool that uses weather data to determine lifestyle advice. This project connects to a MET office API to retrieve weather data. </p><p>The data is used to create a weather object that has a method to convert celsius into fahrenheit and the to populate the fields in a flask app.</p><p>I enjoy the challenge of connecting things together and making them work.</p>",
+		"detail": "<p>This was a fun early project that taught me about sensible storage of API keys.</p>",
 		"image": "./images/weather_forecast_results_small.jpg",
 		"alt": "Weather Forecast Results",
-		"skills": ["placeholder"],
-		"badges": [],
+		"skills": ["Flask", "API connection"],
+		"badges": [" Flask", "API Connection"],
 		"github": "https://github.com/annwyl21/weather_forecast",
 		"primaryLink": "https://github.com/annwyl21/weather_forecast"
 	},
 
 	"sentenceTranslation": {
 		"projectName": "Sentence Translation",
-		"info": "<p>This project takes user input, connects to the Azure Cognitive API to identify the language of the input and translate into 5 given languages; spanish, dutch, french, german & english.</p>",
-		"detail": "placeholder",
+		"info": "<p>I built a rest API to support my own language learning. I actively use Duolingo every day to learn spanish. I built this project as a tool to support my learning and translate sentences as I needed them while reading.</p><p>This project takes user input on a very simple html page and connects to the Azure Cognitive API. The API identifies the language in which the data was entered and returns a translation in 5 given languages.</p><p>The 5 languages into which the sentence is translated by 'Translator Susan' are; Spanish, Dutch, French, German and English.</p>",
+		"detail": "<p>At the time of writing this I have a 923 day streak of uninterrupted daily practice demonstrating my commitment and persistence with new challenges and my passion for active and engaged learning.</p>",
 		"image": "./placeholder.jpg",
-		"alt": "placeholder text",
-		"skills": ["placeholder"],
-		"badges": [],
+		"alt": "Sentence Translation App",
+		"skills": ["rest API", "API connection"],
+		"badges": ["rest API", "API Connection"],
 		"github": "https://github.com/annwyl21/sentence_translation",
 		"primaryLink": "https://github.com/annwyl21/sentence_translation"
 	}
