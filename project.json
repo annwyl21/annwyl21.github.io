@@ -7,33 +7,35 @@
 		"alt": "Screenshot of Test Driven Development for my Yahtzee Score Calculator",
 		"skills": ["Pytest", "Pexpect", "Python", "Github Workflow", "Github Projects"],
 		"badges": ["TDD", "OOP", "Github"],
-		"github": "https://github.com/annwyl21/yahtzee"
+		"github": "https://github.com/annwyl21/yahtzee",
+		"primaryLink": "https://github.com/annwyl21/yahtzee"
 	},
 
 	"brewqueue": {
 		"projectName": "BrewQueue",
-		"info": "<p>An order management system (to-do list) to manage barrista workflow. Created using JavaScript, I successfully debugged critical issues, including an off-by-1 error and unpredictable card creation anomolies, using browser debugging tools to pinpoint a variable declaration oversight that JavaScript gracefully handled without explicit error, a contrast to typical Python behaviour.</p>",
+		"info": "<p>An order management system (to-do list) to manage barrista workflow.</p><p>Created using JavaScript, I successfully debugged critical issues, including an off-by-1 error and unpredictable card creation anomolies, using browser debugging tools to pinpoint a variable declaration oversight that JavaScript gracefully handled without explicit error, a contrast to typical Python behaviour.</p>",
 		"detail": "This was my Bootcamp project, initially designed using Lucid Chart and created on completion of the JavaScript DOM module.",
 		"image": "./images/BrewQueueSmall.jpg",
 		"alt": "Built to my design in LucidChart",
 		"skills": ["JavaScript", "local storage", "LucidChart", "CSS", "HTML"],
 		"badges": ["JavaScript"],
-		"github": "./Fulfillment/index.html"
+		"github": "https://github.com/annwyl21/",
+		"primaryLink": "./Fulfillment/index.html"
 	},
 
 	"heathrowHeatmaps": {
 		"projectName": "Visualising Heathrow Weather",
-		"info": "<p>This project uses data downloaded from MET office into pandas to create heatmaps using Matplotlib, NumPy & Seaborn libraries. A heatmap to show 10 years of weather data, displaying the total rainfall in mm at Heathrow Airport.A heatmap to show 20 years of weather data, displaying the mean daily min temperature at Heathrow Airport.A heatmap to show 70 years of weather data, displaying the mean daily max temperature at Heathrow Airport.",
+		"info": "<p>A series of heatmaps to visualise weather data recorded at Heathrow over the last 70 years.</p><p>I downloaded freely available data from the MET office into pandas in order to create heatmaps using Matplotlib, NumPy & Seaborn libraries.</p><p>See more heatmaps on my project page.</p>",
 		"detail": "placeholder",
 		"image": "./images/heathrow_rainfall_heatmap_decade_small.jpg",
 		"alt": "Heatmap displaying a decade of rainfall (total rainfall in mm)",
-		"image1": "./images/heathrow_min_temp_heatmap_small.jpg",
-		"alt1": "Heatmap displaying 20yrs of weather data (mean daily min temp)",
-		"image2": "./images/heathrow_heatmap_1950_2020_small.jpg",
-		"alt2": "Heatmap displaying 70yrs of weather data (mean daily max temp)",
-		"skills": ["Data Visualisation", "Python"],
-		"badges": [],
-		"github": "https://github.com/annwyl21/heatmap_weather"
+		"imagesArray": ["./images/heathrow_rainfall_heatmap_decade_small.jpg", "./images/heathrow_min_temp_heatmap_small.jpg", "./images/heathrow_heatmap_1950_2020_small.jpg"],
+		"altArray": ["Heatmap displaying a decade of rainfall (total rainfall in mm)", "Heatmap displaying 20yrs of weather data (mean daily min temp)", "Heatmap displaying 70yrs of weather data (mean daily max temp)"],
+		"more-info": ["<p>A heatmap to show 10 years of weather data, displaying the total rainfall in mm at Heathrow Airport.</p>", "<p>A heatmap to show 20 years of weather data, displaying the mean daily min temperature at Heathrow Airport.</p>", "<p>A heatmap to show 70 years of weather data, displaying the mean daily max temperature at Heathrow Airport.</p>"],
+		"skills": ["Data Visualisation", "Python", "Matplotlib", "Pandas", "API"],
+		"badges": ["Python", "Data Visualisation", "API"],
+		"github": "https://github.com/annwyl21/heatmap_weather",
+		"primaryLink": "https://github.com/annwyl21/heatmap_weather"
 	},
 
 	"symptomLogger": {
@@ -44,7 +46,8 @@
 		"alt": "Bubble plot dynamically generated to display frequency of symptoms over time and when they occur throughout the day, with a reported pain scale represented by bubble size.",
 		"skills": ["JavaScript DOM", "JavaScript node.js"],
 		"badges": [],
-		"github": "https://github.com/annwyl21/symptom_record"
+		"github": "https://github.com/annwyl21/symptom_record",
+		"primaryLink": "https://github.com/annwyl21/symptom_record"
 	},
 
 	"debtComparisonCalculator": {
@@ -57,7 +60,8 @@
 		"badges": [],
 		"github": "https://github.com/annwyl21/debt_comparison",
 		"docker": "https://hub.docker.com/r/annwyl21/debt_comparison",
-		"azure": "http://debt-comparison.wittyflower-04a4021a.westus2.azurecontainerapps.io"
+		"azure": "http://debt-comparison.wittyflower-04a4021a.westus2.azurecontainerapps.io",
+		"primaryLink": "http://debt-comparison.wittyflower-04a4021a.westus2.azurecontainerapps.io"
 	},
 
 	"rps": {
@@ -68,7 +72,8 @@
 		"alt": "Rock, Paper, Scissors",
 		"skills": ["JavaScript DOM", "JavaScript node.js"],
 		"badges": [],
-		"github": "https://github.com/annwyl21"
+		"github": "https://github.com/annwyl21",
+		"primaryLink": "./local_Link.html"
 	},
 
 	"weatherApi": {
@@ -79,7 +84,8 @@
 		"alt": "Weather Forecast Results",
 		"skills": ["placeholder"],
 		"badges": [],
-		"github": "https://github.com/annwyl21/weather_forecast"
+		"github": "https://github.com/annwyl21/weather_forecast",
+		"primaryLink": "https://github.com/annwyl21/weather_forecast"
 	},
 
 	"sentenceTranslation": {
@@ -90,7 +96,8 @@
 		"alt": "placeholder text",
 		"skills": ["placeholder"],
 		"badges": [],
-		"github": "https://github.com/annwyl21/sentence_translation"
+		"github": "https://github.com/annwyl21/sentence_translation",
+		"primaryLink": "https://github.com/annwyl21/sentence_translation"
 	}
 
 }
