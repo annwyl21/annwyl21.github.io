@@ -104,7 +104,7 @@ async function main() {
             let textDiv = document.createElement('div');
             textDiv.style.padding=" 0px 15px";
             flipCardFront.appendChild(textDiv);
-            textDiv.innerHTML += `<p>${myProject.alt}</p><p>${myProject.badges}</p>`;
+            textDiv.innerHTML += `<p>${myProject.alt}</p><p class="badge">${myProject.badges}</p>`;
             
             // create flip card back & populate
             let flipCardBack = document.createElement('div');
