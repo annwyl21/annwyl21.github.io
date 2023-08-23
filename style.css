@@ -38,6 +38,7 @@ body {
 	color: white;
 	font-weight: 700;
 	padding: 3px 5px;
+	margin-left: 3px;;
 	text-align: center;
 	border-radius: 25px;
 	/* add some animation with a timer so they twinkle and draw attention */
@@ -350,14 +351,20 @@ input:focus + .slider {
 
 	.header {
 		margin: 3px;
+		flex-direction: column;
 	}
 
 	.main {
 		flex-direction: column;
+		align-items: center;
 	}
 
 	.project-text-box {
 		text-align: left;
+	}
+
+	.project-details {
+		margin: 5px 0;
 	}
 
 	.section {
@@ -379,6 +386,10 @@ input:focus + .slider {
 
 	.footer-icon {
 		max-width: 35px;
+	}
+
+	legend {
+		font-size: 14px;
 	}
 
 }

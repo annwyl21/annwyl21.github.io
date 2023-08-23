@@ -17,7 +17,7 @@ let skillsCollection;
         let weatherApi = project.weatherApi;
         let sentenceTranslation = project.sentenceTranslation;
         let heathrowHeatmaps = project.heathrowHeatmaps;
-        projectsCollection = [yahtzee, brewqueue, heathrowHeatmaps, symptomLogger, debtComparisonCalculator, rps, weatherApi, sentenceTranslation];
+        projectsCollection = [yahtzee, brewqueue, heathrowHeatmaps, symptomLogger, debtComparisonCalculator, weatherApi, sentenceTranslation, rps];
 
 		response = await fetch('./skills.json');
         let skills = await response.json();
@@ -41,17 +41,6 @@ let skillsCollection;
 
 async function main() {
     // all my code runs after the fetch is completed using async here
-
-    // toggle theme button
-    // document.getElementById('themeButton').addEventListener('click', function() {
-    //     if (theme == 'light') {
-    //         theme = 'dark'
-    //         document.getElementsByTagName('body').style.csstext = "background: var(--dark-grey); color: var(--white);";
-    //     } else {
-    //         theme = 'light'
-    //         document.getElementsByTagName('body').style.csstext = "background: var(--paler-grey); color: var(--dark-grey);"; 
-    //     }
-    // });
 
     //populate introduction text
 	let brandPara = document.getElementById('brand');
@@ -162,7 +151,6 @@ async function main() {
 	        projectTextBox.innerHTML = `<h1>${myProject.projectName}</h1><p>${myProject.info}</p>`;
             projectTextBox.innerHTML += `<button class="btn" ><a href="${myProject.primaryLink}">See More</button>`;
         }
-
     };
 
     // generate skills section
@@ -188,5 +176,3 @@ async function main() {
     };
 
 }
-
-
