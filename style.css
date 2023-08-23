@@ -120,7 +120,6 @@ legend {
 
 .project-details {
 	display: flex;
-	/* justify-content: space-evenly; */
 	gap: 5px;
 }
 
@@ -292,10 +291,11 @@ input:focus + .slider {
 .flip-card {
     background-color: transparent;
     width: 250px;
-    height: 450px;
+    height: 380px;
 	border-radius: 12px;
     border: 1px solid var(--light-grey);
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
+	align-self: center;
   }
   /* This container is needed to position the front and back side */
   .flip-card-inner {
@@ -375,6 +375,10 @@ input:focus + .slider {
 	body {
 		background-color: var(--pale-grey);
 		color: var(--dark-grey);
+	}
+
+	.footer-icon {
+		max-width: 35px;
 	}
 
 }

@@ -2,8 +2,6 @@ let brand;
 let projectsCollection;
 let skillsCollection;
 
-let theme = 'light';
-
 (async function() {
     try {
         let response = await fetch('./brand.json');
@@ -79,9 +77,8 @@ async function main() {
             projectDiv.appendChild(projectTextBox);
             // populate text box with project information
 	        projectTextBox.innerHTML = `<h1>${myProject.projectName}</h1><p>${myProject.info}</p>`;
-            projectTextBox.innerHTML += `<button class="btn" ><a href="${myProject.github}">See More</button>`;
+            projectTextBox.innerHTML += `<button class="btn" ><a href="${myProject.primaryLink}">See More</button>`;
 
-            
             // HORIZONTAL RULE
             let hr = document.createElement('hr');
             projectDiv.appendChild(hr);
@@ -102,7 +99,7 @@ async function main() {
             flipCardInner.appendChild(flipCardFront);
             flipCardFront.innerHTML = `<img class="flip-image" src="${myProject.image}" alt="${myProject.alt}">`;
             let textDiv = document.createElement('div');
-            textDiv.style.padding=" 0px 15px";
+            textDiv.style.padding="0px 15px";
             flipCardFront.appendChild(textDiv);
             textDiv.innerHTML += `<p>${myProject.alt}</p>`;
             let myBadge=myProject.badges;
@@ -115,6 +112,7 @@ async function main() {
             let flipCardBack = document.createElement('div');
             flipCardBack.classList.add('flip-card-back');
             flipCardInner.appendChild(flipCardBack);
+            flipCardBack.style.padding="20px";
             flipCardBack.innerHTML = `${myProject.detail}<br><p>Built with ${myProject.skills}</p>`;
 
         }else{
@@ -149,6 +147,7 @@ async function main() {
             let flipCardBack = document.createElement('div');
             flipCardBack.classList.add('flip-card-back');
             flipCardInner.appendChild(flipCardBack);
+            flipCardBack.style.padding="20px";
             flipCardBack.innerHTML = `${myProject.detail}<br><p>Built with ${myProject.skills}</p>`;
 
             // HORIZONTAL RULE
@@ -161,7 +160,7 @@ async function main() {
             projectDiv.appendChild(projectTextBox);
             // populate text box with project information
 	        projectTextBox.innerHTML = `<h1>${myProject.projectName}</h1><p>${myProject.info}</p>`;
-            projectTextBox.innerHTML += `<button class="btn" ><a href="${myProject.github}">See More</button>`;
+            projectTextBox.innerHTML += `<button class="btn" ><a href="${myProject.primaryLink}">See More</button>`;
         }
 
     };
@@ -190,13 +189,4 @@ async function main() {
 
 }
 
-// toggle theme button
-document.getElementById('themeButton').addEventListener('click', function() {
-    if (theme == 'light') {
-        theme = 'dark'
-        document.getElementsByTagName('body').style.csstext = "background: var(--dark-grey); color: var(--white);";
-    } else {
-        theme = 'light'
-        document.getElementsByTagName('body').style.csstext = "background: var(--paler-grey); color: var(--dark-grey);"; 
-    }
-});
+

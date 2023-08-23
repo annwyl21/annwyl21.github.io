@@ -21,7 +21,7 @@
 					</label>
 				</div>
 				<hr>
-				<h3 style="padding-left: 5px;">Junior Software Developer</h3>
+				<h3 style="padding-left: 5px;">Junior Software Engineer</h3>
 			</div>
 			<nav>
 				<button class="btn"><a class="menu" href="#skills">Skills</a></button>
@@ -57,11 +57,25 @@
 
 		<div class="footer">
 			<div class="footer-text">
-			<a href="https://github.com/annwyl21" target="_blank"><img src="./images/icons8-github-120.png" alt="github icon by Icons8.com"></a>
-			<a href="https://hub.docker.com/repositories/annwyl21" target="_blank"><img src="./images/icons8-docker-144.png" alt="docker icon by Icons8.com"></a>
-			<a href="https://www.linkedin.com/in/annwyl21/" target="_blank"><img src="./images/icons8-linked-in-150.png" alt="linked in icon by Icons8.com"></a>
+			<a class="footer-icon" href="https://github.com/annwyl21" target="_blank"><img src="./images/icons8-github-120.png" alt="github icon by Icons8.com"></a>
+			<a class="footer-icon" href="https://hub.docker.com/repositories/annwyl21" target="_blank"><img src="./images/icons8-docker-144.png" alt="docker icon by Icons8.com"></a>
+			<a class="footer-icon" href="https://www.linkedin.com/in/annwyl21/" target="_blank"><img src="./images/icons8-linked-in-150.png" alt="linked in icon by Icons8.com"></a>
 			</div>
 		</div>
 	</div>
+
+	<script>
+		// toggle theme button
+		let theme = light;
+			document.getElementById('themeButton').addEventListener('click', function() {
+    			if (theme == 'light') {
+        		theme = 'dark'
+        		document.getElementsByTagName('body').style.csstext = "background: var(--dark-grey); color: var(--white);";
+    			} else {
+        		theme = 'light'
+        		document.getElementsByTagName('body').style.csstext = "background: var(--paler-grey); color: var(--dark-grey);"; 
+    			}
+			});
+	</script>
 </body>
 </html>

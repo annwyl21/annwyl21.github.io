@@ -1,8 +1,8 @@
 {
 	"yahtzeeScorerProject": {
 		"projectName": "Yahtzee Scorer",
-		"info": "<p>Initially designed to contain the logic to score an individual dice roll during a game and return an object with the score possibilities, this scorer also now allows a user to play the game against the computer, tracking the score in a scoreboard object.</p><p>This project demonstrates my understanding of object-oriented programming, ability to code the scoring logic required for yahtzee and the commit history in github will show that I built this project using Test Driven Development - writing the tests before writing the code. and to run a command line gameThis game project demonstrates how I used GitHub workflows, initiating automatic unit tests to continuously ensure the quality of my code.</p><p>I used pytest and Pexpect for unit testing, the debugger tool to identify errors swiftly and a GitHub project board to efficiently manage tasks, breaking objectives into manageable, deliverable chunks, keeping the project on track and my goals clear.</p>",
-		"detail": "This was a big project and I enjoyed the opportunity to dive into TDD and get to grips with the debugger tool.",
+		"info": "<p>Initially designed to contain the logic to score an individual dice roll during a game and return an object with the score possibilities, this scorer also now allows a user to play the game against the computer, tracking the score in a scoreboard object.</p><p>This project demonstrates my understanding of object-oriented programming, ability to code the scoring logic required for yahtzee and the commit history in github will show that I built this project using Test Driven Development - writing the tests before writing the code. and to run a command line game. For this project I used GitHub workflows, initiating automatic unit tests to continuously ensure the quality of my code.</p>",
+		"detail": "<p>I used pytest and Pexpect for unit testing, the debugger tool to identify errors swiftly and an Agile GitHub Project board to efficiently manage tasks and break objectives into manageable chunks. This helped me to keeping the project on track and deliver my goals.</p>",
 		"image": "./images/tdd_yahtzee_small.png",
 		"alt": "Screenshot of Test Driven Development for my Yahtzee Score Calculator",
 		"skills": ["Pytest", "Pexpect", "Python", "Github Workflow", "Github Projects"],
@@ -40,24 +40,24 @@
 
 	"symptomLogger": {
 		"projectName": "Symptom Tracker",
-		"info": "<p>The <i>current</i> project utilizes a metaprompt prefix in API requests to the text-davinci-003 AI model, summarizing user-logged symptoms. These symptoms timestamped and stored in a Postgres database, can be summarized on demand. A bubbleplot illustrates the frequency of symptoms over time and throughout the day, with bubble size signifying reported pain levels.</p><p>To develop this application, I acquired knowledge in NLP and the NLTK, creating a preliminary summarizing tool to establish a benchmark for the API/metaprompt development. Finally, I adapted my knowledge of mysql to create and connect to a PostgreSQL database using a docker image.</p>",
-		"detail": "placeholder",
+		"info": "<p>Keeping track of symptoms and pain can be difficult for people who are ill, alderly or when remembering symptoms on behalf of someone other than yourself, e.g. a child. My symptom logger is designed to support you in this challenge.</p><p>My project uses a metaprompt prefix in API requests to the text-davinci-003 AI model to request an on-demand summary of user-logged & timestamped symptoms stored in a Postgres database. A bubbleplot illustrates the frequency of symptoms over time and throughout the day, with bubble size signifying reported pain levels.</p>",
+		"detail": "<p>To develop this application, I acquired knowledge in Natural Language Processing and the NLTK, creating a preliminary summarizing tool to establish a benchmark for the API/metaprompt development and I used a docker image of the Postgres database.</p>",
 		"image": "./images/bubbleplot_symptoms_small.png",
-		"alt": "Bubble plot dynamically generated to display frequency of symptoms over time and when they occur throughout the day, with a reported pain scale represented by bubble size.",
-		"skills": ["JavaScript DOM", "JavaScript node.js"],
-		"badges": [],
+		"alt": "Bubble plot dynamically displays frequency of symptoms over time and when they occur throughout the day, with a reported pain scale represented by bubble size.",
+		"skills": ["AI Prompt Engineering", "API", "Python", "Docker Image", "PostgreSQL", "Matplotlib"],
+		"badges": ["AI Prompt Engineering", "Python", "SQL"],
 		"github": "https://github.com/annwyl21/symptom_record",
 		"primaryLink": "https://github.com/annwyl21/symptom_record"
 	},
 
 	"debtComparisonCalculator": {
 		"projectName": "Debt Comparison Calculator",
-		"info": "<p>Available on Dockerhub and as a serverless container app on Azure, my simple debt comparison calculator creates 3 debt objects and calculates how long it will take to repay 3 debts, comparing 3 specific repayment methods; stack, snowball & avalanche.</p>",
-		"detail": "placeholder",
-		"image": "./placeholder.jpg",
+		"info": "<p>A calculator tool to compare repayments over time of personal debt using 3 different methods of structuring debt; stack, snowball & avalanche.</p><p>My simple calculator creates 3 debt objects, for 3 given debts, and then imagines how each method could repay debt in varying time periods if the repayment amounts were lumped towards a single debt at a time.</p><p>On completion of this project, I created a docker image, this image is available on Dockerhub and as an Azure serverless container. Click the button to visit my container.</p>",
+		"detail": "<p>This project is a demonstration of my knowledge of object-oriented programming and was my contribution to a team project where we created flask website.</p>",
+		"image": "./images/debt_comparison_small.png",
 		"alt": "placeholder text",
-		"skills": ["JavaScript DOM", "JavaScript node.js"],
-		"badges": [],
+		"skills": ["Flask", "Python", "Docker Image", "Dockerhub", "Git"],
+		"badges": ["OOP", "Azure Serverless Container", "Version Control"],
 		"github": "https://github.com/annwyl21/debt_comparison",
 		"docker": "https://hub.docker.com/r/annwyl21/debt_comparison",
 		"azure": "http://debt-comparison.wittyflower-04a4021a.westus2.azurecontainerapps.io",
@@ -66,14 +66,14 @@
 
 	"rps": {
 		"projectName": "Rock, Paper Scissors",
-		"info": "<p>Logic for the traditional Rock, Paper, Scissors Game behind my JavaScript front-end.</p>",
-		"detail": "placeholder",
-		"image": "./RockPaperScissors/Assignment_5_Ellen_2of3.html",
-		"alt": "Rock, Paper, Scissors",
-		"skills": ["JavaScript DOM", "JavaScript node.js"],
-		"badges": [],
+		"info": "<p>While the logic for the traditional Rock, Paper, Scissors Game is far from challenging, this project does demonstrate my ability to use node.js as I wrote the logic independently of the eventual project website build.</p><p>This challenge demonstrates that my front-end skill has seen significant improvement since I wrote some of my more complex projects.  Here I use fun box shadows in CSS and control html elements using Javascript.</p><p>Click to play Rock, Paper, Scissors.</p>",
+		"detail": "This project was a bootcamp assignment. I enjoy learning new things and with this project the opportunity to play with the debugger tool was a fun diversion.",
+		"image": "./images/RPSscreenshot_small.jpg",
+		"alt": "Enjoying the traditonal game of Rock, Paper, Scissors",
+		"skills": ["JavaScript", "JavaScript node.js", "DOM debugger", "HTML", "CSS"],
+		"badges": ["JavaScript", "Node.js", "HTML", "CSS"],
 		"github": "https://github.com/annwyl21",
-		"primaryLink": "./local_Link.html"
+		"primaryLink": "./RockPaperScissors/Assignment_5_Ellen_2of3.html"
 	},
 
 	"weatherApi": {
