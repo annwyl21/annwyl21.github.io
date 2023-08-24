@@ -330,34 +330,35 @@ input:focus + .slider {
   /*
   button animations
 	background: linear-gradient(0deg, var(--white) 20%, var(--red-neverwithdkgrey) 100%);
+	https://www.colorbook.io/hexcolors/view/e71d36?utm_content=cmp-true
   */
   @keyframes btn-animation {
 	0% {
-		background: linear-gradient(90deg, red 15%, orange 50%, yellow 100%);
-		color: purple;
+		background: linear-gradient(45deg, #e71d6c 25%, #e71d51 50%, #e71d36 75%, #e71f1d 100%);
+		color: white;
 	}
 	25% {
-		background: linear-gradient(90deg, orange 15%, yellow 50%, greenyellow 100%);
-		color: blue;
+		background: linear-gradient(45deg, #e71d51 25%, #e71d36 50%, #e71f1d 75%, #e71d6c 100%);
+		color: black;
 	}
 	50% {
-		background: linear-gradient(90deg, yellow 15%, greenyellow 50%, blue 100%);
-		color: green;
+		background: linear-gradient(45deg, #e71d36 25%, #e71f1d 50%, #e71d6c 75%, #e71d51 100%);
+		color: white;
 	}
 	75% {
-		background: linear-gradient(90deg, greenyellow 15%, blue 50%, violet 100%);
-		color: orangered
+		background: linear-gradient(45deg, #e71f1d 25%, #e71d6c 50%, #e71d51 75%, #e71d36 100%);
+		color: black;
 	}
 	100% {
-		background: linear-gradient(90deg, blue 15%, violet 50%, purple 100%);
-		color: red;
+		background: linear-gradient(45deg, #e71d6c 25%, #e71d51 50%, #e71d36 75%, #e71f1d 100%);
+		color: white;
 	}
 }
 
-.animationTwo {
+.btn-animation {
 	animation-name: btn-animation;
-	animation-duration: 5s;
-	animation-delay: 1s;
+	animation-duration: 0.5s;
+	animation-delay: 5s;
 	/* after the initial 5s delay it will then keep going */
 	animation-iteration-count: infinite;
 }
