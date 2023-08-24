@@ -141,24 +141,24 @@ for (let i=0; i<skillsCollection.length; i++){
 let theme = 'light';
 let body = document.getElementById('body');
 let flipCardStyle = document.getElementsByClassName('flip-card-front')
-    document.getElementById('themeButton').addEventListener('click', function() {
-        if (theme == 'light') {
-        theme = 'dark'
-        body.style.backgroundColor = "var(--dark-grey)";
-        body.style.color = "var(--paler-grey)";
-        for (let i=0; i<flipCardStyle.length; i++){
-            flipCardStyle[i].style.backgroundColor = "var(--light-grey)";
-            flipCardStyle[i].style.color = "var(--dark-grey)";
-        }
-        } else {
-        theme = 'light'
-        body.style.backgroundColor = "var(--paler-grey)";
-        body.style.color = "var(--dark-grey)";
-        for (let i=0; i<flipCardStyle.length; i++){
-            flipCardStyle[i].style.backgroundColor = "var(--dark-grey)";
-            flipCardStyle[i].style.backgroundColor = "var(--white)";
-        }
+document.getElementById('themeButton').addEventListener('click', function() {
+    if (theme == 'light') {
+    theme = 'dark'
+    body.style.backgroundColor = "var(--dark-grey)";
+    body.style.color = "var(--paler-grey)";
+    for (let i=0; i<flipCardStyle.length; i++){
+        flipCardStyle[i].style.backgroundColor = "var(--light-grey)";
+        flipCardStyle[i].style.color = "var(--dark-grey)";
     }
+    } else {
+    theme = 'light'
+    body.style.backgroundColor = "var(--paler-grey)";
+    body.style.color = "var(--dark-grey)";
+    for (let i=0; i<flipCardStyle.length; i++){
+        flipCardStyle[i].style.backgroundColor = "var(--dark-grey)";
+        flipCardStyle[i].style.backgroundColor = "var(--white)";
+    }
+}
 });
 
 // button animation

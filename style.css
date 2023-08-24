@@ -34,7 +34,7 @@ body {
 
 .badge {
 	display: inline;
-	background-color: var(--bright-green);
+	background: linear-gradient(180deg, #4c8a34 20%, #559b3a 40%, #5fad41 60%, #6fb554 80%, #7ebd66 100%);
 	color: white;
 	font-weight: 700;
 	padding: 3px 5px;
@@ -355,6 +355,18 @@ input:focus + .slider {
 
 /* TODO */
 /* skills needs to be sent to end between 1260 & 400px to maintain screen display */
+@media screen and (max-width: 1260px){
+	.container {
+		grid-template-areas: 
+		/* placeholder references */
+		'header header header'
+		'main main main'
+		'section section section'
+		'footer footer footer'
+		'aside aside aside';
+	}
+}
+
 @media screen and (max-width: 400px){
 	.container {
 		/* display: grid;
@@ -367,8 +379,7 @@ input:focus + .slider {
 		'main main main'
 		'section section section'
 		'footer footer footer'
-		'aside aside aside'
-		;
+		'aside aside aside';
 	}
 
 	.header {
