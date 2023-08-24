@@ -8,12 +8,12 @@
 
 		"database": {
 			"title": "Database Management",
-			"info": ["MySQL", "PostgrSQL", "Mongo DB"]
+			"info": ["MySQL", "MySQL Workbench", "PostgreSQL (Docker image)", "MongoDB", "MongoDBCompass"]
 		},
 
 		"git": {
 			"title": "Version Control & Containerization",
-			"info": ["Git", "Docker", "Gitbash", "Ubuntu", "Github", "Github Workflow", "Dockerhub"]
+			"info": ["Git", "Docker & Dockerhub", "Gitbash", "Ubuntu", "Github, Workflow & Projects"]
 		},
 
 		"libraries": {
