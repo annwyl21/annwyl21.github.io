@@ -35,6 +35,19 @@ try {
     console.error('Error fetching JSON:', error);
 }
 
+// toggle theme button
+let theme = 'light';
+let body = document.getElementById('body');
+    document.getElementById('themeButton').addEventListener('click', function() {
+        if (theme == 'light') {
+        theme = 'dark'
+        body.style.backgroundColor = "red";
+        } else {
+        theme = 'light'
+        body.style.backgroundColor = "purple"; 
+        }
+    });
+
 // MAIN INTRO SECTION
 //populate introduction text
 let brandPara = document.getElementById('brand');

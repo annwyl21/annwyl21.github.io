@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="style.css">
 	<title>Ellen's Portfolio</title>
 </head>
-<body>
+<body id="body">
 	
 	<div class="container">
 		
@@ -68,18 +68,5 @@
 		</div>
 	</div>
 
-	<script>
-		// toggle theme button
-		let theme = 'light';
-			document.getElementById('themeButton').addEventListener('click', function() {
-    			if (theme == 'light') {
-        		theme = 'dark'
-        		document.getElementsByTagName('body').style.csstext = "background: var(--dark-grey); color: var(--white);";
-    			} else {
-        		theme = 'light'
-        		document.getElementsByTagName('body').style.csstext = "background: var(--paler-grey); color: var(--dark-grey);"; 
-    			}
-			});
-	</script>
 </body>
 </html>
