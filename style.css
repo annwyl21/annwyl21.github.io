@@ -170,9 +170,15 @@ legend {
 	margin: 25px 0 0 0;
 }
 
+:any-link {
+	text-decoration: underline;
+	color: var(--white);
+}
+
 .footer-text {
-	background: linear-gradient(to left, rgba(0, 0, 0, 0) 40%, rgba(255, 255, 255, 1) 100%);
+	background: linear-gradient(to left, rgba(0, 0, 0, 0) 75%, rgba(255, 255, 255, 1) 100%);
 	padding-left: 25px;
+	color: var(--black);
 }
 
 .card {
@@ -211,11 +217,6 @@ hr {
 	width: 3px;
 	background-color: var(--red-neverwithdkgrey);
 	border-width: 0;
-}
-
-:any-link {
-	text-decoration: underline;
-	color: var(--white);
 }
 
 /* toggle button from W3 Schools */
@@ -333,6 +334,40 @@ input:focus + .slider {
     transform: rotateY(180deg);
   }
 
+  /*
+  button animations
+  */
+  @keyframes btn-animation {
+	0% {
+		background: linear-gradient(90deg, red 15%, orange 50%, yellow 100%);
+		color: purple;
+	}
+	25% {
+		background: linear-gradient(90deg, orange 15%, yellow 50%, greenyellow 100%);
+		color: blue;
+	}
+	50% {
+		background: linear-gradient(90deg, yellow 15%, greenyellow 50%, blue 100%);
+		color: green;
+	}
+	75% {
+		background: linear-gradient(90deg, greenyellow 15%, blue 50%, violet 100%);
+		color: orangered
+	}
+	100% {
+		background: linear-gradient(90deg, blue 15%, violet 50%, purple 100%);
+		color: red;
+	}
+}
+
+.animationTwo {
+	animation-name: btn-animation;
+	animation-duration: 5s;
+	animation-delay: 1s;
+	/* after the initial 5s delay it will then keep going */
+	animation-iteration-count: infinite;
+}
+
 @media screen and (max-width: 1050px){
 	.container {
 		/* display: grid;
@@ -352,6 +387,14 @@ input:focus + .slider {
 	.header {
 		margin: 3px;
 		flex-direction: column;
+	}
+
+	nav {
+		justify-content: center;
+	}
+
+	#myName {
+		text-align: center;
 	}
 
 	.main {
@@ -390,6 +433,11 @@ input:focus + .slider {
 
 	legend {
 		font-size: 14px;
+	}
+
+	.btn {
+		padding: 10px 5px 8px 5px;
+		font-size: 0.85rem;
 	}
 
 }
