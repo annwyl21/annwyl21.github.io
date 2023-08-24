@@ -160,3 +160,20 @@ let flipCardStyle = document.getElementsByClassName('flip-card-front')
         }
     }
 });
+
+// button animation
+let buttonArray = document.getElementsByTagName('button');
+let length = buttonArray.length;
+for (let count=0; count<25; count++){
+    let random = Math.round(Math.random()*3);
+    let selected = random;
+    console.log(random, selected, selected);
+    buttonArray[selected].classList.add('btn-animation');
+    buttonArray[selected].style.color="white";
+    function resetClass(){
+        buttonArray[selected].classList.remove('btn-animation');
+        buttonArray[selected].style.color="var(--red-neverwithdkgrey)";
+        console.log(selected);
+    }
+    setTimeout(resetClass, 500);
+}
