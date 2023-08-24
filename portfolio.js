@@ -1,8 +1,9 @@
+let project;
+let skills;
 let brand;
 let projectsCollection;
 let skillsCollection;
 
-(async function() {
     try {
         let response = await fetch('./brand.json');
         brand = await response.json();
@@ -29,16 +30,9 @@ let skillsCollection;
         let api = skills.knowledge.api;
         skillsCollection = [languages, database, git, libraries, ide, api];
 
-        // Once data is fetched, invoke the main function
-        main();
-
     } catch (error) {
         console.error('Error fetching JSON:', error);
     }
-})();
-
-async function main() {
-    // all my code runs after the fetch is completed using async here
 
     //populate introduction text
 	let brandPara = document.getElementById('brand');
@@ -170,4 +164,3 @@ async function main() {
                 
     };
 
-}
