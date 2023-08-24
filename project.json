@@ -66,8 +66,8 @@
 
 	"rps": {
 		"projectName": "Rock, Paper Scissors",
-		"info": "<p>While the logic for the traditional Rock, Paper, Scissors Game is far from challenging, this project does demonstrate my ability to use node.js as I wrote the logic independently of the eventual project website build.</p><p>This challenge demonstrates that my front-end skill has seen significant improvement since I wrote some of my more complex projects.  Here I use fun box shadows in CSS and control html elements using Javascript.</p><p>Click to play Rock, Paper, Scissors.</p>",
-		"detail": "This project was a bootcamp assignment. I enjoy learning new things and with this project the opportunity to play with the debugger tool was a fun diversion.",
+		"info": "<p>This project demonstrates my ability to use node.js as I wrote the logic independently of the eventual project website build.</p><p>This challenge also provided the opportunity to develop that my front-end skill which has seen significant improvement since I wrote some of my more complex projects.  Here I use fun box shadows in CSS and control html elements using Javascript. Many of the js skills (automatically generating the flip cards and button hover responses) that I practiced on this project have helped me to develop this portfolio website.</p><p>Click to play Rock, Paper, Scissors.</p>",
+		"detail": "This project was a bootcamp assignment. I take every opportunity that I am given to learn and make the absolute most of it that I can in order to enhance my skillset.",
 		"image": "./images/RPSscreenshot_small.jpg",
 		"alt": "Enjoying the traditonal game of Rock, Paper, Scissors",
 		"skills": ["JavaScript", "JavaScript node.js", "DOM debugger", "HTML", "CSS"],

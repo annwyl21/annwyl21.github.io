@@ -41,81 +41,80 @@ let brandPara = document.getElementById('brand');
 brandPara.innerHTML += brand.portfolioIntro;
 
 // PROJECT CARDS SECTION
+function createhr(projectDiv){
+    // HORIZONTAL RULE
+    let hr = document.createElement('hr');
+    projectDiv.appendChild(hr);
+};
 
-    //generate project section
-    let projectSection = document.getElementById('experience');
-    // for every project create a project div
-    for (let i=0; i<=projectsCollection.length-1; i++){
-        let myProject = projectsCollection[i];
+function createFlipCard(projectDiv, myProject){
+    // create flip card
+    let projectCards = document.createElement('div');
+    projectCards.classList.add('flip-card');
+    projectDiv.appendChild(projectCards);
 
-        // create each project div
-        let projectDiv = document.createElement('div');
-        projectDiv.classList.add('project-details');
-        projectSection.appendChild(projectDiv);
+    // create flip card inner
+    let flipCardInner = document.createElement('div');
+    flipCardInner.classList.add('flip-card-inner');
+    projectCards.appendChild(flipCardInner);
 
-        function createhr(){
-            // HORIZONTAL RULE
-            let hr = document.createElement('hr');
-            projectDiv.appendChild(hr);
-        };
-
-        function createProjTextBox(){
-            // TEXT BOX
-            let projectTextBox = document.createElement('div');
-            projectTextBox.classList.add('project-text-box');
-            projectDiv.appendChild(projectTextBox);
-            // populate text box with project information
-	        projectTextBox.innerHTML = `<h1>${myProject.projectName}</h1><p>${myProject.info}</p>`;
-            projectTextBox.innerHTML += `<button class="btn" ><a href="${myProject.primaryLink}">See More</button>`;
-        };
-
-        function createFlipCard(){
-            // create flip card
-            let projectCards = document.createElement('div');
-            projectCards.classList.add('flip-card');
-            projectDiv.appendChild(projectCards);
-
-            // create flip card inner
-            let flipCardInner = document.createElement('div');
-            flipCardInner.classList.add('flip-card-inner');
-            projectCards.appendChild(flipCardInner);
-
-            // create flip card front & populate
-            let flipCardFront = document.createElement('div');
-            flipCardFront.classList.add('flip-card-front');
-            flipCardInner.appendChild(flipCardFront);
-            flipCardFront.innerHTML = `<img class="flip-image" src="${myProject.image}" alt="${myProject.alt}">`;
-            let textDiv = document.createElement('div');
-            textDiv.style.padding="0px 15px";
-            flipCardFront.appendChild(textDiv);
-            textDiv.innerHTML += `<p>${myProject.alt}</p>`;
-            let myBadge=myProject.badges;
-            for (let b=0; b<myBadge.length; b++){
-                textDiv.innerHTML += `<p class="badge">${myBadge[b]}</p>`;
-            };
-            
-            // create flip card back & populate
-            let flipCardBack = document.createElement('div');
-            flipCardBack.classList.add('flip-card-back');
-            flipCardInner.appendChild(flipCardBack);
-            flipCardBack.style.cssText = "padding: 20px; text-align: left;";
-            flipCardBack.innerHTML = `${myProject.detail}<br><p>Built with ${myProject.skills}</p>`;
-        };
-
-        // create each project row
-        if (i%2==0){
-            // even rows text then cards
-            createProjTextBox();
-            createhr();
-            createFlipCard();
-
-        }else{
-            // odd rows cards then text
-            createFlipCard();
-            createhr();
-            createProjTextBox();
-        }
+    // create flip card front & populate
+    let flipCardFront = document.createElement('div');
+    flipCardFront.classList.add('flip-card-front');
+    flipCardInner.appendChild(flipCardFront);
+    flipCardFront.innerHTML = `<img class="flip-image" src="${myProject.image}" alt="${myProject.alt}">`;
+    let textDiv = document.createElement('div');
+    textDiv.style.padding="0px 15px";
+    flipCardFront.appendChild(textDiv);
+    textDiv.innerHTML += `<p>${myProject.alt}</p>`;
+    let myBadge=myProject.badges;
+    for (let b=0; b<myBadge.length; b++){
+        textDiv.innerHTML += `<p class="badge">${myBadge[b]}</p>`;
     };
+    
+    // create flip card back & populate
+    let flipCardBack = document.createElement('div');
+    flipCardBack.classList.add('flip-card-back');
+    flipCardInner.appendChild(flipCardBack);
+    flipCardBack.style.cssText = "padding: 20px; text-align: left;";
+    flipCardBack.innerHTML = `${myProject.detail}<br><p>Built with ${myProject.skills}</p>`;
+};
+
+function createProjTextBox(projectDiv, myProject){
+    // TEXT BOX
+    let projectTextBox = document.createElement('div');
+    projectTextBox.classList.add('project-text-box');
+    projectDiv.appendChild(projectTextBox);
+    // populate text box with project information
+    projectTextBox.innerHTML = `<h1>${myProject.projectName}</h1><p>${myProject.info}</p>`;
+    projectTextBox.innerHTML += `<button class="btn" ><a href="${myProject.primaryLink}">See More</button>`;
+};
+
+//generate project section
+let projectSection = document.getElementById('experience');
+// for every project create a project div
+for (let index=0; index<=projectsCollection.length-1; index++){
+    let myProject = projectsCollection[index];
+
+    // create each project div
+    let projectDiv = document.createElement('div');
+    projectDiv.classList.add('project-details');
+    projectSection.appendChild(projectDiv);
+
+    // create each project row
+    if (index%2==0){
+        // even rows text then cards
+        createProjTextBox(projectDiv, myProject);
+        createhr(projectDiv);
+        createFlipCard(projectDiv, myProject);
+
+    }else{
+        // odd rows cards then text
+        createFlipCard(projectDiv, myProject);
+        createhr(projectDiv);
+        createProjTextBox(projectDiv, myProject);
+    }
+};
 
 // ASIDE SECTION
 // generate skills section
