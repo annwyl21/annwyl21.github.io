@@ -327,42 +327,35 @@ input:focus + .slider {
     transform: rotateY(180deg);
   }
 
-  /*
-  button animations
-	background: linear-gradient(0deg, var(--white) 20%, var(--red-neverwithdkgrey) 100%);
-  */
+  
+  /* button animations */
   @keyframes btn-animation {
 	0% {
-		background: linear-gradient(90deg, red 15%, orange 50%, yellow 100%);
-		color: purple;
+		background: linear-gradient(45deg, white 20%, #e71f1d 40%, #efebe5 60%, #efebe5 80%, #e71d51 100%);
 	}
 	25% {
-		background: linear-gradient(90deg, orange 15%, yellow 50%, greenyellow 100%);
-		color: blue;
+		background: linear-gradient(45deg, #e71f1d 20%, #efebe5 40%, #efebe5 60%, #e71d51 80%, white 100%);
 	}
 	50% {
-		background: linear-gradient(90deg, yellow 15%, greenyellow 50%, blue 100%);
-		color: green;
+		background: linear-gradient(45deg, #efebe5 20%, #efebe5 40%, #e71d51 60%, white 80%, #e71f1d 100%);
 	}
 	75% {
-		background: linear-gradient(90deg, greenyellow 15%, blue 50%, violet 100%);
-		color: orangered
+		background: linear-gradient(45deg, #efebe5 20%, #e71d51 40%, white 60%, #e71f1d 80%, #efebe5 100%);
 	}
 	100% {
-		background: linear-gradient(90deg, blue 15%, violet 50%, purple 100%);
-		color: red;
+		background: linear-gradient(45deg, #e71d51 20%, white 40%, #e71f1d 60%, #efebe5 80%, #efebe5 100%);
 	}
 }
 
-.animationTwo {
+.btn-animation {
 	animation-name: btn-animation;
-	animation-duration: 5s;
-	animation-delay: 1s;
-	/* after the initial 5s delay it will then keep going */
+	animation-duration: 0.5s;
 	animation-iteration-count: infinite;
 }
 
-@media screen and (max-width: 1050px){
+/* TODO */
+/* skills needs to be sent to end between 1260 & 400px to maintain screen display */
+@media screen and (max-width: 400px){
 	.container {
 		/* display: grid;
 		grid-template-columns: span 12;
