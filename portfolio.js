@@ -163,21 +163,18 @@ let flipCardStyle = document.getElementsByClassName('flip-card-front')
 
 // button animation
 let buttonArray = document.getElementsByTagName('button');
-function animation(selected){
+function animation(){
     let random = Math.round(Math.random()*(buttonArray.length-1));
-    let selected = random;
-    console.log(selected)
-    animatebutton(selected);
-    resetbutton(selected);
+    let num = random;
+    animatebutton(num);
+    setTimeout(resetbutton, 500, num);
 };
-function animatebutton(selected){
-    buttonArray[selected].style.color="white";
-    buttonArray[selected].classList.add('btn-animation');
+function animatebutton(num){
+    buttonArray[num].classList.add('btn-animation');
 };
-function resetbutton(selected){
-    buttonArray[selected].style.color="var(--red-neverwithdkgrey)";
-    buttonArray[selected].classList.remove('btn-animation');
+function resetbutton(num){
+    buttonArray[num].classList.remove('btn-animation');
 };
 
-setInterval(animation, 500);
+setInterval(animation, 5000);
 

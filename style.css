@@ -327,35 +327,30 @@ input:focus + .slider {
     transform: rotateY(180deg);
   }
 
-  /*
-  button animations
-	background: linear-gradient(0deg, var(--white) 20%, var(--red-neverwithdkgrey) 100%);
-	https://www.colorbook.io/hexcolors/view/e71d36?utm_content=cmp-true
-  */
+  
+  /* button animations */
   @keyframes btn-animation {
 	0% {
-		background: linear-gradient(45deg, #e71d6c 25%, #e71d51 50%, #e71d36 75%, #e71f1d 100%);
+		background: linear-gradient(45deg, white 20%, #e71f1d 40%, #efebe5 60%, #efebe5 80%, #e71d51 100%);
 	}
 	25% {
-		background: linear-gradient(45deg, #e71d51 25%, #e71d36 50%, #e71f1d 75%, #e71d6c 100%);
+		background: linear-gradient(45deg, #e71f1d 20%, #efebe5 40%, #efebe5 60%, #e71d51 80%, white 100%);
 	}
 	50% {
-		background: linear-gradient(45deg, #e71d36 25%, #e71f1d 50%, #e71d6c 75%, #e71d51 100%);
+		background: linear-gradient(45deg, #efebe5 20%, #efebe5 40%, #e71d51 60%, white 80%, #e71f1d 100%);
 	}
 	75% {
-		background: linear-gradient(45deg, #e71f1d 25%, #e71d6c 50%, #e71d51 75%, #e71d36 100%);
+		background: linear-gradient(45deg, #efebe5 20%, #e71d51 40%, white 60%, #e71f1d 80%, #efebe5 100%);
 	}
 	100% {
-		background: linear-gradient(45deg, #e71d6c 25%, #e71d51 50%, #e71d36 75%, #e71f1d 100%);
+		background: linear-gradient(45deg, #e71d51 20%, white 40%, #e71f1d 60%, #efebe5 80%, #efebe5 100%);
 	}
 }
 
 .btn-animation {
 	animation-name: btn-animation;
 	animation-duration: 0.5s;
-	/* animation-delay: 5s; */
-	/* after the initial 5s delay it will then keep going */
-	/* animation-iteration-count: infinite; */
+	animation-iteration-count: infinite;
 }
 
 /* TODO */
