@@ -29,8 +29,6 @@ let skillsCollection;
         let api = skills.knowledge.api;
         skillsCollection = [languages, database, git, libraries, ide, api];
 
-        console.log('get data from json', skills.knowledge.languages)
-
         // Once data is fetched, invoke the main function
         main();
 
@@ -44,7 +42,7 @@ async function main() {
 
     //populate introduction text
 	let brandPara = document.getElementById('brand');
-	brandPara.innerHTML = brand.portfolioIntro;
+	brandPara.innerHTML += brand.portfolioIntro;
 
     //generate project section
     let projectSection = document.getElementById('experience');
@@ -92,7 +90,6 @@ async function main() {
             flipCardFront.appendChild(textDiv);
             textDiv.innerHTML += `<p>${myProject.alt}</p>`;
             let myBadge=myProject.badges;
-            console.log(myBadge);
             for (let b=0; b<myBadge.length; b++){
                 textDiv.innerHTML += `<p class="badge">${myBadge[b]}</p>`;
             };
@@ -127,7 +124,6 @@ async function main() {
             flipCardFront.appendChild(textDiv);
             textDiv.innerHTML += `<p>${myProject.alt}</p>`;
             let myBadge=myProject.badges;
-            console.log(myBadge);
             for (let b=0; b<myBadge.length; b++){
                 textDiv.innerHTML += `<p class="badge">${myBadge[b]}</p>`;
             };
@@ -155,7 +151,6 @@ async function main() {
 
     // generate skills section
     let mySkills = document.getElementById('mySkills');
-    console.log('skills', skillsCollection[1].info);
 
     for (let i=0; i<skillsCollection.length; i++){
         // create unordered list for each list of skills using title and info
