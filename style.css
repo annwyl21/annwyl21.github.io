@@ -296,7 +296,6 @@ input:focus + .slider {
     width: 250px;
     height: 380px;
 	border-radius: 12px;
-    border: 1px solid var(--light-grey);
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
 	align-self: center;
   }
