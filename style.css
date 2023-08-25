@@ -292,8 +292,9 @@ input:focus + .slider {
 .flip-card {
     background-color: transparent;
     width: 250px;
-    height: 380px;
+    height: 360px;
 	border-radius: 12px;
+	border: 1px solid var(--card-reverse);
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
 	align-self: center;
   }
@@ -311,16 +312,17 @@ input:focus + .slider {
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
-  /* Position the front and back side */
+  /* Position the front and back side, border box added to stop the flip creating a larger card on the reverse side */
   .flip-card-front, .flip-card-back {
     position: absolute;
+	box-sizing:border-box;
 	border-radius: 12px;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
   }
-  /* Style the front side (fallback if image is missing) */
+  /* Style the front side*/
   .flip-card-front {
     background-color: var(--dark-mode-background);
     color: var(--white);

@@ -47,15 +47,7 @@ function createhr(projectDiv){
     projectDiv.appendChild(hr);
 };
 
-// SORTING RULES FOR BADGES
-function ascBadges(){
-    let badgesInc = myBadge.sort((a, b) => a.length - b.length);
-};
-function descBadges(myBadge){
-    let badgesDec = myBadge.sort((a, b) => b.length - a.length);
-};
-
-function createFlipCard(projectDiv, myProject){
+function createFlipCard(projectDiv, myProject, index){
     // create flip card
     let projectCards = document.createElement('div');
     projectCards.classList.add('flip-card');
@@ -76,8 +68,12 @@ function createFlipCard(projectDiv, myProject){
     flipCardFront.appendChild(textDiv);
     textDiv.innerHTML += `<span>${myProject.alt}</span>`;
     let myBadge=myProject.badges;
-    myBadge.sort((a, b) => a.length - b.length);
     for (let b=0; b<myBadge.length; b++){
+        if (index%2==0){
+            myBadge.sort((a, b) => b.length - a.length);
+        }else{
+            myBadge.sort((a, b) => a.length - b.length);
+        }
         textDiv.innerHTML += `<br><span class="badge">${myBadge[b]}</span>`;
     };
     
@@ -115,11 +111,11 @@ for (let index=0; index<=projectsCollection.length-1; index++){
         // even rows text then cards
         createProjTextBox(projectDiv, myProject);
         createhr(projectDiv);
-        createFlipCard(projectDiv, myProject);
+        createFlipCard(projectDiv, myProject, index);
 
     }else{
         // odd rows cards then text
-        createFlipCard(projectDiv, myProject);
+        createFlipCard(projectDiv, myProject, index);
         createhr(projectDiv);
         createProjTextBox(projectDiv, myProject);
     }
