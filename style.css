@@ -61,6 +61,11 @@ h1 {
 	gap: 5px;
 }
 
+/* .desire {
+	display:flex;
+	align-self: left;
+} */
+
 nav {
 	display: flex;
 	font-size: 20px;
@@ -204,6 +209,10 @@ legend {
 	font-size: 20px;
 	padding: 12px 10px;
 	font-size: 1rem;
+}
+
+.btn:hover {
+	box-shadow: 0 4px 12px 0 rgba(231, 31, 39, 0.35);
 }
 
 hr {
@@ -365,9 +374,13 @@ input:focus + .slider {
 		'footer footer footer'
 		'aside aside aside';
 	}
+
+	.footer-text {
+		background: linear-gradient(to left, rgba(0, 0, 0, 0) 3%, rgba(255, 255, 255, 1) 100%);
+	}
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 900px){
 	.container {
 		/* display: grid;
 		grid-template-columns: span 12;
@@ -423,14 +436,6 @@ input:focus + .slider {
 	body {
 		background-color: var(--pale-grey);
 		color: var(--dark-grey);
-	}
-
-	.footer-icon {
-		max-width: 35px;
-	}
-
-	legend {
-		font-size: 14px;
 	}
 
 	.btn {
