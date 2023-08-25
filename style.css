@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 :root {
-	--pale-grey: #DCDCDD;
-	--paler-grey: #efebe5;
-	--light-grey: #C5C3C6;
-	--dark-grey: #46494C;
-	--bright-green: #5FAD41;
-	--red-neverwithdkgrey: #E71D36;
+	--card-front: #DCDCDD;
+	--light-mode-background: #efebe5;
+	--card-reverse: #C5C3C6;
+	--dark-mode-background: #46494C;
+	--labels: #5FAD41;
+	--buttons: #E71D36;
 	--white: white;
 	--black: #000000;
 }
 
 body {
-	background-color: var(--paler-grey);
-	color: var(--dark-grey);
+	background-color: var(--light-mode-background);
+	color: var(--dark-mode-background);
 	font-family: 'Titillium Web', sans-serif;
 	margin: 0;
 	height: 100vh !important;
@@ -41,7 +41,6 @@ body {
 	margin-left: 3px;;
 	text-align: center;
 	border-radius: 25px;
-	/* add some animation with a timer so they twinkle and draw attention */
   }
 
 .header {
@@ -53,7 +52,7 @@ body {
 }
 
 h1 {
-	color: var(--bright-green);
+	color: var(--labels);
 }
 
 .title {
@@ -139,17 +138,17 @@ legend {
 }
 
 #bk-cd {
-	background-color: var(--light-grey);
+	background-color: var(--card-reverse);
 	color: var(--black);
-	border: 1px solid var(--light-grey);
+	border: 1px solid var(--card-reverse);
 }
 
 .proj-cd {
 	position: relative;
 	left: 0px;
-	background-color: var(--dark-grey);
+	background-color: var(--dark-mode-background);
 	color: var(--white);
-	border: 1px solid var(--dark-grey);
+	border: 1px solid var(--dark-mode-background);
 	border-radius: 5px;
 	margin: 5px;
 }
@@ -168,7 +167,7 @@ legend {
 
 .footer {
 	grid-area: footer;
-	background-color: var(--dark-grey);
+	background-color: var(--dark-mode-background);
 	background-image: url(./images/EllenHoughtonCVwordcloud_oranges.png);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -178,7 +177,7 @@ legend {
 
 :any-link {
 	text-decoration: none;
-	color: var(--red-neverwithdkgrey);
+	color: var(--buttons);
 }
 
 .footer-text {
@@ -187,13 +186,10 @@ legend {
 	color: var(--black);
 }
 
-.card {
-	background-color: var(--light-grey);
-	color: var(--white);
-	border: 1px solid var(--light-grey);
-	border-radius: 5px;
-	margin: 5px;
-	padding: 25px;
+p::first-letter {
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: var(--labels);
 }
 
 #my-photo {
@@ -202,9 +198,9 @@ legend {
 }
 
 .btn {
+	background-color: var(--white);
 	border-radius: 15px;
-	color: var(--red-neverwithdkgrey);
-	border: 3px solid var(--red-neverwithdkgrey);
+	border: 1px solid var(--buttons);
 	font-weight: 500;
 	font-size: 20px;
 	padding: 12px 10px;
@@ -216,9 +212,9 @@ legend {
 }
 
 hr {
-	color: var(--red-neverwithdkgrey);
+	color: var(--buttons);
 	width: 3px;
-	background-color: var(--red-neverwithdkgrey);
+	background-color: var(--buttons);
 	border-width: 0;
 }
 
@@ -268,10 +264,10 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 input:checked + .slider {
-    background-color: var(--dark-grey);
+    background-color: var(--dark-mode-background);
 }
 input:focus + .slider {
-    box-shadow: 0 0 1px var(--dark-grey);
+    box-shadow: 0 0 1px var(--dark-mode-background);
 }
 /* Rounded sliders */
 .slider.round {
@@ -281,8 +277,8 @@ input:focus + .slider {
     border-radius: 50%;
 }
 #themeButton, .submit {
-    background: linear-gradient(90deg, var(--white) 40%, var(--dark-grey) 100%);
-    border-color: var(--light-grey);
+    background: linear-gradient(90deg, var(--white) 40%, var(--dark-mode-background) 100%);
+    border-color: var(--card-reverse);
     /* color: var(--main-text-color, white); */
 }
 
@@ -326,12 +322,12 @@ input:focus + .slider {
   }
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background-color: var(--dark-grey);
+    background-color: var(--dark-mode-background);
     color: var(--white);
   }
   /* Style the back side */
   .flip-card-back {
-    background-color: var(--light-grey);
+    background-color: var(--card-reverse);
     color: black;
     transform: rotateY(180deg);
   }
@@ -434,8 +430,8 @@ input:focus + .slider {
 	}
 
 	body {
-		background-color: var(--pale-grey);
-		color: var(--dark-grey);
+		background-color: var(--card-front);
+		color: var(--dark-mode-background);
 	}
 
 	.btn {

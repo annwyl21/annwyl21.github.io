@@ -38,13 +38,21 @@ try {
 // MAIN INTRO SECTION
 //populate introduction text
 let brandPara = document.getElementById('brand');
-brandPara.innerHTML += brand.portfolioIntro;
+brandPara.innerHTML += `<p>${brand.portfolioIntro}</p>`;
 
 // PROJECT CARDS SECTION
 function createhr(projectDiv){
     // HORIZONTAL RULE
     let hr = document.createElement('hr');
     projectDiv.appendChild(hr);
+};
+
+// SORTING RULES FOR BADGES
+function ascBadges(){
+    let badgesInc = myBadge.sort((a, b) => a.length - b.length);
+};
+function descBadges(myBadge){
+    let badgesDec = myBadge.sort((a, b) => b.length - a.length);
 };
 
 function createFlipCard(projectDiv, myProject){
@@ -66,10 +74,11 @@ function createFlipCard(projectDiv, myProject){
     let textDiv = document.createElement('div');
     textDiv.style.padding="0px 15px";
     flipCardFront.appendChild(textDiv);
-    textDiv.innerHTML += `<p>${myProject.alt}</p>`;
+    textDiv.innerHTML += `<span>${myProject.alt}</span>`;
     let myBadge=myProject.badges;
+    myBadge.sort((a, b) => a.length - b.length);
     for (let b=0; b<myBadge.length; b++){
-        textDiv.innerHTML += `<p class="badge">${myBadge[b]}</p>`;
+        textDiv.innerHTML += `<br><span class="badge">${myBadge[b]}</span>`;
     };
     
     // create flip card back & populate
@@ -77,7 +86,7 @@ function createFlipCard(projectDiv, myProject){
     flipCardBack.classList.add('flip-card-back');
     flipCardInner.appendChild(flipCardBack);
     flipCardBack.style.cssText = "padding: 20px; text-align: left;";
-    flipCardBack.innerHTML = `${myProject.detail}<br><p>Built with ${myProject.skills}</p>`;
+    flipCardBack.innerHTML = `<span>${myProject.detail}<span><br><span>Built with ${myProject.skills}</span>`;
 };
 
 function createProjTextBox(projectDiv, myProject){
@@ -123,7 +132,7 @@ let mySkills = document.getElementById('mySkills');
 for (let i=0; i<skillsCollection.length; i++){
     // create unordered list for each list of skills using title and info
     let skillHeading = document.createElement('div');
-    mySkills.innerHTML += `<p>${skillsCollection[i].title}:</p>`;
+    mySkills.innerHTML += `<span>${skillsCollection[i].title}:</span>`;
     mySkills.appendChild(skillHeading);
     let skillList = document.createElement('ul');
     skillHeading.appendChild(skillList);
@@ -137,31 +146,34 @@ for (let i=0; i<skillsCollection.length; i++){
     }           
 };
 
-// toggle theme button
+// TOGGLE THEME BUTTON
 let theme = 'light';
+// all the elements that change
 let body = document.getElementById('body');
 let flipCardStyle = document.getElementsByClassName('flip-card-front')
+let labelArray = document.getElementsByTagName('h1');
+// defining the button
 document.getElementById('themeButton').addEventListener('click', function() {
     if (theme == 'light') {
     theme = 'dark'
-    body.style.backgroundColor = "var(--dark-grey)";
-    body.style.color = "var(--paler-grey)";
+    body.style.backgroundColor = "var(--dark-mode-background)";
+    body.style.color = "var(--light-mode-background)";
     for (let i=0; i<flipCardStyle.length; i++){
-        flipCardStyle[i].style.backgroundColor = "var(--light-grey)";
-        flipCardStyle[i].style.color = "var(--dark-grey)";
+        flipCardStyle[i].style.backgroundColor = "var(--white)";
+        flipCardStyle[i].style.color = "var(--dark-mode-background)";
     }
     } else {
     theme = 'light'
-    body.style.backgroundColor = "var(--paler-grey)";
-    body.style.color = "var(--dark-grey)";
+    body.style.backgroundColor = "var(--light-mode-background)";
+    body.style.color = "var(--dark-mode-background)";
     for (let i=0; i<flipCardStyle.length; i++){
-        flipCardStyle[i].style.backgroundColor = "var(--dark-grey)";
-        flipCardStyle[i].style.backgroundColor = "var(--white)";
-    }
+        flipCardStyle[i].style.backgroundColor = "var(--dark-mode-background)";
+        flipCardStyle[i].style.color = "var(--white)";
+        }
 }
 });
 
-// button animation
+// BUTTON ANIMATION
 let buttonArray = document.getElementsByTagName('button');
 function animation(){
     let random = Math.round(Math.random()*(buttonArray.length-1));
@@ -178,3 +190,15 @@ function resetbutton(num){
 
 setInterval(animation, 5000);
 
+// ON BUTTON MOUSEOVER
+for (let i=0; i<buttonArray.length; i++){
+    let selectedButton = buttonArray[i];
+    selectedButton.addEventListener('mouseover', function(){
+        selectedButton.style.fontSize="1.5rem";
+        selectedButton.style.borderWidth="3px";
+    selectedButton.addEventListener('mouseout', function(){
+        selectedButton.style.fontSize="1rem";
+        selectedButton.style.borderWidth="1px";
+    })
+    })
+}

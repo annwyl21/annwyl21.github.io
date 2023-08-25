@@ -1,8 +1,8 @@
 {
 	"yahtzeeScorerProject": {
 		"projectName": "Yahtzee Scorer",
-		"info": "<p>Initially designed to contain the logic to score an individual dice roll during a game and return an object with the score possibilities, this scorer also now allows a user to play the game against the computer, tracking the score in a scoreboard object.</p><p>This project demonstrates my understanding of object-oriented programming, ability to code the scoring logic required for yahtzee and the commit history in github will show that I built this project using Test Driven Development - writing the tests before writing the code. For this project I used GitHub workflows, initiating automatic unit tests to continuously ensure the quality of my code.</p>",
-		"detail": "<p>I used pytest and Pexpect for unit testing, the debugger tool to identify errors swiftly and an Agile GitHub Project board to efficiently manage tasks and break objectives into manageable chunks. This helped me to keeping the project on track and deliver my goals.</p>",
+		"info": "Initially designed to contain the logic to score an individual dice roll during a game and return an object with the score possibilities, this scorer also now allows a user to play the game against the computer, tracking the score in a scoreboard object.This project demonstrates my understanding of object-oriented programming, ability to code the scoring logic required for yahtzee and the commit history in github will show that I built this project using Test Driven Development - writing the tests before writing the code. For this project I used GitHub workflows, initiating automatic unit tests to continuously ensure the quality of my code.",
+		"detail": "I used pytest and Pexpect for unit testing, the debugger tool to identify errors swiftly and an Agile GitHub Project board to efficiently manage tasks and break objectives into manageable chunks. This helped me to keeping the project on track and deliver my goals.",
 		"image": "./images/tdd_yahtzee_small.png",
 		"alt": "Screenshot of Test Driven Development for my Yahtzee Score Calculator",
 		"skills": ["Pytest", "Pexpect", "Python", "Github Workflow", "Github Projects"],
@@ -13,7 +13,7 @@
 
 	"brewqueue": {
 		"projectName": "BrewQueue",
-		"info": "<p>An order management system (to-do list) to manage barrista workflow.</p><p>Created using JavaScript, I successfully debugged critical issues, including an off-by-1 error and unpredictable card creation anomolies, using browser debugging tools to pinpoint a variable declaration oversight that JavaScript gracefully handled without explicit error, a contrast to typical Python behaviour.</p>",
+		"info": "An order management system (to-do list) to manage barrista workflow.Created using JavaScript, I successfully debugged critical issues, including an off-by-1 error and unpredictable card creation anomolies, using browser debugging tools to pinpoint a variable declaration oversight that JavaScript gracefully handled without explicit error, a contrast to typical Python behaviour.",
 		"detail": "This was my Bootcamp project, initially designed using Lucid Chart and created on completion of the JavaScript DOM module.",
 		"image": "./images/BrewQueueSmall.jpg",
 		"alt": "Built to my design in LucidChart",
@@ -25,14 +25,14 @@
 
 	"heathrowHeatmaps": {
 		"projectName": "Visualising Heathrow Weather",
-		"info": "<p>A series of heatmaps to visualise weather data recorded at Heathrow over the last 70 years.</p><p>I downloaded freely available data from the MET office into pandas in order to create heatmaps using Matplotlib, NumPy & Seaborn libraries.</p><p>See more heatmaps on my project page.</p>",
+		"info": "A series of heatmaps to visualise weather data recorded at Heathrow over the last 70 years.I downloaded freely available data from the MET office into pandas in order to create heatmaps using Matplotlib, NumPy & Seaborn libraries.See more heatmaps on my project page.",
 		"detail": "placeholder",
 		"image": "./images/heathrow_rainfall_heatmap_decade_small.jpg",
 		"alt": "Heatmap displaying a decade of rainfall (total rainfall in mm)",
 		"imagesArray": ["./images/heathrow_rainfall_heatmap_decade_small.jpg", "./images/heathrow_min_temp_heatmap_small.jpg", "./images/heathrow_heatmap_1950_2020_small.jpg"],
 		"altArray": ["Heatmap displaying a decade of rainfall (total rainfall in mm)", "Heatmap displaying 20yrs of weather data (mean daily min temp)", "Heatmap displaying 70yrs of weather data (mean daily max temp)"],
-		"more-info": ["<p>A heatmap to show 10 years of weather data, displaying the total rainfall in mm at Heathrow Airport.</p>", "<p>A heatmap to show 20 years of weather data, displaying the mean daily min temperature at Heathrow Airport.</p>", "<p>A heatmap to show 70 years of weather data, displaying the mean daily max temperature at Heathrow Airport.</p>"],
-		"skills": ["Data Visualisation", "Python", "Matplotlib", "Pandas", "API"],
+		"more-info": ["A heatmap to show 10 years of weather data, displaying the total rainfall in mm at Heathrow Airport.", "A heatmap to show 20 years of weather data, displaying the mean daily min temperature at Heathrow Airport.", "A heatmap to show 70 years of weather data, displaying the mean daily max temperature at Heathrow Airport."],
+		"skills": ["Python", "Matplotlib", "Pandas", "API"],
 		"badges": ["Python", "API", "Data Visualisation"],
 		"github": "https://github.com/annwyl21/heatmap_weather",
 		"primaryLink": "https://github.com/annwyl21/heatmap_weather"
@@ -40,8 +40,8 @@
 
 	"symptomLogger": {
 		"projectName": "Symptom Tracker",
-		"info": "<p>Keeping track of symptoms and pain can be difficult for people who are ill, alderly or when remembering symptoms on behalf of someone other than yourself, e.g. a child. My symptom logger is designed to support you in this challenge.</p><p>My project uses a metaprompt prefix in API requests to the text-davinci-003 AI model to request an on-demand summary of user-logged & timestamped symptoms stored in a Postgres database. A bubbleplot illustrates the frequency of symptoms over time and throughout the day, with bubble size signifying reported pain levels.</p>",
-		"detail": "<p>To develop this application, I acquired knowledge in Natural Language Processing and the NLTK, creating a preliminary summarizing tool to establish a benchmark for the API/metaprompt development and I used a docker image of the Postgres database.</p>",
+		"info": "Keeping track of symptoms and pain can be difficult for people who are ill, alderly or when remembering symptoms on behalf of someone other than yourself, e.g. a child. My symptom logger is designed to support you in this challenge.My project uses a metaprompt prefix in API requests to the text-davinci-003 AI model to request an on-demand summary of user-logged & timestamped symptoms stored in a Postgres database. A bubbleplot illustrates the frequency of symptoms over time and throughout the day, with bubble size signifying reported pain levels.",
+		"detail": "To develop this application, I acquired knowledge in Natural Language Processing and the NLTK, creating a preliminary summarizing tool to establish a benchmark for the API/metaprompt development and I used a docker image of the Postgres database.",
 		"image": "./images/bubbleplot_symptoms_small.png",
 		"alt": "Bubble plot dynamically displays frequency of symptoms over time and when they occur throughout the day, with a reported pain scale represented by bubble size.",
 		"skills": ["AI Prompt Engineering", "API", "Python", "Docker Image", "PostgreSQL", "Matplotlib"],
@@ -52,8 +52,8 @@
 
 	"debtComparisonCalculator": {
 		"projectName": "Debt Comparison Calculator",
-		"info": "<p>A calculator tool to compare repayments over time of personal debt using 3 different methods of structuring debt; stack, snowball & avalanche.</p><p>My simple calculator creates 3 debt objects, for 3 given debts, and then imagines how each method could repay debt in varying time periods if the repayment amounts were lumped towards a single debt at a time.</p><p>On completion of this project, I created a docker image, this image is available on Dockerhub and as an Azure serverless container. Click the button to visit my container.</p>",
-		"detail": "<p>This project is a demonstration of my knowledge of object-oriented programming and was my contribution to a team project where we created flask website.</p>",
+		"info": "A calculator tool to compare repayments over time of personal debt using 3 different methods of structuring debt; stack, snowball & avalanche.My simple calculator creates 3 debt objects, for 3 given debts, and then imagines how each method could repay debt in varying time periods if the repayment amounts were lumped towards a single debt at a time.On completion of this project, I created a docker image, this image is available on Dockerhub and as an Azure serverless container. Click the button to visit my container.",
+		"detail": "This project is a demonstration of my knowledge of object-oriented programming and was my contribution to a team project where we created flask website.",
 		"image": "./images/debt_comparison_small.png",
 		"alt": "placeholder text",
 		"skills": ["Flask", "Python", "Docker Image", "Dockerhub", "Git"],
@@ -66,7 +66,7 @@
 
 	"rps": {
 		"projectName": "Rock, Paper Scissors",
-		"info": "<p>This project demonstrates my ability to use node.js as I wrote the logic independently of the eventual project website build.</p><p>This challenge also provided the opportunity to develop that my front-end skill which has seen significant improvement since I wrote some of my more complex projects.  Here I use fun box shadows in CSS and control html elements using Javascript. Many of the js skills (automatically generating the flip cards and button hover responses) that I practiced on this project have helped me to develop this portfolio website.</p><p>Click to play Rock, Paper, Scissors.</p>",
+		"info": "This project demonstrates my ability to use node.js as I wrote the logic independently of the eventual project website build.This challenge also provided the opportunity to develop that my front-end skill which has seen significant improvement since I wrote some of my more complex projects.  Here I use fun box shadows in CSS and control html elements using Javascript. Many of the js skills (automatically generating the flip cards and button hover responses) that I practiced on this project have helped me to develop this portfolio website.Click to play Rock, Paper, Scissors.",
 		"detail": "This project was a bootcamp assignment. I take every opportunity that I am given to learn and make the absolute most of it that I can in order to enhance my skillset.",
 		"image": "./images/RPSscreenshot_small.jpg",
 		"alt": "Enjoying the traditonal game of Rock, Paper, Scissors",
@@ -78,8 +78,8 @@
 
 	"weatherApi": {
 		"projectName": "Weather API",
-		"info": "<p>A weather forecast tool that uses weather data to determine lifestyle advice. This project connects to a MET office API to retrieve weather data. </p><p>The data is used to create a weather object that has a method to convert celsius into fahrenheit and the to populate the fields in a flask app.</p><p>I enjoy the challenge of connecting things together and making them work.</p>",
-		"detail": "<p>This was a fun early project that taught me about sensible storage of API keys.</p>",
+		"info": "A weather forecast tool that uses weather data to determine lifestyle advice. This project connects to a MET office API to retrieve weather data. The data is used to create a weather object that has a method to convert celsius into fahrenheit and the to populate the fields in a flask app.I enjoy the challenge of connecting things together and making them work.",
+		"detail": "This was a fun early project that taught me about sensible storage of API keys.",
 		"image": "./images/weather_forecast_results_small.jpg",
 		"alt": "Weather Forecast Results",
 		"skills": ["Flask", "API connection"],
@@ -90,8 +90,8 @@
 
 	"sentenceTranslation": {
 		"projectName": "Sentence Translation",
-		"info": "<p>I built a rest API to support my own language learning. I actively use Duolingo every day to learn spanish. I built this project as a tool to support my learning and translate sentences as I needed them while reading.</p><p>This project takes user input on a very simple html page and connects to the Azure Cognitive API. The API identifies the language in which the data was entered and returns a translation in 5 given languages.</p><p>The 5 languages into which the sentence is translated by 'Translator Susan' are; Spanish, Dutch, French, German and English.</p>",
-		"detail": "<p>At the time of writing this I have a 923 day streak of uninterrupted daily practice demonstrating my commitment and persistence with new challenges and my passion for active and engaged learning.</p>",
+		"info": "I built a rest API to support my own language learning. I actively use Duolingo every day to learn spanish. I built this project as a tool to support my learning and translate sentences as I needed them while reading.This project takes user input on a very simple html page and connects to the Azure Cognitive API. The API identifies the language in which the data was entered and returns a translation in 5 given languages.The 5 languages into which the sentence is translated by 'Translator Susan' are; Spanish, Dutch, French, German and English.",
+		"detail": "At the time of writing this I have a 923 day streak of uninterrupted daily practice demonstrating my commitment and persistence with new challenges and my passion for active and engaged learning.",
 		"image": "./placeholder.jpg",
 		"alt": "Sentence Translation App",
 		"skills": ["rest API", "API connection"],
