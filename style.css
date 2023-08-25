@@ -119,6 +119,10 @@ legend {
 	font-size: 18px;
 }
 
+strong {
+	color: var(--labels);
+}
+
 .right-text-box {
 	padding: 20px;
 	text-align: left;
@@ -186,10 +190,8 @@ legend {
 	color: var(--black);
 }
 
-p::first-letter {
+li::first-letter {
 	font-size: 1.5rem;
-	font-weight: 700;
-	color: var(--labels);
 }
 
 #my-photo {

@@ -38,7 +38,7 @@ try {
 // MAIN INTRO SECTION
 //populate introduction text
 let brandPara = document.getElementById('brand');
-brandPara.innerHTML += `<p>${brand.portfolioIntro}</p>`;
+brandPara.innerHTML += `<span>${brand.portfolioIntro}</span>`;
 
 // PROJECT CARDS SECTION
 function createhr(projectDiv){
@@ -66,7 +66,7 @@ function createFlipCard(projectDiv, myProject, index){
     let textDiv = document.createElement('div');
     textDiv.style.padding="0px 15px";
     flipCardFront.appendChild(textDiv);
-    textDiv.innerHTML += `<span>${myProject.alt}</span>`;
+    textDiv.innerHTML += `<span>${myProject.alt}</span><br>`;
     let myBadge=myProject.badges;
     for (let b=0; b<myBadge.length; b++){
         if (index%2==0){
@@ -82,7 +82,7 @@ function createFlipCard(projectDiv, myProject, index){
     flipCardBack.classList.add('flip-card-back');
     flipCardInner.appendChild(flipCardBack);
     flipCardBack.style.cssText = "padding: 20px; text-align: left;";
-    flipCardBack.innerHTML = `<span>${myProject.detail}<span><br><span>Built with ${myProject.skills}</span>`;
+    flipCardBack.innerHTML = `<span>${myProject.detail}<span><br><span><i>Built with: ${myProject.skills}</i></span>`;
 };
 
 function createProjTextBox(projectDiv, myProject){
