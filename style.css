@@ -190,6 +190,10 @@ li::first-letter {
 	font-size: 1.5rem;
 }
 
+li::marker {
+	content: '~ ';
+}
+
 #my-photo {
 	border-radius: 50%;
 	max-width: 200px;
@@ -216,6 +220,8 @@ hr {
 	background-color: var(--buttons);
 	border-width: 0;
 }
+
+
 
 /* toggle button from W3 Schools */
 .toggle-theme {
@@ -405,6 +411,23 @@ input:focus + .slider {
 		text-align: center;
 	}
 
+	#brand {
+		padding-left: 20px;
+		order: 1; 
+	}
+
+	.intro-text {
+		order: 1;
+	}
+
+	.intro-image {
+		order: 2;
+	}
+
+	#my-photo {
+		max-width: 120px;
+	}
+
 	.main {
 		flex-direction: column;
 		align-items: center;
@@ -413,10 +436,16 @@ input:focus + .slider {
 	.project-text-box {
 		padding: 5px;
 		text-align: left;
+		order: 2;
+	}
+
+	.flip-card {
+		order: 1;
 	}
 
 	.project-details {
 		margin: 5px 0;
+		flex-direction: column;
 	}
 
 	.section {
@@ -425,10 +454,6 @@ input:focus + .slider {
 		flex-direction: column;
 		justify-content: flex-start;
 		gap: 5px;
-	}
-
-	.project-details {
-		flex-direction: column;
 	}
 
 	body {
