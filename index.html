@@ -1,195 +1,74 @@
 <!DOCTYPE html>
-<html lang="en-gb">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link id="stylesheet-theme" rel="stylesheet" href="./styles/style_dark.css">
-    <link id="stylesheet" rel="stylesheet" href="./styles/styles.css">
-    <title>Portfolio</title>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="module" src="portfolio.js" defer></script>
+	<link rel="stylesheet" href="style.css">
+	<title>Ellen's Portfolio</title>
 </head>
-<body>
+<body id="body">
+	
+	<div class="container">
+		
+		<div class="header">
+			<div class="title">
+			<!-- toggle theme button -->
+				<div class="toggle-theme">
+					<label class="switch">
+						<input type="checkbox">
+						<span class="slider round" id="themeButton"></span>
+					</label>
+				</div>
+				<hr>
+				<div class="desire">
+					<h3 style="padding-left: 5px;">Junior Software Engineer</h3>
+				</div>
+			</div>
+			<nav>
+				<a href="https://www.linkedin.com/in/annwyl21/" target="_blank"><img src="./icons/icons8-linked-in-50.png" alt="linked in icon by Icons8.com"></a>
+				<button class="btn"><a class="menu" href="#skills">Skills</a></button>
+				<button class="btn"><a class="menu" href="#experience">Experience</a></button>
+				<button class="btn"><a class="menu" href="mailto:ellen.a.ash@gmail.com">Contact</a></button>
+			</nav>
+		</div>
+		
+		<!-- Main Intro Section -->
+		<div class="main">
+			<div class="intro-image">
+				<img id="my-photo" src="./images/Ellen_profileshot_betty.jpeg" alt="Ellen Houghton a highly motivated Junior Software Engineer">
+			</div>
+			<div class="intro-text" id="brand">
+				<h1 id="myName">Ellen Houghton</h1>
+				<!-- Insert my portfolio intro text here -->
+			</div>
+		</div>
+		<!-- class="project-text-box"  -->
 
-<div class="container-fluid bg-1 text-left" id="page1">
+		<!-- Aside Skills Section -->
+		<div class="aside" id="skills">
+			<div id="mySkills">
+			<!-- Insert my skills list here -->
+			</div>
+		</div>
 
-    <div class="row">
-        <div class="col-sm-12">
-            <label class="switch">
-                <input type="checkbox">
-                <span class="slider round" id="themeButton"></span>
-            </label>
-        </div>
-    </div>
+		<!-- Project Cards Section -->
+		<div class="section">
+			<fieldset id="experience">
+				<legend>Project Experience</legend>
+			<!-- Insert my project cards here -->
+			</fieldset>
+		</div>
 
-    <div class="row">
-        <div class="col-sm-8 order-1 order-sm-1">
-            <a href="./aboutme.html"><h1><strong>Ellen Houghton, Junior Software Developer</strong></h1></a>
-            <table style="width: 100%;">
-                <tr>
-                    <td>
-                        <span class="badge rounded-pill text-bg-secondary" style="display: inline-block; background: linear-gradient(135deg, #aad922 50%, #f15025 100%);">
-                            <table>
-                                <tr>
-                                    <td><a href="https://www.linkedin.com/in/annwyl21/"><img src="./images/linkedin.png" target="blank" style="max-width: 23px;"alt="Linkedin icons created by Freepik - flaticon.com/free-icons"></a></td>
-                                    <td><a href="https://github.com/annwyl21"><img src="./images/github-mark.png" target="blank" style="max-width: 23px;" alt="image from Github"></a></td>
-                                    <td><a href="https://hub.docker.com/repositories/annwyl21"><img src="./images/docker.png" target="blank" style="max-width: 23px;" alt="Linkedin icons created by Freepik - flaticon.com/free-icons"></a></td>
-                                </tr>
-                            </table>
-                        </span>
-                    </td>
-                    <td>
-                        <a class="btn btn-primary" style="text-align: end;" href="./aboutme.html" role="button">Skills</a>
-                        <a href="mailto:ellen.a.ash@gmail.com" class="btn btn-primary" role="button">mailto: ellen</a>
-                    </td>
-                </tr>
-            </table>
-            
-                <!-- accordion -->
-                <div class="accordion" id="project-accordion">
+		<div class="footer">
+			<div class="footer-text">
+			<a class="footer-icon" href="https://github.com/annwyl21" target="_blank"><img src="./icons/icons8-github-90.png" alt="github icon by Icons8.com"></a>
+			<a class="footer-icon" href="https://hub.docker.com/repositories/annwyl21" target="_blank"><img src="./icons/icons8-docker-96.png" alt="docker icon by Icons8.com"></a>
+			<a class="footer-icon" href="https://www.linkedin.com/in/annwyl21/" target="_blank"><img src="./icons/icons8-linked-in-100.png" alt="linked in icon by Icons8.com"></a>
+			<p>Icons by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+			</div>
+		</div>
+	</div>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="yahtzee">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#yahtzee_collapse" aria-expanded="false" aria-controls="yahtzee_collapse">
-                                <span class="badge rounded-pill text-bg-secondary" id="badge">py TDD CI</span><span>Yahtzee</span>
-                            </button>
-                        </h2>
-                        <div id="yahtzee_collapse" class="accordion-collapse collapse" aria-labelledby="yahtzee" data-bs-parent="#project-accordion">
-                            <div class="accordion-body">
-                                <p class="lead"><a class="github_link" href="https://github.com/annwyl21/yahtzee"><img src="./images/github-mark.png" target="blank"> Github Repo: yahtzee</a></p>
-                                <p>
-                                    This game project demonstrates how I used <mark>GitHub workflows</mark>, initiating automatic unit tests to continuously ensure the quality of my code. I used <code>pytest</code> and <code>Pexpect</code> for <mark>unit testing</mark>. I also used the <mark>debugger tool</mark> to identify errors swiftly. Additionally, I used a <mark>GitHub project board</mark> to efficiently manage tasks, breaking objectives into manageable, deliverable chunks, keeping the project on track and my goals clear. This project is my first dive into <mark>Test Driven Development</mark>.
-                                </p>
-                            <br>
-                            <a href="./images/tdd_yahtzee.png"><img src="./images/tdd_yahtzee_small.png" class="img-responsive margin" alt="Screenshot of Test Driven Development for my Yahtzee Score Calculator"></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="bootcamp">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bootcamp_collapse" aria-expanded="false" aria-controls="bootcamp_collapse">
-                                <span class="badge rounded-pill text-bg-secondary" id="badge">js</span><span>BrewQueue</span>
-                            </button>
-                        </h2>
-                        <div id="bootcamp_collapse" class="accordion-collapse collapse" aria-labelledby="bootcamp" data-bs-parent="#project-accordion">
-                            <div class="accordion-body">
-                                <a class="btn btn-info" href="./Fulfillment/index.html" role="button" target="_blank">BrewQueue</a>
-                                <p>An order management system (to-do list)created using JavaScript. I successfully debugged critical issues, including an off-by-1 error and unpredictable card creation anomolies, using browser debugging tools to pinpoint a variable declaration oversight that JavaScript gracefully handled without explicit error, a contrast to typical Python behaviour.</p>
-                            <br>
-                            <a href="./images/debugger.jpg"><img src="./images/debugger_small.jpg" class="img-responsive margin" alt="Screenshot of Browser Debugger in use during my project"></a>
-                            <br>
-                            <a class="btn btn-info" href="./RockPaperScissors/Assignment_5_Ellen_2of3.html" role="button" target="_blank">Another Javascript Project</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="symptom-record">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-log" aria-expanded="false" aria-controls="collapse-log">
-                            <span class="badge rounded-pill text-bg-secondary" id="badge">py SQL AI</span><span>Symptom Record</span>
-                            </button>
-                        </h2>
-                        <div id="collapse-log" class="accordion-collapse collapse" aria-labelledby="symptom-record" data-bs-parent="#project-accordion">
-                            <div class="accordion-body">
-                                <p class="lead"><a class="github_link" href="https://github.com/annwyl21/symptom_record"><img src="./images/github-mark.png" target="blank"> Github Repo: symptom_record</a></p>
-                                <p>The <i>current</i> project utilizes a <mark>metaprompt</mark> prefix in API requests to the <mark>text-davinci-003 AI model</mark>, summarizing user-logged symptoms. These symptoms, timestamped and stored in a Postgres database, can be summarized on demand. A <mark>bubbleplot</mark> illustrates the frequency of symptoms over time and throughout the day, with bubble size signifying reported pain levels.</p> 
-                                <p>To develop this application, I acquired knowledge in <mark>NLP and the NLTK</mark>, creating a preliminary summarizing tool to establish a benchmark for the API/metaprompt development. Finally, I adapted my knowledge of mysql to create and connect to a <mark>PostgreSQL database</mark> using a docker image.</p>
-                                <br>
-                                <a href="./images/bubbleplot_symptoms.png"><img src="./images/bubbleplot_symptoms_small.png" class="img-responsive margin" alt="Bubble plot dynamically generated to display frequency of symptoms over time and when they occur throughout the day, with a reported pain scale represented by bubble size."></a>
-                                <br>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="debt_comparison">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsedebt" aria-expanded="false" aria-controls="collapsedebt">
-                            <span class="badge rounded-pill text-bg-secondary" id="badge">py OOP</span><span>Debt Comparison Calculator</span>
-                            </button>
-                        </h2>
-                        <div id="collapsedebt" class="accordion-collapse collapse" aria-labelledby="debt_comparison" data-bs-parent="#project-accordion">
-                            <div class="accordion-body">
-                                <p class="lead"><a class="github_link" href="https://github.com/annwyl21/debt_comparison"><img src="./images/github-mark.png" target="_blank"> Github Repo: debt_comparison</a></p>
-                                <a class="btn btn-info" href="https://hub.docker.com/r/annwyl21/debt_comparison" role="button" target="_blank">available on Dockerhub</a> and <a class="btn btn-info" href="http://debt-comparison.wittyflower-04a4021a.westus2.azurecontainerapps.io/" role="button" target="_blank"> as a serverless container app on Azure</a>. 
-                                <p>My simple debt comparison calculator <mark>creates 3 debt objects</mark> and calculates how long it will take to repay 3 debts, <mark>comparing 3 specific repayment methods</mark>; stack, snowball & avalanche.</p>
-                            <br>
-                            <a href="./images/debt_comparison.png"><img src="./images/debt_comparison_small.png" class="img-responsive margin" alt="Debt Repayment Methods Comparison Results"></a>
-                            <br>
-                            <p>The github repository for the much larger team project is called JAMEE and is located in my github.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="weather-forecast">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-forecast" aria-expanded="false" aria-controls="collapse-forecast">
-                            <span class="badge rounded-pill text-bg-secondary" id="badge">Rest API</span><span>Azure Cognitive & MET Office</span>
-                        </button>
-                        </h2>
-                        <div id="collapse-forecast" class="accordion-collapse collapse" aria-labelledby="weather-forecast" data-bs-parent="#project-accordion">
-                            <div class="accordion-body">
-                                <p class="lead"><a class="github_link" href="https://github.com/annwyl21/sentence_translation"><img src="./images/github-mark.png" target="blank"> Github Repo: sentence_translation</a></p>
-                                <p>This project takes user input, <mark>connects to the Azure Cognitive API</mark> to identify the language of the input and translate into 5 given languages; spanish, dutch, french, german & english.</p>
-                                <br>
-                                <p class="lead"><a class="github_link" href="https://github.com/annwyl21/weather_forecast"><img src="./images/github-mark.png" target="blank"> Github Repo: weather_forecast</a></p>
-                                <p>This project <mark>connects to a MET office API</mark>, a weather object is created with the retrieved weather forecast data which is then used to display customised information in the app.</p>
-                                <br>
-                                <a href="./images/weather_forecast_home.jpg"><img src="./images/weather_forecast_home_small.jpg" class="img-responsive margin" alt="Weather Forecast Home Page"></a>
-                                <br>
-                                <p>This flask app also contains css to maintain the mobile size for the display on larger screens.</p>
-                                <a href="./images/weather_forecast_results.jpg"><img src="./images/weather_forecast_results_small.jpg" class="img-responsive margin" alt="Weather Forecast Results"></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="weather-data">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-weather-api" aria-expanded="false" aria-controls="collapse-weather-api">
-                        <span class="badge rounded-pill text-bg-secondary" id="badge">Data Visualisation</span><span>Climate Change</span>
-                        </button>
-                        </h2>
-                        <div id="collapse-weather-api" class="accordion-collapse collapse" aria-labelledby="weather-data" data-bs-parent="#project-accordion">
-                            <div class="accordion-body">
-                                <p class="lead"><a class="github_link" href="https://github.com/annwyl21/heatmap_weather"><img src="./images/github-mark.png" target="blank"> Github Repo: heatmap_weather</a></p>
-                                <p>This project uses data downloaded from MET office into pandas to <mark>create heatmaps</mark> using Matplotlib, NumPy & Seaborn libraries.
-                                <br>
-                                A heatmap to show 10 years of weather data, displaying the total rainfall in mm at Heathrow Airport.</p>  
-                                <br>
-                                <a href="./images/heathrow_rainfall_heatmap_decade.jpg"><img src="./images/heathrow_rainfall_heatmap_decade_small.jpg" class="img-responsive margin" alt="Heatmap displaying a decade of rainfall (total rainfall in mm)"></a>
-                                <br>
-                                A heatmap to show 20 years of weather data, displaying the mean daily min temperature at Heathrow Airport.
-                                <br>
-                                <a href="./images/heathrow_min_temp_heatmap.jpg"><img src="./images/heathrow_min_temp_heatmap_small.jpg" class="img-responsive margin"  alt="Heatmap displaying 20yrs of weather data (mean daily min temp)"></a>
-                                <br>
-                                A heatmap to show 70 years of weather data, displaying the mean daily max temperature at Heathrow Airport.
-                                <br>
-                                <img src="./images/heathrow_heatmap_1950_2020_small.jpg" class="img-responsive margin" alt="Heatmap displaying 70yrs of weather data (mean daily max temp)">
-                                <br>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-                    <br>
-                </div>
-            </div>
-        <div class="col-sm-4 order-2 order-sm-2">
-             <!-- About Me Bootstrap Card -->
-            <div class="card" style="margin: 0;">
-                <img class="card-img-top" src="./images/Ellen_profileshot_betty.jpeg" alt="Ellen Houghton">
-                <div class="card-body">
-                <p class="card-text">I have projects on <strong>github</strong> and <strong>dockerhub</strong> to showcase my skills.</p><p>I am looking for a <strong>junior role</strong> with opportunities to learn.
-                </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-<!-- link to Bootstrap Javascript bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-<script src="styles/changeTheme.js"></script>
 </body>
 </html>
