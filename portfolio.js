@@ -173,7 +173,7 @@ for (let i=0; i<buttonArray.length; i++){
 }
 
 // TOGGLE THEME BUTTON
-let theme = 'light';
+let theme = 'dark';
 // all the elements that change
 let body = document.getElementById('body');
 let flipCardStyle = document.getElementsByClassName('flip-card-front')
@@ -185,7 +185,7 @@ document.getElementById('themeButton').addEventListener('click', function() {
     body.style.backgroundColor = "var(--dark-mode-background)";
     body.style.color = "var(--light-mode-background)";
     for (let i=0; i<flipCardStyle.length; i++){
-        flipCardStyle[i].style.backgroundColor = "var(--white)";
+        flipCardStyle[i].style.backgroundColor = "var(--card-reverse)";
         flipCardStyle[i].style.color = "var(--dark-mode-background)";
         buttonArray[i].style.backgroundColor = "var(--white)";
     }

@@ -12,8 +12,8 @@
 }
 
 body {
-	background-color: var(--light-mode-background);
-	color: var(--dark-mode-background);
+	background-color: var(--dark-mode-background);
+	color: var(--light-mode-background);
 	font-family: 'Titillium Web', sans-serif;
 	margin: 0;
 	height: 100vh !important;
@@ -197,7 +197,7 @@ li::first-letter {
 
 /* button text colour is determined by link colour */
 .btn {
-	background-color: #e7201d2f;
+	background-color: var(--white);
 	border-radius: 15px;
 	border: 1px solid var(--buttons);
 	font-weight: 500;
@@ -276,7 +276,7 @@ input:focus + .slider {
     border-radius: 50%;
 }
 #themeButton, .submit {
-    background: linear-gradient(90deg, var(--white) 40%, var(--dark-mode-background) 100%);
+    background: linear-gradient(270deg, var(--white) 40%, var(--dark-mode-background) 100%);
     border-color: var(--card-reverse);
     /* color: var(--main-text-color, white); */
 }
@@ -323,8 +323,8 @@ input:focus + .slider {
   }
   /* Style the front side*/
   .flip-card-front {
-    background-color: var(--dark-mode-background);
-    color: var(--white);
+    background-color: var(--card-reverse);
+    color: var(--dark-mode-background);
   }
   /* Style the back side */
   .flip-card-back {
