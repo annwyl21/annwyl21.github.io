@@ -92,7 +92,7 @@ function createProjTextBox(projectDiv, myProject){
     projectDiv.appendChild(projectTextBox);
     // populate text box with project information
     projectTextBox.innerHTML = `<h1>${myProject.projectName}</h1><p>${myProject.info}</p>`;
-    projectTextBox.innerHTML += `<button class="btn" ><a href="${myProject.primaryLink}">See More</button>`;
+    projectTextBox.innerHTML += `<button class="btn" ><a href="${myProject.primaryLink}" target="_blank">${myProject.seeMore}</button>`;
 };
 
 //generate project section

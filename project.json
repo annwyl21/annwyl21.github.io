@@ -8,7 +8,8 @@
 		"skills": ["Pytest", "Pexpect", "Python", "Github Actions", "Github Projects"],
 		"badges": ["TDD", "OOP", "Github"],
 		"github": "https://github.com/annwyl21/yahtzee",
-		"primaryLink": "https://github.com/annwyl21/yahtzee"
+		"primaryLink": "https://github.com/annwyl21/yahtzee",
+		"seeMore": "<img class='links' src='./icons/icons8-github-60.png'>Yahtzee Repo"
 	},
 
 	"brewqueue": {
@@ -20,12 +21,13 @@
 		"skills": ["JavaScript", "local storage", "LucidChart", "CSS", "HTML"],
 		"badges": ["JavaScript", "HTML", "CSS"],
 		"github": "https://github.com/annwyl21/",
-		"primaryLink": "./Fulfillment/index.html"
+		"primaryLink": "./Fulfillment/index.html",
+		"seeMore": "See BrewQueue"
 	},
 
 	"heathrowHeatmaps": {
 		"projectName": "Visualising Heathrow Weather",
-		"info": "A series of <strong>heatmaps</strong> to visualise weather data recorded at Heathrow over the last 70 years.<br>I downloaded freely available data from the MET office into <strong>Pandas</strong> in order to create heatmaps using <strong>Matplotlib, NumPy & Seaborn</strong> libraries.<br>This project involved <strong>cleaning the data</strong>.<br>See more heatmaps on my project page.",
+		"info": "A series of <strong>heatmaps</strong> to visualise weather data recorded at Heathrow over the last 70 years.<br>I downloaded freely available data from the MET office into <strong>Pandas</strong> in order to create heatmaps using <strong>Matplotlib, NumPy & Seaborn</strong> libraries.<br>This project involved <strong>cleaning the data</strong>.<br>See more heatmaps in my Github Repository.",
 		"detail": "A interesting puzzle that I researched and handled was the <strong>Unix Epoch</strong> which changed how my date data was handled.",
 		"image": "./images/heathrowHeatmaps-main.jpg",
 		"alt": "Heatmap displaying a decade of rainfall (total rainfall in mm)",
@@ -35,7 +37,8 @@
 		"skills": ["Python", "Matplotlib", "Pandas"],
 		"badges": ["Python", "Data Visualisation"],
 		"github": "https://github.com/annwyl21/heatmap_weather",
-		"primaryLink": "https://github.com/annwyl21/heatmap_weather"
+		"primaryLink": "https://github.com/annwyl21/heatmap_weather",
+		"seeMore": "<img class='links' src='./icons/icons8-github-60.png'>Heatmap Repo"
 	},
 
 	"symptomLogger": {
@@ -47,12 +50,13 @@
 		"skills": ["AI Prompt Engineering", "API", "Python", "Docker Image", "PostgreSQL", "Matplotlib"],
 		"badges": ["AI Prompt Engineering", "SQL"],
 		"github": "https://github.com/annwyl21/symptom_record",
-		"primaryLink": "https://github.com/annwyl21/symptom_record"
+		"primaryLink": "https://github.com/annwyl21/symptom_record",
+		"seeMore": "<img class='links' src='./icons/icons8-github-60.png'>Symptom Log Repo"
 	},
 
 	"debtComparisonCalculator": {
 		"projectName": "Debt Comparison Calculator",
-		"info": "A calculator tool to compare repayments over time of personal debt using 3 different methods of structuring debt; stack, snowball & avalanche.<br>My calculator creates 3 <strong>debt objects</strong>, for 3 given debts, and then imagines how each method could repay debt in varying time periods if the repayment amounts were lumped towards a single debt at a time.<br>On completion of this project, I created a <strong>docker image</strong>, this image is available on Dockerhub and as an <strong>Azure serverless container</strong>.<br>Click the button to visit my container.",
+		"info": "A calculator tool to compare repayments over time of personal debt using 3 different methods of structuring debt; stack, snowball & avalanche.<br>My calculator creates 3 <strong>debt objects</strong>, for 3 given debts, and then imagines how each method could repay debt in varying time periods if the repayment amounts were lumped towards a single debt at a time.<br>On completion of this project, I created a <strong>docker image</strong>, this image is available on Dockerhub and as an <strong>Azure serverless container</strong>.",
 		"detail": "This project is a demonstration of my knowledge of <strong>object-oriented programming</strong> and was my contribution to a team project where we created <strong>flask</strong> website.",
 		"image": "./images/debtComparisonCalculator-main.jpg",
 		"alt": "Results for 3 repayment approaches allow a comparison",
@@ -61,19 +65,21 @@
 		"github": "https://github.com/annwyl21/debt_comparison",
 		"docker": "https://hub.docker.com/r/annwyl21/debt_comparison",
 		"azure": "http://debt-comparison.wittyflower-04a4021a.westus2.azurecontainerapps.io",
-		"primaryLink": "http://debt-comparison.wittyflower-04a4021a.westus2.azurecontainerapps.io"
+		"primaryLink": "http://debt-comparison.wittyflower-04a4021a.westus2.azurecontainerapps.io",
+		"seeMore": "Try my debt calculator"
 	},
 
 	"rps": {
 		"projectName": "Rock, Paper Scissors",
-		"info": "I developed the game logic in Node.js, then integrated that into the front-end JavaScript, allowing me to debug the game logic independently of the web site. This challenge also provided the opportunity to develop my front-end skill. Here I use fun box shadows in CSS and control html elements using Javascript.<br>Many of the js skills (automatically generating the flip cards and dynamically sorting my skill badges) that I practiced on this project have helped me to develop this portfolio website.<br>Click to play Rock, Paper, Scissors.",
+		"info": "I developed the game logic in Node.js, then integrated that into the front-end JavaScript, allowing me to debug the game logic independently of the web site. This challenge also provided the opportunity to develop my front-end skill. Here I use fun box shadows in CSS and control html elements using Javascript.<br>Many of the js skills (automatically generating the flip cards and dynamically sorting my skill badges) that I practiced on this project have helped me to develop this portfolio website.",
 		"detail": "This project was a bootcamp assignment. I <strong>take every opportunity</strong> that I am given to learn and <strong>make the absolute most of it</strong> that I can in order to <strong>enhance my skillset</strong>.",
 		"image": "./images/rps-main.jpg",
 		"alt": "Enjoying the traditonal game of Rock, Paper, Scissors",
 		"skills": ["JavaScript", "Node.js", "Browser Dev Tools/Debugger", "HTML", "CSS"],
 		"badges": ["JavaScript", "Node.js", "HTML & CSS"],
 		"github": "https://github.com/annwyl21",
-		"primaryLink": "./RockPaperScissors/Assignment_5_Ellen_2of3.html"
+		"primaryLink": "./RockPaperScissors/Assignment_5_Ellen_2of3.html",
+		"seeMore": "Play Rock, Paper, Scissors"
 	},
 
 	"weatherApi": {
@@ -85,7 +91,8 @@
 		"skills": ["Flask", "API connection"],
 		"badges": [" Flask", "API Connection"],
 		"github": "https://github.com/annwyl21/weather_forecast",
-		"primaryLink": "https://github.com/annwyl21/weather_forecast"
+		"primaryLink": "https://github.com/annwyl21/weather_forecast",
+		"seeMore": "<img class='links' src='./icons/icons8-github-60.png'>Forecast Repo"
 	},
 
 	"sentenceTranslation": {
@@ -97,6 +104,7 @@
 		"skills": ["RESTful API", "API Integration"],
 		"badges": ["RESTful API", "API Integration"],
 		"github": "https://github.com/annwyl21/sentence_translation",
-		"primaryLink": "https://github.com/annwyl21/sentence_translation"
+		"primaryLink": "https://github.com/annwyl21/sentence_translation",
+		"seeMore": "<img class='links' src='./icons/icons8-github-60.png'>Translation Repo"
 	}
 }
