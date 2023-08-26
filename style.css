@@ -60,10 +60,9 @@ h1 {
 	gap: 5px;
 }
 
-/* .desire {
-	display:flex;
-	align-self: left;
-} */
+.desire {
+	padding-right: 15px;
+}
 
 nav {
 	display: flex;
@@ -117,6 +116,7 @@ legend {
 	padding: 20px;
 	text-align: left;
 	font-size: 18px;
+	max-width: 500px;
 }
 
 strong {
@@ -135,10 +135,6 @@ strong {
 
 .project-cards {
 	display: flex;
-}
-
-.project-text-box {
-	max-width: 500px;
 }
 
 #bk-cd {
@@ -414,6 +410,7 @@ input:focus + .slider {
 	}
 
 	.project-text-box {
+		padding: 5px;
 		text-align: left;
 	}
 

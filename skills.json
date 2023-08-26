@@ -2,8 +2,7 @@
 	"knowledge": {
 		"languages": {
 			"title": "Programming Languages",
-			"info": ["Python", "JavaScript", "SQL", "Regex", "HTML", "CSS"],
-			"abbrev": ["py", "js", "html", "css", "sql", "regex"]
+			"info": ["Python", "JavaScript", "SQL", "HTML", "CSS"]
 		},
 
 		"database": {
@@ -13,12 +12,12 @@
 
 		"git": {
 			"title": "Version Control & Containerization",
-			"info": ["Git", "Docker & Dockerhub", "Gitbash", "Ubuntu", "Github, Workflow & Projects"]
+			"info": ["Git", "Github Version Control", "Github Actions & Projects", "Ubuntu/WSL", "Docker & Dockerhub", "Gitbash"]
 		},
 
 		"libraries": {
 			"title": "Frameworks & Libraries",
-			"info": ["Pytest", "Pextract", "Jest", "Flask", "Matplotlib", "Pandas", "NumPy", "NLTK", "Bootstrap", "Beautiful Soup (BS4)"]
+			"info": ["Pytest", "Pextract", "Jest", "Flask", "Matplotlib", "Pandas", "NumPy", "NLTK", "Regex", "Bootstrap", "Beautiful Soup (BS4)"]
 		},
 
 		"ide": {
@@ -28,7 +27,7 @@
 
 		"api": {
 			"title": "API's & AI Engineering",
-			"info": ["Postman", "Azure Cognitive API", "AI Prompt Engineering"]
+			"info": ["Python Requests", "Azure Cognitive API", "AI Prompt Engineering", "Postman"]
 		}
 		
 	}
