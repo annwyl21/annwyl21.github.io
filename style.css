@@ -206,7 +206,7 @@ li::marker {
 	border: 1px solid var(--buttons);
 	font-weight: 500;
 	font-size: 20px;
-	padding: 12px 10px;
+	padding: 8px 10px;
 	font-size: 1rem;
 }
 
