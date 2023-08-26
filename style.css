@@ -12,8 +12,8 @@
 }
 
 body {
-	background-color: var(--light-mode-background);
-	color: var(--dark-mode-background);
+	background-color: var(--dark-mode-background);
+	color: var(--light-mode-background);
 	font-family: 'Titillium Web', sans-serif;
 	margin: 0;
 	height: 100vh !important;
@@ -190,19 +190,28 @@ li::first-letter {
 	font-size: 1.5rem;
 }
 
+li::marker {
+	content: '~ ';
+}
+
 #my-photo {
 	border-radius: 50%;
 	max-width: 200px;
 }
 
+/* button text colour is determined by link colour */
 .btn {
 	background-color: var(--white);
 	border-radius: 15px;
 	border: 1px solid var(--buttons);
 	font-weight: 500;
 	font-size: 20px;
-	padding: 12px 10px;
+	padding: 8px 10px;
 	font-size: 1rem;
+}
+
+.links {
+	max-height: 25px;
 }
 
 .btn:hover {
@@ -215,6 +224,8 @@ hr {
 	background-color: var(--buttons);
 	border-width: 0;
 }
+
+
 
 /* toggle button from W3 Schools */
 .toggle-theme {
@@ -275,7 +286,7 @@ input:focus + .slider {
     border-radius: 50%;
 }
 #themeButton, .submit {
-    background: linear-gradient(90deg, var(--white) 40%, var(--dark-mode-background) 100%);
+    background: linear-gradient(270deg, var(--white) 40%, var(--dark-mode-background) 100%);
     border-color: var(--card-reverse);
     /* color: var(--main-text-color, white); */
 }
@@ -322,8 +333,8 @@ input:focus + .slider {
   }
   /* Style the front side*/
   .flip-card-front {
-    background-color: var(--dark-mode-background);
-    color: var(--white);
+    background-color: var(--card-reverse);
+    color: var(--dark-mode-background);
   }
   /* Style the back side */
   .flip-card-back {
@@ -404,6 +415,23 @@ input:focus + .slider {
 		text-align: center;
 	}
 
+	#brand {
+		padding-left: 20px;
+		order: 1; 
+	}
+
+	.intro-text {
+		order: 1;
+	}
+
+	.intro-image {
+		order: 2;
+	}
+
+	#my-photo {
+		max-width: 120px;
+	}
+
 	.main {
 		flex-direction: column;
 		align-items: center;
@@ -412,10 +440,16 @@ input:focus + .slider {
 	.project-text-box {
 		padding: 5px;
 		text-align: left;
+		order: 2;
+	}
+
+	.flip-card {
+		order: 1;
 	}
 
 	.project-details {
 		margin: 5px 0;
+		flex-direction: column;
 	}
 
 	.section {
@@ -424,10 +458,6 @@ input:focus + .slider {
 		flex-direction: column;
 		justify-content: flex-start;
 		gap: 5px;
-	}
-
-	.project-details {
-		flex-direction: column;
 	}
 
 	body {
