@@ -403,6 +403,10 @@ input:focus + .slider {
 		'aside aside aside';
 	}
 
+	html {
+		font-size: 14px;
+	}
+
 	.header {
 		margin: 3px;
 		flex-direction: column;
@@ -446,6 +450,7 @@ input:focus + .slider {
 
 	.flip-card {
 		order: 1;
+		height: 325px;
 	}
 
 	.project-details {
