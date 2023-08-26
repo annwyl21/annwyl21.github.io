@@ -66,7 +66,7 @@ h1 {
 
 nav {
 	display: flex;
-	font-size: 20px;
+	font-size: 1.15rem;
 	font-weight: 500;
 	align-items: center;
 	gap: 5px;
@@ -81,6 +81,12 @@ nav {
 	display: flex;
 	justify-content: space-around;
 	gap: 5px;
+	margin: 0px 10px;
+}
+
+.intro-text {
+	max-width: 630px;
+	font-size: 1.5rem;
 }
 
 .aside {
@@ -109,13 +115,13 @@ fieldset {
 
 legend {
 	font-weight: 500;
-	font-size: 25px;
+	font-size: 1.75rem;
 }
 
 .project-text-box {
 	padding: 20px;
 	text-align: left;
-	font-size: 18px;
+	font-size: 1.25rem;
 	max-width: 500px;
 }
 
@@ -205,9 +211,8 @@ li::marker {
 	border-radius: 15px;
 	border: 1px solid var(--buttons);
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 1.15rem;
 	padding: 8px 10px;
-	font-size: 1rem;
 }
 
 .links {
@@ -389,10 +394,6 @@ input:focus + .slider {
 
 @media screen and (max-width: 900px){
 	.container {
-		/* display: grid;
-		grid-template-columns: span 12;
-		/* grid-template-rows: 150px 320px 320px 150px; */
-
 		grid-template-areas: 
 		/* placeholder references */
 		'header header header'
@@ -460,14 +461,17 @@ input:focus + .slider {
 		gap: 5px;
 	}
 
-	body {
-		background-color: var(--card-front);
-		color: var(--dark-mode-background);
-	}
-
 	.btn {
 		padding: 10px 5px 8px 5px;
 		font-size: 0.85rem;
+	}
+
+	.toggle-theme {
+		padding-left: 40px;
+	}
+
+	.desire {
+		padding-right: 40px;
 	}
 
 }
