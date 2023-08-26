@@ -352,19 +352,29 @@ input:focus + .slider {
   /* button animations */
   @keyframes btn-animation {
 	0% {
-		background: linear-gradient(45deg, white 20%, #e71f1d 40%, #efebe5 60%, #efebe5 80%, #e71d51 100%);
+		background: linear-gradient(225deg, rgba(0, 0, 0, 0.177) 10%, white 15%, rgba(0, 0, 0, 0.177) 20%);
+		border-width: 2px;
+		font-size:1.25rem;
 	}
 	25% {
-		background: linear-gradient(45deg, #e71f1d 20%, #efebe5 40%, #efebe5 60%, #e71d51 80%, white 100%);
+		background: linear-gradient(225deg, rgba(0, 0, 0, 0.177) 30%, white 35%, rgba(0, 0, 0, 0.177) 40%);
+		border-width:3px;
+		font-size: 1.35rem;
 	}
 	50% {
-		background: linear-gradient(45deg, #efebe5 20%, #efebe5 40%, #e71d51 60%, white 80%, #e71f1d 100%);
+		background: linear-gradient(225deg, rgba(0, 0, 0, 0.177) 50%, white 55%, rgba(0, 0, 0, 0.177) 60%);
+		border-width:5px;
+		font-size: 1.5rem;
 	}
 	75% {
-		background: linear-gradient(45deg, #efebe5 20%, #e71d51 40%, white 60%, #e71f1d 80%, #efebe5 100%);
+		background: linear-gradient(225deg, rgba(0, 0, 0, 0.177) 70%, white 75%, rgba(0, 0, 0, 0.177) 80%);
+		border-width:3px;
+		font-size: 1.35rem;
 	}
 	100% {
-		background: linear-gradient(45deg, #e71d51 20%, white 40%, #e71f1d 60%, #efebe5 80%, #efebe5 100%);
+		background: linear-gradient(225deg, rgba(0, 0, 0, 0.177) 90%, white 95%, rgba(0, 0, 0, 0.177) 100%);
+		border-width:2px;
+		font-size: 1.25rem;
 	}
 }
 
