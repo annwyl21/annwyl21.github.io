@@ -6,7 +6,8 @@
 	--card-reverse: #C5C3C6;
 	--dark-mode-background: #46494C;
 	--labels: #5FAD41;
-	--buttons: #E71D36;
+	--buttons-light-mode: #E71D36;
+	--buttons-dark-mode: #ffd400;
 	--white: white;
 	--black: #000000;
 }
@@ -66,7 +67,7 @@ h1 {
 
 nav {
 	display: flex;
-	font-size: 20px;
+	font-size: 1.15rem;
 	font-weight: 500;
 	align-items: center;
 	gap: 5px;
@@ -81,6 +82,12 @@ nav {
 	display: flex;
 	justify-content: space-around;
 	gap: 5px;
+	margin: 0px 10px;
+}
+
+.intro-text {
+	max-width: 630px;
+	font-size: 1.5rem;
 }
 
 .aside {
@@ -109,13 +116,13 @@ fieldset {
 
 legend {
 	font-weight: 500;
-	font-size: 25px;
+	font-size: 1.75rem;
 }
 
 .project-text-box {
 	padding: 20px;
 	text-align: left;
-	font-size: 18px;
+	font-size: 1.25rem;
 	max-width: 500px;
 }
 
@@ -177,7 +184,7 @@ strong {
 
 :any-link {
 	text-decoration: none;
-	color: var(--buttons);
+	color: var(--black);
 }
 
 .footer-text {
@@ -201,13 +208,12 @@ li::marker {
 
 /* button text colour is determined by link colour */
 .btn {
-	background-color: var(--white);
+	background-color: #ffd5005b;
 	border-radius: 15px;
-	border: 1px solid var(--buttons);
+	border: 1px solid var(--buttons-dark-mode);
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 1.15rem;
 	padding: 8px 10px;
-	font-size: 1rem;
 }
 
 .links {
@@ -215,13 +221,12 @@ li::marker {
 }
 
 .btn:hover {
-	box-shadow: 0 4px 12px 0 rgba(231, 31, 39, 0.35);
+	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.35);
 }
 
 hr {
-	color: var(--buttons);
 	width: 3px;
-	background-color: var(--buttons);
+	background-color: var(--buttons-dark-mode);
 	border-width: 0;
 }
 
@@ -347,19 +352,29 @@ input:focus + .slider {
   /* button animations */
   @keyframes btn-animation {
 	0% {
-		background: linear-gradient(45deg, white 20%, #e71f1d 40%, #efebe5 60%, #efebe5 80%, #e71d51 100%);
+		background: linear-gradient(225deg, rgba(0, 0, 0, 0.177) 10%, white 15%, rgba(0, 0, 0, 0.177) 20%);
+		border-width: 2px;
+		font-size:1.25rem;
 	}
 	25% {
-		background: linear-gradient(45deg, #e71f1d 20%, #efebe5 40%, #efebe5 60%, #e71d51 80%, white 100%);
+		background: linear-gradient(225deg, rgba(0, 0, 0, 0.177) 30%, white 35%, rgba(0, 0, 0, 0.177) 40%);
+		border-width:3px;
+		font-size: 1.35rem;
 	}
 	50% {
-		background: linear-gradient(45deg, #efebe5 20%, #efebe5 40%, #e71d51 60%, white 80%, #e71f1d 100%);
+		background: linear-gradient(225deg, rgba(0, 0, 0, 0.177) 50%, white 55%, rgba(0, 0, 0, 0.177) 60%);
+		border-width:5px;
+		font-size: 1.5rem;
 	}
 	75% {
-		background: linear-gradient(45deg, #efebe5 20%, #e71d51 40%, white 60%, #e71f1d 80%, #efebe5 100%);
+		background: linear-gradient(225deg, rgba(0, 0, 0, 0.177) 70%, white 75%, rgba(0, 0, 0, 0.177) 80%);
+		border-width:3px;
+		font-size: 1.35rem;
 	}
 	100% {
-		background: linear-gradient(45deg, #e71d51 20%, white 40%, #e71f1d 60%, #efebe5 80%, #efebe5 100%);
+		background: linear-gradient(225deg, rgba(0, 0, 0, 0.177) 90%, white 95%, rgba(0, 0, 0, 0.177) 100%);
+		border-width:2px;
+		font-size: 1.25rem;
 	}
 }
 
@@ -389,10 +404,6 @@ input:focus + .slider {
 
 @media screen and (max-width: 900px){
 	.container {
-		/* display: grid;
-		grid-template-columns: span 12;
-		/* grid-template-rows: 150px 320px 320px 150px; */
-
 		grid-template-areas: 
 		/* placeholder references */
 		'header header header'
@@ -400,6 +411,10 @@ input:focus + .slider {
 		'section section section'
 		'footer footer footer'
 		'aside aside aside';
+	}
+
+	html {
+		font-size: 14px;
 	}
 
 	.header {
@@ -445,6 +460,7 @@ input:focus + .slider {
 
 	.flip-card {
 		order: 1;
+		height: 325px;
 	}
 
 	.project-details {
@@ -460,14 +476,17 @@ input:focus + .slider {
 		gap: 5px;
 	}
 
-	body {
-		background-color: var(--card-front);
-		color: var(--dark-mode-background);
-	}
-
 	.btn {
 		padding: 10px 5px 8px 5px;
 		font-size: 0.85rem;
+	}
+
+	.toggle-theme {
+		padding-left: 40px;
+	}
+
+	.desire {
+		padding-right: 40px;
 	}
 
 }
