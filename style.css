@@ -195,8 +195,9 @@ li::first-letter {
 	max-width: 200px;
 }
 
+/* button text colour is determined by link colour */
 .btn {
-	background-color: var(--white);
+	background-color: #e7201d2f;
 	border-radius: 15px;
 	border: 1px solid var(--buttons);
 	font-weight: 500;

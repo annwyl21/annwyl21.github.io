@@ -142,33 +142,6 @@ for (let i=0; i<skillsCollection.length; i++){
     }           
 };
 
-// TOGGLE THEME BUTTON
-let theme = 'light';
-// all the elements that change
-let body = document.getElementById('body');
-let flipCardStyle = document.getElementsByClassName('flip-card-front')
-let labelArray = document.getElementsByTagName('h1');
-// defining the button
-document.getElementById('themeButton').addEventListener('click', function() {
-    if (theme == 'light') {
-    theme = 'dark'
-    body.style.backgroundColor = "var(--dark-mode-background)";
-    body.style.color = "var(--light-mode-background)";
-    for (let i=0; i<flipCardStyle.length; i++){
-        flipCardStyle[i].style.backgroundColor = "var(--white)";
-        flipCardStyle[i].style.color = "var(--dark-mode-background)";
-    }
-    } else {
-    theme = 'light'
-    body.style.backgroundColor = "var(--light-mode-background)";
-    body.style.color = "var(--dark-mode-background)";
-    for (let i=0; i<flipCardStyle.length; i++){
-        flipCardStyle[i].style.backgroundColor = "var(--dark-mode-background)";
-        flipCardStyle[i].style.color = "var(--white)";
-        }
-}
-});
-
 // BUTTON ANIMATION
 let buttonArray = document.getElementsByTagName('button');
 function animation(){
@@ -198,3 +171,32 @@ for (let i=0; i<buttonArray.length; i++){
     })
     })
 }
+
+// TOGGLE THEME BUTTON
+let theme = 'light';
+// all the elements that change
+let body = document.getElementById('body');
+let flipCardStyle = document.getElementsByClassName('flip-card-front')
+let labelArray = document.getElementsByTagName('h1');
+// defining the button
+document.getElementById('themeButton').addEventListener('click', function() {
+    if (theme == 'light') {
+    theme = 'dark'
+    body.style.backgroundColor = "var(--dark-mode-background)";
+    body.style.color = "var(--light-mode-background)";
+    for (let i=0; i<flipCardStyle.length; i++){
+        flipCardStyle[i].style.backgroundColor = "var(--white)";
+        flipCardStyle[i].style.color = "var(--dark-mode-background)";
+        buttonArray[i].style.backgroundColor = "var(--white)";
+    }
+    } else {
+    theme = 'light'
+    body.style.backgroundColor = "var(--light-mode-background)";
+    body.style.color = "var(--dark-mode-background)";
+    for (let i=0; i<flipCardStyle.length; i++){
+        flipCardStyle[i].style.backgroundColor = "var(--dark-mode-background)";
+        flipCardStyle[i].style.color = "var(--white)";
+        buttonArray[i].style.backgroundColor = "#e7201d2f";
+        }
+}
+});
