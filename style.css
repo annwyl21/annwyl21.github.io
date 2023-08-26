@@ -6,7 +6,8 @@
 	--card-reverse: #C5C3C6;
 	--dark-mode-background: #46494C;
 	--labels: #5FAD41;
-	--buttons: #E71D36;
+	--buttons-light-mode: #E71D36;
+	--buttons-dark-mode: #ffd400;
 	--white: white;
 	--black: #000000;
 }
@@ -183,7 +184,7 @@ strong {
 
 :any-link {
 	text-decoration: none;
-	color: var(--buttons);
+	color: var(--black);
 }
 
 .footer-text {
@@ -207,9 +208,9 @@ li::marker {
 
 /* button text colour is determined by link colour */
 .btn {
-	background-color: var(--white);
+	background-color: #ffd5005b;
 	border-radius: 15px;
-	border: 1px solid var(--buttons);
+	border: 1px solid var(--buttons-dark-mode);
 	font-weight: 500;
 	font-size: 1.15rem;
 	padding: 8px 10px;
@@ -220,13 +221,12 @@ li::marker {
 }
 
 .btn:hover {
-	box-shadow: 0 4px 12px 0 rgba(231, 31, 39, 0.35);
+	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.35);
 }
 
 hr {
-	color: var(--buttons);
 	width: 3px;
-	background-color: var(--buttons);
+	background-color: var(--buttons-dark-mode);
 	border-width: 0;
 }
 
