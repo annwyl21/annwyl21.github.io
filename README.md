@@ -13,10 +13,24 @@ I am looking for my first job as a junior software developer.
 **Programming Languages:**
 - Python
 - JavaScript
+- SQL
 - HTML
 - CSS
-- SQL
-- Regular Expressions (Regex)
+
+**Database Management:**
+- MySQL
+- MySQL Workbench
+- PostgreSQL (Docker Image)
+- Mongo DB
+- MongoDB Compass
+
+**Version Control & Containerization:**
+- Git
+- Github Version Control
+- Github Actions & Projects
+- Ubuntu/WSL
+- Docker & Dockerhub
+- GitBash
 
 **Frameworks & Libraries:**
 - Pytest
@@ -25,31 +39,23 @@ I am looking for my first job as a junior software developer.
 - Flask
 - Matplotlib
 - Pandas
+- NumPy
+- NLTK
+- Rehex
+- Bootstrap
+- Beautiful Soup (BS4)
 
-**Database Management:**
-- MySQL
-- PostgreSQL
-
-**Operating Systems:**
-- Ubuntu
-- Linux Command Line
-
-**Version Control & Containerization:**
-- Git
-- GitBash
-- GitHub
-- GitHub Workflow
-- Docker
-- DockerHub
 
 **Development Environments/IDEs:**
 - Visual Studio Code (VSCode)
 - PyCharm
+- Jupyter Notebook
 
 **APIs & AI Engineering:**
-- Postman
+- Python Requests
 - Azure Cognitive API
 - AI Prompt Engineering
+- Postman
 
 **Agile Development:**
 - Agile
