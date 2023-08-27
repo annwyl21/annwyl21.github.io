@@ -27,7 +27,7 @@ body {
 
     grid-template-areas: 
     'header header header'
-    'main main aside'
+    'main main main'
     'section section aside'
     'footer footer footer'
     ;
@@ -90,7 +90,7 @@ nav {
 }
 
 .intro-text {
-	max-width: 630px;
+	max-width: 950px;
 	font-size: 1.5rem;
 }
 
@@ -386,7 +386,7 @@ input:focus + .slider {
 
 /* TODO */
 /* skills needs to be sent to end between 1260 & 400px to maintain screen display */
-@media screen and (max-width: 1260px){
+@media screen and (max-width: 1281px){
 	.container {
 		grid-template-areas: 
 		/* placeholder references */
