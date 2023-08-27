@@ -179,7 +179,7 @@ let body = document.getElementById('body');
 let flipCardStyle = document.getElementsByClassName('flip-card-front');
 let flipCard = document.getElementsByClassName('flip-card');
 let labelArray = document.getElementsByTagName('h1');
-let hr = document.getElementsByTagName('hr')[0];
+let hr = document.getElementsByTagName('hr');
 // defining the button
 document.getElementById('themeButton').addEventListener('click', function() {
     if (theme == 'light') {
@@ -198,6 +198,7 @@ document.getElementById('themeButton').addEventListener('click', function() {
     };
     for (let i=0; i<hr.length; i++){
         hr.style.backgroundColor = "var(--buttons-dark-mode)";
+        hr.style.color = "var(--buttons-dark-mode)";
     };
     
     } else {
@@ -215,6 +216,7 @@ document.getElementById('themeButton').addEventListener('click', function() {
     };
     for (let i=0; i<hr.length; i++){
         hr.style.backgroundColor = "var(--buttons-light-mode)";
+        hr.style.color = "var(--buttons-light-mode)";
     }
 }
 });

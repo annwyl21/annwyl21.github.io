@@ -227,6 +227,7 @@ li::marker {
 hr {
 	width: 3px;
 	background-color: var(--buttons-dark-mode);
+	color: var(--buttons-dark-mode);
 	border-width: 0;
 }
 
