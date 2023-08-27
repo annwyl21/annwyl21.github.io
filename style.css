@@ -297,7 +297,7 @@ input:focus + .slider {
 }
 
 .flip-image {
-	border-radius: 12px;
+	border-radius: 12px 12px 0px 0px;
 	max-width: 250px;
 }
 

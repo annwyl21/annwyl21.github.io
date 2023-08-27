@@ -148,7 +148,7 @@ function animation(){
     let random = Math.round(Math.random()*(buttonArray.length-1));
     let num = random;
     animatebutton(num);
-    setTimeout(resetbutton, 750, num);
+    setTimeout(resetbutton, 1000, num);
 };
 function animatebutton(num){
     buttonArray[num].classList.add('btn-animation');
