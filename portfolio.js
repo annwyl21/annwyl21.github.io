@@ -163,10 +163,8 @@ setInterval(animation, 5000);
 for (let i=0; i<buttonArray.length; i++){
     let selectedButton = buttonArray[i];
     selectedButton.addEventListener('mouseover', function(){
-        selectedButton.style.fontSize="1.5rem";
         selectedButton.style.borderWidth="3px";
     selectedButton.addEventListener('mouseout', function(){
-        selectedButton.style.fontSize="1rem";
         selectedButton.style.borderWidth="1px";
     })
     })
@@ -197,8 +195,9 @@ document.getElementById('themeButton').addEventListener('click', function() {
         buttonArray[i].style.borderColor = "var(--buttons-dark-mode)";
     };
     for (let i=0; i<hr.length; i++){
-        hr.style.backgroundColor = "var(--buttons-dark-mode)";
-        hr.style.color = "var(--buttons-dark-mode)";
+        // hr.style.backgroundColor = "var(--buttons-dark-mode)";
+        // hr.style.color = "var(--buttons-dark-mode)";
+        hr.style.borderColor = "var(--buttons-dark-mode)";
     };
     
     } else {
@@ -215,8 +214,9 @@ document.getElementById('themeButton').addEventListener('click', function() {
         buttonArray[i].style.borderColor = "var(--buttons-light-mode)";
     };
     for (let i=0; i<hr.length; i++){
-        hr.style.backgroundColor = "var(--buttons-light-mode)";
-        hr.style.color = "var(--buttons-light-mode)";
+        // hr.style.backgroundColor = "var(--buttons-light-mode)";
+        // hr.style.color = "var(--buttons-light-mode)";
+        hr.style.borderColor = "var(--buttons-light-mode)";
     }
 }
 });

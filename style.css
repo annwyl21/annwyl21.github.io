@@ -230,9 +230,10 @@ li::marker {
 
 hr {
 	width: 3px;
-	background-color: var(--buttons-dark-mode);
-	color: var(--buttons-dark-mode);
+	/* background-color: var(--buttons-dark-mode); */
+	/* color: var(--buttons-dark-mode); */
 	border-width: 0;
+	border-color: var(--buttons-dark-mode);
 }
 
 
@@ -359,27 +360,22 @@ input:focus + .slider {
 	0% {
 		background: linear-gradient(225deg, rgba(0, 0, 0, 0) 10%, white 15%, rgba(0, 0, 0, 0) 20%);
 		border-width: 2px;
-		font-size:1.15rem;
 	}
 	25% {
 		background: linear-gradient(225deg, rgba(0, 0, 0, 0) 30%, white 35%, rgba(0, 0, 0, 0) 40%);
 		border-width:3px;
-		font-size: 1.25rem;
 	}
 	50% {
 		background: linear-gradient(225deg, rgba(0, 0, 0, 0) 50%, white 55%, rgba(0, 0, 0, 0) 60%);
 		border-width:5px;
-		font-size: 1.35rem;
 	}
 	75% {
 		background: linear-gradient(225deg, rgba(0, 0, 0, 0) 70%, white 75%, rgba(0, 0, 0, 0) 80%);
 		border-width:3px;
-		font-size: 1.25rem;
 	}
 	100% {
 		background: linear-gradient(225deg, rgba(0, 0, 0, 0) 90%, white 95%, rgba(0, 0, 0, 0) 100%);
 		border-width:2px;
-		font-size: 1.15rem;
 	}
 }
 
