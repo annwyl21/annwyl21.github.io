@@ -14,7 +14,7 @@ let offWhite = getComputedStyle(document.documentElement).getPropertyValue('--ca
 let theme = 'dark';
 
 // all the elements that change
-let body = document.getElementById('body');
+let body = document.getElementsByTagName('body')[0];
 let labelArray = document.getElementsByTagName('h1');
 let hr = document.getElementsByTagName('hr');
 // main section
