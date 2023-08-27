@@ -352,29 +352,29 @@ input:focus + .slider {
   /* button animations */
   @keyframes btn-animation {
 	0% {
-		background: linear-gradient(225deg, rgba(0, 0, 0, 0.177) 10%, white 15%, rgba(0, 0, 0, 0.177) 20%);
+		background: linear-gradient(225deg, rgba(0, 0, 0, 0) 10%, white 15%, rgba(0, 0, 0, 0) 20%);
 		border-width: 2px;
-		font-size:1.25rem;
+		font-size:1.15rem;
 	}
 	25% {
-		background: linear-gradient(225deg, rgba(0, 0, 0, 0.177) 30%, white 35%, rgba(0, 0, 0, 0.177) 40%);
+		background: linear-gradient(225deg, rgba(0, 0, 0, 0) 30%, white 35%, rgba(0, 0, 0, 0) 40%);
 		border-width:3px;
-		font-size: 1.35rem;
+		font-size: 1.25rem;
 	}
 	50% {
-		background: linear-gradient(225deg, rgba(0, 0, 0, 0.177) 50%, white 55%, rgba(0, 0, 0, 0.177) 60%);
+		background: linear-gradient(225deg, rgba(0, 0, 0, 0) 50%, white 55%, rgba(0, 0, 0, 0) 60%);
 		border-width:5px;
-		font-size: 1.5rem;
-	}
-	75% {
-		background: linear-gradient(225deg, rgba(0, 0, 0, 0.177) 70%, white 75%, rgba(0, 0, 0, 0.177) 80%);
-		border-width:3px;
 		font-size: 1.35rem;
 	}
-	100% {
-		background: linear-gradient(225deg, rgba(0, 0, 0, 0.177) 90%, white 95%, rgba(0, 0, 0, 0.177) 100%);
-		border-width:2px;
+	75% {
+		background: linear-gradient(225deg, rgba(0, 0, 0, 0) 70%, white 75%, rgba(0, 0, 0, 0) 80%);
+		border-width:3px;
 		font-size: 1.25rem;
+	}
+	100% {
+		background: linear-gradient(225deg, rgba(0, 0, 0, 0) 90%, white 95%, rgba(0, 0, 0, 0) 100%);
+		border-width:2px;
+		font-size: 1.15rem;
 	}
 }
 
