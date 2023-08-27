@@ -4,6 +4,13 @@ let brand;
 let projectsCollection;
 let skillsCollection;
 
+// Colours
+let yellow = getComputedStyle(document.documentElement).getPropertyValue('--buttons-dark-mode');
+let crimson = getComputedStyle(document.documentElement).getPropertyValue('--buttons-light-mode');
+let darkGrey = getComputedStyle(document.documentElement).getPropertyValue('--dark-mode-background');
+let lightGrey = getComputedStyle(document.documentElement).getPropertyValue('--light-mode-background');
+let offWhite = getComputedStyle(document.documentElement).getPropertyValue('--card-reverse');
+
 // import the content from my json files to populate the site
 try {
     let response = await fetch('./brand.json');
@@ -182,41 +189,37 @@ let hr = document.getElementsByTagName('hr');
 document.getElementById('themeButton').addEventListener('click', function() {
     if (theme == 'light') {
     theme = 'dark'
-    body.style.backgroundColor = "var(--dark-mode-background)";
-    body.style.color = "var(--light-mode-background)";
+    body.style.backgroundColor = darkGrey;
+    body.style.color = offWhite;
     for (let i=0; i<flipCardStyle.length; i++){
-        flipCardStyle[i].style.backgroundColor = "var(--card-reverse)";
-        flipCardStyle[i].style.color = "var(--dark-mode-background)";
-        flipCard[i].style.borderColor = "var(--buttons-dark-mode)";
+        flipCardStyle[i].style.backgroundColor = lightGrey;
+        flipCardStyle[i].style.color = darkGrey;
+        flipCard[i].style.borderColor = yellow;
         
     };
     for (let i=0; i<buttonArray.length; i++){
         buttonArray[i].style.backgroundColor = "#ffd5005b";
-        buttonArray[i].style.borderColor = "var(--buttons-dark-mode)";
+        buttonArray[i].style.borderColor = yellow;
     };
     for (let i=0; i<hr.length; i++){
-        // hr.style.backgroundColor = "var(--buttons-dark-mode)";
-        // hr.style.color = "var(--buttons-dark-mode)";
-        hr.style.borderColor = "var(--buttons-dark-mode)";
+        hr[i].style.borderColor = yellow;
     };
     
     } else {
     theme = 'light'
-    body.style.backgroundColor = "var(--light-mode-background)";
-    body.style.color = "var(--dark-mode-background)";
+    body.style.backgroundColor = offWhite;
+    body.style.color = darkGrey;
     for (let i=0; i<flipCardStyle.length; i++){
-        flipCardStyle[i].style.backgroundColor = "var(--dark-mode-background)";
-        flipCardStyle[i].style.color = "var(--white)";
-        flipCard[i].style.borderColor = "var(--buttons-light-mode)";
+        flipCardStyle[i].style.backgroundColor = darkGrey;
+        flipCardStyle[i].style.color = "white";
+        flipCard[i].style.borderColor = crimson;
         };
     for (let i=0; i<buttonArray.length; i++){
         buttonArray[i].style.backgroundColor = "#e7201d2f";
-        buttonArray[i].style.borderColor = "var(--buttons-light-mode)";
+        buttonArray[i].style.borderColor = crimson;
     };
     for (let i=0; i<hr.length; i++){
-        // hr.style.backgroundColor = "var(--buttons-light-mode)";
-        // hr.style.color = "var(--buttons-light-mode)";
-        hr.style.borderColor = "var(--buttons-light-mode)";
+        hr[i].style.borderColor = crimson;
     }
 }
 });
