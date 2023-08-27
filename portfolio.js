@@ -38,7 +38,7 @@ try {
 // MAIN INTRO SECTION
 //populate introduction text
 let brandPara = document.getElementById('brand');
-brandPara.innerHTML += `<span>${brand.portfolioIntro}</span>`;
+brandPara.innerHTML += `<p>${brand.portfolioIntro}</p>`;
 
 // PROJECT CARDS SECTION
 function createhr(projectDiv){
@@ -81,8 +81,8 @@ function createFlipCard(projectDiv, myProject, index){
     let flipCardBack = document.createElement('div');
     flipCardBack.classList.add('flip-card-back');
     flipCardInner.appendChild(flipCardBack);
-    flipCardBack.style.cssText = "padding: 30px 10px 0px 20px; text-align: left;";
-    flipCardBack.innerHTML = `<span>${myProject.detail}<span><br><span><i>Built with: ${myProject.skills}</i></span>`;
+    flipCardBack.style.cssText = "padding: 15px 10px 0px 20px; text-align: left;";
+    flipCardBack.innerHTML = `<p>${myProject.detail}<p><span><i>${myProject.skills}</i></span>`;
 };
 
 function createProjTextBox(projectDiv, myProject){

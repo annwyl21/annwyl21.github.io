@@ -52,6 +52,10 @@ body {
 	margin: 15px;
 }
 
+span {
+	font-weight: 600;
+}
+
 h1 {
 	color: var(--labels);
 }
