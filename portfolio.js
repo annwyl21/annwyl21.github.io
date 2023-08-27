@@ -136,12 +136,6 @@ for (let index=0; index<=projectsCollection.length-1; index++){
         createhr(projectDiv);
         createFlipCard(projectDiv, myProject, index);
 
-        // change settings to switch direction of card shape
-        flipCardStyle[index].style.borderRadius = "80px 80px 80px 12px";
-        flipCardReverse[index].style.borderRadius = "80px 80px 80px 12px";
-        flipCardInner[index].style.borderRadius = "80px 80px 80px 12px";
-        flipCard[index].style.borderRadius = "80px 80px 80px 12px";
-
     }else{
         // odd rows cards then text
         createFlipCard(projectDiv, myProject, index);
