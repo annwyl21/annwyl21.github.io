@@ -57,8 +57,8 @@ span {
 }
 
 h1 {
-	/* color: var(--labels); */
 	background: linear-gradient(180deg, #4c8a34 40%, #559b3a 60%, #5fad41 80%, #6fb554 100%);
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
