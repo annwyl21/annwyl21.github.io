@@ -11,6 +11,24 @@ let darkGrey = getComputedStyle(document.documentElement).getPropertyValue('--da
 let lightGrey = getComputedStyle(document.documentElement).getPropertyValue('--light-mode-background');
 let offWhite = getComputedStyle(document.documentElement).getPropertyValue('--card-reverse');
 
+let theme = 'dark';
+
+// all the elements that change
+let body = document.getElementById('body');
+let labelArray = document.getElementsByTagName('h1');
+let hr = document.getElementsByTagName('hr');
+// main section
+let brandPara = document.getElementById('brand');
+// projects section
+let projectSection = document.getElementById('experience');
+let buttonArray = document.getElementsByTagName('button');
+let flipCardStyle = document.getElementsByClassName('flip-card-front');
+let flipCardReverse = document.getElementsByClassName('flip-card-back');
+let flipCardInner = document.getElementsByClassName('flip-card-inner');
+let flipCard = document.getElementsByClassName('flip-card');
+// skills section
+let mySkills = document.getElementById('mySkills');
+
 // import the content from my json files to populate the site
 try {
     let response = await fetch('./brand.json');
@@ -44,7 +62,6 @@ try {
 
 // MAIN INTRO SECTION
 //populate introduction text
-let brandPara = document.getElementById('brand');
 brandPara.innerHTML += `<p>${brand.portfolioIntro}</p>`;
 
 // PROJECT CARDS SECTION
@@ -103,7 +120,6 @@ function createProjTextBox(projectDiv, myProject){
 };
 
 //generate project section
-let projectSection = document.getElementById('experience');
 // for every project create a project div
 for (let index=0; index<=projectsCollection.length-1; index++){
     let myProject = projectsCollection[index];
@@ -120,18 +136,29 @@ for (let index=0; index<=projectsCollection.length-1; index++){
         createhr(projectDiv);
         createFlipCard(projectDiv, myProject, index);
 
+        // change settings to switch direction of card shape
+        flipCardStyle[index].style.borderRadius = "80px 80px 80px 12px";
+        flipCardReverse[index].style.borderRadius = "80px 80px 80px 12px";
+        flipCardInner[index].style.borderRadius = "80px 80px 80px 12px";
+        flipCard[index].style.borderRadius = "80px 80px 80px 12px";
+
     }else{
         // odd rows cards then text
         createFlipCard(projectDiv, myProject, index);
         createhr(projectDiv);
         createProjTextBox(projectDiv, myProject);
+
+        // change settings to switch direction of card shape
+        flipCardStyle[index].style.borderRadius = "80px 80px 12px 80px";
+        flipCardReverse[index].style.borderRadius = "80px 80px 12px 80px";
+        flipCardInner[index].style.borderRadius = "80px 80px 12px 80px";
+        flipCard[index].style.borderRadius = "80px 80px 12px 80px";
+
     }
 };
 
 // ASIDE SECTION
 // generate skills section
-let mySkills = document.getElementById('mySkills');
-
 for (let i=0; i<skillsCollection.length; i++){
     // create unordered list for each list of skills using title and info
     let skillHeading = document.createElement('div');
@@ -150,7 +177,6 @@ for (let i=0; i<skillsCollection.length; i++){
 };
 
 // BUTTON ANIMATION
-let buttonArray = document.getElementsByTagName('button');
 function animation(){
     let random = Math.round(Math.random()*(buttonArray.length-1));
     let num = random;
@@ -178,14 +204,6 @@ for (let i=0; i<buttonArray.length; i++){
 }
 
 // TOGGLE THEME BUTTON
-let theme = 'dark';
-// all the elements that change
-let body = document.getElementById('body');
-let flipCardStyle = document.getElementsByClassName('flip-card-front');
-let flipCardReverse = document.getElementsByClassName('flip-card-back');
-let flipCard = document.getElementsByClassName('flip-card');
-let labelArray = document.getElementsByTagName('h1');
-let hr = document.getElementsByTagName('hr');
 // defining the button
 document.getElementById('themeButton').addEventListener('click', function() {
     if (theme == 'light') {
