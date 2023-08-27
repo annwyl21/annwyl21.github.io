@@ -297,7 +297,7 @@ input:focus + .slider {
 }
 
 .flip-image {
-	border-radius: 12px 12px 0px 0px;
+	border-radius: 80px 80px 0px 0px;
 	max-width: 250px;
 }
 
@@ -307,7 +307,7 @@ input:focus + .slider {
     background-color: transparent;
     width: 250px;
     height: 360px;
-	border-radius: 12px;
+	border-radius: 80px 80px 80px 12px;
 	border: 1px solid var(--card-reverse);
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
 	align-self: center;
@@ -317,7 +317,7 @@ input:focus + .slider {
     position: relative;
     width: 100%;
     height: 100%;
-	border-radius: 12px;
+	border-radius: 80px 80px 80px 12px;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
@@ -330,7 +330,7 @@ input:focus + .slider {
   .flip-card-front, .flip-card-back {
     position: absolute;
 	box-sizing:border-box;
-	border-radius: 12px;
+	border-radius: 80px 80px 80px 12px;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */

@@ -81,7 +81,7 @@ function createFlipCard(projectDiv, myProject, index){
     let flipCardBack = document.createElement('div');
     flipCardBack.classList.add('flip-card-back');
     flipCardInner.appendChild(flipCardBack);
-    flipCardBack.style.cssText = "padding: 20px; text-align: left;";
+    flipCardBack.style.cssText = "padding: 30px 10px 0px 20px; text-align: left;";
     flipCardBack.innerHTML = `<span>${myProject.detail}<span><br><span><i>Built with: ${myProject.skills}</i></span>`;
 };
 
