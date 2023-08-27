@@ -358,23 +358,23 @@ input:focus + .slider {
   @keyframes btn-animation {
 	0% {
 		background: linear-gradient(225deg, rgba(0, 0, 0, 0) 10%, white 15%, rgba(0, 0, 0, 0) 20%);
-		border-width: 2px;
+		border-width: 1px;
 	}
 	25% {
 		background: linear-gradient(225deg, rgba(0, 0, 0, 0) 30%, white 35%, rgba(0, 0, 0, 0) 40%);
-		border-width:3px;
+		border-width:1px;
 	}
 	50% {
 		background: linear-gradient(225deg, rgba(0, 0, 0, 0) 50%, white 55%, rgba(0, 0, 0, 0) 60%);
-		border-width:5px;
+		border-width:1px;
 	}
 	75% {
 		background: linear-gradient(225deg, rgba(0, 0, 0, 0) 70%, white 75%, rgba(0, 0, 0, 0) 80%);
-		border-width:3px;
+		border-width:1px;
 	}
 	100% {
 		background: linear-gradient(225deg, rgba(0, 0, 0, 0) 90%, white 95%, rgba(0, 0, 0, 0) 100%);
-		border-width:2px;
+		border-width:1px;
 	}
 }
 
