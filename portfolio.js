@@ -177,6 +177,7 @@ let theme = 'dark';
 // all the elements that change
 let body = document.getElementById('body');
 let flipCardStyle = document.getElementsByClassName('flip-card-front');
+let flipCard = document.getElementsByClassName('flip-card');
 let labelArray = document.getElementsByTagName('h1');
 let hr = document.getElementsByTagName('hr')[0];
 // defining the button
@@ -188,10 +189,17 @@ document.getElementById('themeButton').addEventListener('click', function() {
     for (let i=0; i<flipCardStyle.length; i++){
         flipCardStyle[i].style.backgroundColor = "var(--card-reverse)";
         flipCardStyle[i].style.color = "var(--dark-mode-background)";
+        flipCard[i].style.borderColor = "var(--buttons-dark-mode)";
+        
+    };
+    for (let i=0; i<buttonArray.length; i++){
         buttonArray[i].style.backgroundColor = "#ffd5005b";
         buttonArray[i].style.borderColor = "var(--buttons-dark-mode)";
-    }
-    hr.style.backgroundColor = "var(--buttons-dark-mode)";
+    };
+    for (let i=0; i<hr.length; i++){
+        hr.style.backgroundColor = "var(--buttons-dark-mode)";
+    };
+    
     } else {
     theme = 'light'
     body.style.backgroundColor = "var(--light-mode-background)";
@@ -199,9 +207,14 @@ document.getElementById('themeButton').addEventListener('click', function() {
     for (let i=0; i<flipCardStyle.length; i++){
         flipCardStyle[i].style.backgroundColor = "var(--dark-mode-background)";
         flipCardStyle[i].style.color = "var(--white)";
+        flipCard[i].style.borderColor = "var(--buttons-light-mode)";
+        };
+    for (let i=0; i<buttonArray.length; i++){
         buttonArray[i].style.backgroundColor = "#e7201d2f";
         buttonArray[i].style.borderColor = "var(--buttons-light-mode)";
-        }
+    };
+    for (let i=0; i<hr.length; i++){
         hr.style.backgroundColor = "var(--buttons-light-mode)";
+    }
 }
 });

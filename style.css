@@ -308,7 +308,7 @@ input:focus + .slider {
     width: 250px;
     height: 360px;
 	border-radius: 80px 80px 80px 12px;
-	border: 1px solid var(--card-reverse);
+	border: 1px solid var(--buttons-dark-mode);
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
 	align-self: center;
   }
