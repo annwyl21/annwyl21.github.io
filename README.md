@@ -3,7 +3,7 @@
 
 # Ellen Houghton
 
-![Ellen Houghton CV wordcloud](./images/EllenHoughtonCVwordcloud_oranges.png)
+![Ellen Houghton CV wordcloud](./images/EllenHoughtonCVwordcloudAug16.png)
 
 *Wordcloud created dynamically using text scraped from my cv html page*
 
@@ -70,8 +70,3 @@ I am looking for my first job as a junior software developer.
 - Discord
 - Signal
 - Teams
-
-**Updated Wordcloud**
-My wordcloud updated in July 2023 with the new technologies that I have learnt over the last 6-months.
-
-![Ellen Houghton updated wordcloud](./images/EllenHoughtonCVwordcloudJuly23.png)

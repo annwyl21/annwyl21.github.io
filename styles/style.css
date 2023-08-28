@@ -182,7 +182,7 @@ strong {
 .footer {
 	grid-area: footer;
 	background-color: var(--dark-mode-background);
-	background-image: url(./images/footer.png);
+	background-image: url(./footer.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;

@@ -31,10 +31,10 @@ let mySkills = document.getElementById('mySkills');
 
 // import the content from my json files to populate the site
 try {
-    let response = await fetch('./brand.json');
+    let response = await fetch('./scripts/brand.json');
     brand = await response.json();
 
-    response = await fetch('./project.json');
+    response = await fetch('./scripts/project.json');
     let project = await response.json();
     let yahtzee = project.yahtzeeScorerProject;
     let brewqueue = project.brewqueue;
@@ -46,7 +46,7 @@ try {
     let heathrowHeatmaps = project.heathrowHeatmaps;
     projectsCollection = [yahtzee, brewqueue, heathrowHeatmaps, symptomLogger, debtComparisonCalculator, weatherApi, sentenceTranslation, rps];
 
-    response = await fetch('./skills.json');
+    response = await fetch('./scripts/skills.json');
     let skills = await response.json();
     let languages = skills.knowledge.languages;
     let database = skills.knowledge.database;

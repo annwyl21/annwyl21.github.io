@@ -5,7 +5,7 @@ import web_scraper as ws
 
 def create_CVwordcloud():
 
-    with open('./wordcloud/my_cv2.txt', 'r') as f:
+    with open('./wordcloud/my_cv.txt', 'r') as f:
         my_cv = f.read()
 
     stopwords = set(STOPWORDS)
@@ -25,7 +25,7 @@ def create_CVwordcloud():
     plt.figure()
     plt.imshow(colors, interpolation="bilinear")
     plt.axis('off')
-    plt.savefig('EllenHoughtonCVwordcloudAug16.png')
+    plt.savefig('wordCloud.png')
     plt.show()
 
 # ws.web_scraper()
