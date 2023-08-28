@@ -7,7 +7,7 @@
 	--dark-mode-background: #46494C;
 	--labels: #5FAD41;
 	--buttons-light-mode: #E71D36;
-	--buttons-dark-mode: #ffd400;
+	--buttons-dark-mode: #ffd500;
 	--white: white;
 	--black: #000000;
 }
@@ -187,6 +187,18 @@ strong {
 	background-position: center;
 	background-size: cover;
 	margin: 25px 0 0 0;
+}
+
+.page2Header {
+	background-color: var(--dark-mode-background);
+	background-image: url(./footer.png);	
+}
+
+.page2Title {
+	display: flex;
+	background: linear-gradient(to left, rgba(0, 0, 0, 0) 75%, rgba(207, 135, 28, 0.69) 100%);
+	padding: 25px;
+
 }
 
 :any-link {
