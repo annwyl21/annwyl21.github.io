@@ -3,6 +3,7 @@ let skills;
 let brand;
 let projectsCollection;
 let skillsCollection;
+let projectVariable = "yahtzee";
 
 // Colours
 let yellow = getComputedStyle(document.documentElement).getPropertyValue('--buttons-dark-mode');
