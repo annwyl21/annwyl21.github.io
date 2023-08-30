@@ -1,7 +1,7 @@
 {
 	"yahtzeeScorerProject": {
 		"projectName": "Yahtzee Scorer",
-		"info": "This scorer allows a user to play the game against the computer tracking the score in a scoreboard object.<br>This project demonstrates my understanding of <strong>object-oriented programming</strong>, ability to code the scoring logic required for yahtzee and the commit history in github will show that I built this project using <strong>Test Driven Development</strong> - writing the tests before writing the code.<br>For this project I used <strong>GitHub Actions</strong> to create a workflow, initiating automatic unit tests to continuously ensure the quality of my code.",
+		"info": "This scorer allows a user to play the game against the computer tracking the score in a scoreboard object.<br>This project demonstrates my understanding of <strong>object-oriented programming</strong>, ability to code the scoring logic required for yahtzee and the commit history shows that I built this project using <strong>Test Driven Development</strong> - writing the tests before writing the code.<br>For this project I used <strong>GitHub Actions</strong> to create a workflow, initiating automatic unit tests to continuously ensure the quality of my code.",
 		"detail": "I used pytest and Pexpect for <span>unit testing</span>, the <span>debugger</span> tool to identify errors swiftly and an <span>Agile GitHub Project Board</span> to efficiently manage tasks and break objectives into manageable chunks.<br>This helped me to keeping the project on track and deliver my goals.",
 		"image": "./images/yahtzeeScorerProject-main.jpg",
 		"alt": "Test Driven Development for my Yahtzee Score Calculator",
@@ -31,9 +31,9 @@
 		"detail": "An interesting puzzle that I researched and handled was the <span>Unix Epoch</span> which changed how my date data was handled.",
 		"image": "./images/heathrowHeatmaps-main.jpg",
 		"alt": "Heatmap displaying a decade of rainfall (total rainfall in mm)",
-		"imagesArray": ["./images/heathrow_rainfall_heatmap_decade_small.jpg", "./images/heathrow_min_temp_heatmap_small.jpg", "./images/heathrow_heatmap_1950_2020_small.jpg"],
+		"imagesArray": ["./images/heathrow_rainfall_heatmap_decade.jpg", "./images/heathrow_min_temp_heatmap.jpg", "./images/heathrow_heatmap_1950_2020.jpg"],
 		"altArray": ["Heatmap displaying a decade of rainfall (total rainfall in mm)", "Heatmap displaying 20yrs of weather data (mean daily min temp)", "Heatmap displaying 70yrs of weather data (mean daily max temp)"],
-		"more-info": ["A heatmap to show 10 years of weather data, displaying the total rainfall in mm at Heathrow Airport.", "A heatmap to show 20 years of weather data, displaying the mean daily min temperature at Heathrow Airport.", "A heatmap to show 70 years of weather data, displaying the mean daily max temperature at Heathrow Airport."],
+		"moreInfo": ["A heatmap to show 10 years of weather data, displaying the total rainfall in mm at Heathrow Airport.", "A heatmap to show 20 years of weather data, displaying the mean daily min temperature at Heathrow Airport.", "A heatmap to show 70 years of weather data, displaying the mean daily max temperature at Heathrow Airport."],
 		"skills": ["Python", "Matplotlib", "Pandas"],
 		"badges": ["Python", "Data Visualisation"],
 		"github": "https://github.com/annwyl21/heatmap_weather",
@@ -78,6 +78,7 @@
 		"skills": ["JavaScript", "Node.js", "Browser Dev Tools/Debugger", "HTML", "CSS"],
 		"badges": ["JavaScript", "Node.js", "HTML & CSS"],
 		"github": "https://github.com/annwyl21",
+		"localLink": "./RockPaperScissors/Assignment_5_Ellen_2of3.html",
 		"primaryLink": "./RockPaperScissors/Assignment_5_Ellen_2of3.html",
 		"seeMore": "Play Rock, Paper, Scissors"
 	},

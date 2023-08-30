@@ -1,5 +1,5 @@
 let project;
-let projectVariable = "yahtzee";
+let projectVariable = "debt";
 let selectedProject;
 
 // import the content from my json project file to populate the page
@@ -41,14 +41,52 @@ try {
 }
 
 // PROJECT PAGE
-let extraInfo = document.getElementsByClassName('extraInfo');
+let extraInfo = document.getElementsByClassName('extraInfo')[0];
 
 // title
-extraInfo.innerHTML = `<h1>${selectedProject.projectName}</h1>`;
+extraInfo.innerHTML += `<h1 class="projectSpecific">${selectedProject.projectName}</h1>`;
+let myBadge=selectedProject.badges;
+for (let b=0; b<myBadge.length; b++){
+    // TODO change abbreviations on badges and centre
+    extraInfo.innerHTML += `<span class="badge projectSpecificBadge">${myBadge[b]}</span>`;
+};
 
-/*		badges
-		extra extraInfo
-		auto images
-		<button class="btn"><a class="menu" href="mailto:ellen.a.ash@gmail.com">Contact Me</a></button>
-		main extraInfoskills
-		card-reverse details */
+// links
+let links = document.createElement('div');
+extraInfo.appendChild(links);
+if (selectedProject.github){
+    links.innerHTML += `<a href="${selectedProject.github}" target="_blank"><img src="./icons/icons8-github-90.png" alt="linked in icon by Icons8.com"></a>`
+}
+if (selectedProject.docker){
+    links.innerHTML += `<a href="${selectedProject.docker}" target="_blank"><img src="./icons/icons8-docker-96.png" alt="linked in icon by Icons8.com"></a>`
+}
+if (selectedProject.azure){
+    links.innerHTML += `<button class="btn"><a href="${selectedProject.azure}">Link to Azure Container</a></button>`
+}
+if (selectedProject.localLink){
+    links.innerHTML += `<button class="btn"><a href="${selectedProject.localLink}">Play with ${selectedProject.projectName}`
+}
+
+
+
+
+extraInfo.innerHTML += `<p>${selectedProject.skills}</p>`
+
+
+if (selectedProject.extraInfo){
+    extraInfo.innerhtml += `<p>${selectedProject.extraInfo}</p>`
+}
+
+if (selectedProject.imagesArray){
+    extraInfo.innerHTML += `<br><img src="${selectedProject.image}" alt="${selectedProject.alt}">`
+    for (let a=0; a<selectedProject.imagesArray.length; a++){
+        extraInfo.innerHTML += `<img src="${selectedProject.imagesArray[a]}" alt="${selectedProject.altArray[a]}"><p>${selectedProject.moreInfo[a]}</p>`
+    }
+}else{
+    extraInfo.innerHTML += `<br><img src="${selectedProject.image}" alt="${selectedProject.alt}">`
+}
+
+extraInfo.innerHTML += `<p>${selectedProject.info}</p>`
+extraInfo.innerHTML += `<p>${selectedProject.detail}</p>`
+
+

@@ -202,8 +202,23 @@ strong {
 .page2Title {
 	display: flex;
 	background: radial-gradient(rgba(0, 0, 0, 0), rgba(207, 135, 28, 0.69));
-	padding: 15px 3px;
+	padding: 15px;
 	justify-content: space-between;
+}
+
+.extraInfo {
+	padding: 15px;
+}
+
+.projectSpecific {
+	text-align: center;
+	font-size: 3.5rem;
+}
+
+.projectSpecificBadge {
+	font-size: 1.5rem;
+	font-weight: 200;
+	
 }
 
 :any-link {
