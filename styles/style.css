@@ -181,19 +181,21 @@ strong {
 
 .footer {
 	grid-area: footer;
-	background-color: var(--dark-mode-background);
-	background-image: url(./footer.png);
+	background: var(--dark-mode-background) url(./footer.png) no-repeat center;
+	/* background-color: var(--dark-mode-background); */
+	/* background-image: url(./footer.png);
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center; */
 	background-size: cover;
 	margin: 25px 0 0 0;
 }
 
 .page2Header {
-	background-color: var(--dark-mode-background);
+	background: var(--dark-mode-background) url(./footer.png) no-repeat center;
+	/* background-color: var(--dark-mode-background);
 	background-image: url(./footer.png);
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center; */
 	background-size: cover;	
 }
 

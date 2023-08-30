@@ -43,7 +43,12 @@ try {
 // PROJECT PAGE
 let extraInfo = document.getElementsByClassName('extraInfo');
 
-// create the page
-let projectName = document.createElement('h1');
-projectName.appendChild(extraInfo);
-projectName.innerHTML = selectedProject.projectName;
+// title
+extraInfo.innerHTML = `<h1>${selectedProject.projectName}</h1>`;
+
+/*		badges
+		extra extraInfo
+		auto images
+		<button class="btn"><a class="menu" href="mailto:ellen.a.ash@gmail.com">Contact Me</a></button>
+		main extraInfoskills
+		card-reverse details */
