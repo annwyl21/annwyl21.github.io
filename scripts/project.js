@@ -1,5 +1,5 @@
 let project;
-let projectVariable = "debt";
+let projectVariable = "heathrowHeatmaps";
 let selectedProject;
 
 // import the content from my json project file to populate the page
@@ -45,47 +45,61 @@ let extraInfo = document.getElementsByClassName('extraInfo')[0];
 
 // title
 extraInfo.innerHTML += `<h1 class="projectSpecific">${selectedProject.projectName}</h1>`;
-let myBadge=selectedProject.badges;
-for (let b=0; b<myBadge.length; b++){
-    // TODO change abbreviations on badges and centre
-    extraInfo.innerHTML += `<span class="badge projectSpecificBadge">${myBadge[b]}</span>`;
-};
 
-// links
-let links = document.createElement('div');
-extraInfo.appendChild(links);
-if (selectedProject.github){
-    links.innerHTML += `<a href="${selectedProject.github}" target="_blank"><img src="./icons/icons8-github-90.png" alt="linked in icon by Icons8.com"></a>`
-}
-if (selectedProject.docker){
-    links.innerHTML += `<a href="${selectedProject.docker}" target="_blank"><img src="./icons/icons8-docker-96.png" alt="linked in icon by Icons8.com"></a>`
-}
-if (selectedProject.azure){
-    links.innerHTML += `<button class="btn"><a href="${selectedProject.azure}">Link to Azure Container</a></button>`
-}
-if (selectedProject.localLink){
-    links.innerHTML += `<button class="btn"><a href="${selectedProject.localLink}">Play with ${selectedProject.projectName}`
-}
-
-
-
-
-extraInfo.innerHTML += `<p>${selectedProject.skills}</p>`
-
-
+// extra explanatory project paragraph
 if (selectedProject.extraInfo){
     extraInfo.innerhtml += `<p>${selectedProject.extraInfo}</p>`
 }
 
-if (selectedProject.imagesArray){
-    extraInfo.innerHTML += `<br><img src="${selectedProject.image}" alt="${selectedProject.alt}">`
-    for (let a=0; a<selectedProject.imagesArray.length; a++){
-        extraInfo.innerHTML += `<img src="${selectedProject.imagesArray[a]}" alt="${selectedProject.altArray[a]}"><p>${selectedProject.moreInfo[a]}</p>`
-    }
-}else{
-    extraInfo.innerHTML += `<br><img src="${selectedProject.image}" alt="${selectedProject.alt}">`
+// create 1 div to contain skills and links divs
+let skillsLinks = document.createElement('div');
+skillsLinks.classList.add('skillsLinks')
+extraInfo.appendChild(skillsLinks)
+let skillsDiv = document.createElement('div');
+skillsDiv.classList.add('skillsDiv')
+skillsLinks.appendChild(skillsDiv)
+let linksDiv = document.createElement('div');
+linksDiv.classList.add('linksDiv')
+skillsLinks.appendChild(linksDiv);
+
+// skills
+skillsDiv.innerHTML += `<p>This project was built using my knowledge of:`;
+
+let skillsListul = document.createElement('ul');
+skillsDiv.appendChild(skillsListul);
+
+for (let s=0; s<selectedProject.skills.length; s++){
+    skillsListul.innerHTML += `<li>${selectedProject.skills[s]}</li>`
+};
+
+// links
+if (selectedProject.github){
+    linksDiv.innerHTML += `<a href="${selectedProject.github}" target="_blank"><img src="./icons/icons8-github-60.png" alt="linked in icon by Icons8.com"></a>`
+}
+if (selectedProject.docker){
+    linksDiv.innerHTML += `<a href="${selectedProject.docker}" target="_blank"><img src="./icons/icons8-docker-48.png" alt="linked in icon by Icons8.com"></a>`
+}
+if (selectedProject.azure){
+    linksDiv.innerHTML += `<button class="btn"><a href="${selectedProject.azure}">Azure Container</a></button>`
+}
+if (selectedProject.localLink){
+    linksDiv.innerHTML += `<button class="btn"><a href="${selectedProject.localLink}">Play with ${selectedProject.projectName}`
 }
 
+// create the images
+let imageHoverBox = document.createElement('div');
+imageHoverBox.classList.add('image-box')
+extraInfo.appendChild(imageHoverBox);
+
+// create a card for each image in the array and add it to the images box
+for (let i=0; i<selectedProject.imagesArray.length; i++){
+    let imageCard = document.createElement('div');
+    imageCard.classList.add('image-card');
+    imageHoverBox.appendChild(imageCard)
+    imageCard.innerHTML = `<img src="${selectedProject.imagesArray[i]}" alt="${selectedProject.altArray[i]}">"`
+};
+
+// add the remaining info that was present on the main page for completeness
 extraInfo.innerHTML += `<p>${selectedProject.info}</p>`
 extraInfo.innerHTML += `<p>${selectedProject.detail}</p>`
 

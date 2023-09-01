@@ -26,7 +26,7 @@
 	},
 
 	"heathrowHeatmaps": {
-		"projectName": "Visualising<br>Heathrow Weather",
+		"projectName": "Heathrow Weather",
 		"info": "A series of <strong>heatmaps</strong> to visualise weather data recorded at Heathrow over the last 70 years.<br>I downloaded freely available data from the MET office into <strong>Pandas</strong> in order to create heatmaps using <strong>Matplotlib, NumPy & Seaborn</strong> libraries.<br>This project involved <strong>cleaning the data</strong>.<br>See more heatmaps in my Github Repository.",
 		"detail": "An interesting puzzle that I researched and handled was the <span>Unix Epoch</span> which changed how my date data was handled.",
 		"image": "./images/heathrowHeatmaps-main.jpg",
