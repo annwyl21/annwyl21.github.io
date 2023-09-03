@@ -63,7 +63,7 @@ try {
 
 // MAIN INTRO SECTION
 //populate introduction text
-brandPara.innerHTML += `<p>${brand.portfolioIntro}</p>`;
+brandPara.innerHTML += `<p class="myIntro">${brand.portfolioIntro}</p>`;
 
 // PROJECT CARDS SECTION
 function createhr(projectDiv){

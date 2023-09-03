@@ -518,6 +518,10 @@ input:focus + .slider {
 		flex-direction: column;
 	}
 
+	.toggle-theme {
+		padding-left: 3px;
+	}
+
 	nav {
 		justify-content: center;
 	}
@@ -528,8 +532,11 @@ input:focus + .slider {
 	}
 
 	#brand {
-		padding-left: 20px;
 		order: 1; 
+	}
+
+	.myIntro {
+		padding-left: 10px;
 	}
 
 	.intro-text {
@@ -541,7 +548,7 @@ input:focus + .slider {
 	}
 
 	#my-photo {
-		max-width: 80px;
+		max-width: 40px;
 	}
 
 	.main {
