@@ -29,6 +29,7 @@ body {
     'header header header'
     'main main main'
     'section section aside'
+	'demo demo demo'
     'footer footer footer'
     ;
 }
@@ -180,6 +181,10 @@ legend {
 	text-align: left;
 	font-size: 1.25rem;
 	max-width: 500px;
+}
+
+iframe {
+	border-radius: 14px;
 }
 
 strong {
@@ -477,6 +482,7 @@ input:focus + .slider {
 		'header header header'
 		'main main main'
 		'section section section'
+		'demo demo demo'
 		'footer footer footer'
 		'aside aside aside';
 	}
