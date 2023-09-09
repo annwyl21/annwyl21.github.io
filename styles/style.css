@@ -185,6 +185,7 @@ legend {
 
 iframe {
 	border-radius: 14px;
+	width: 600px;
 }
 
 strong {
@@ -598,6 +599,11 @@ input:focus + .slider {
 
 	.desire {
 		padding-right: 40px;
+	}
+
+	iframe {
+		border-radius: 14px;
+		width: 250px; 
 	}
 
 }

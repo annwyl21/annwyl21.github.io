@@ -99,7 +99,7 @@
 	"sentenceTranslation": {
 		"projectName": "Sentence Translation",
 		"info": "I built a <strong>RESTful API</strong> to support my own language learning. I actively use Duolingo every day to learn Spanish. I built this project as a tool to support my learning and translate sentences as I needed them while reading.<br>This project takes user input on a very simple HTML page and connects to the <strong>Azure Cognitive API</strong>. The API identifies the language in which the data was entered and returns a translation in 5 given languages.<br>The 5 languages into which the sentence is translated by <strong>'Translator Susan'</strong> are; Spanish, Dutch, French, German and English.",
-		"detail": "At the time of writing this I have a <span>926-day streak</span> of uninterrupted daily spanish practice demonstrating my <span>commitment</span> and persistence with new challenges and my passion for <span>active and engaged learning</span>.",
+		"detail": "My streak of uninterrupted daily spanish practice demonstrates my <span>commitment</span> and persistence with new challenges and my passion for <span>active and engaged learning</span>. See also, my green <span>GitHub profile</span> showing active coding days.",
 		"image": "./images/sentenceTranslation-main.jpg",
 		"alt": "Sentence Translation App",
 		"skills": ["RESTful API", "API Integration"],

@@ -107,7 +107,12 @@ function createFlipCard(projectDiv, myProject, index){
     flipCardBack.classList.add('flip-card-back');
     flipCardInner.appendChild(flipCardBack);
     flipCardBack.style.cssText = "padding: 15px 10px 0px 20px; text-align: left;";
-    flipCardBack.innerHTML = `<p>${myProject.detail}<p><span><i>${myProject.skills}</i></span>`;
+    if (myProject.projectName == 'Sentence Translation'){
+        flipCardBack.innerHTML = `<p> 940 day Duolingo streak</p>`
+        flipCardBack.innerHTML += `<p>${myProject.detail}<p><span><i>${myProject.skills}</i></span>`;
+    }else{
+        flipCardBack.innerHTML += `<p>${myProject.detail}<p><span><i>${myProject.skills}</i></span>`;
+    };
 };
 
 function createProjTextBox(projectDiv, myProject){
