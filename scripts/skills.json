@@ -12,7 +12,7 @@
 
 		"git": {
 			"title": "Version Control & Containerization",
-			"info": ["Git", "Github Version Control", "Github Actions & Projects", "Ubuntu/WSL", "Docker & Dockerhub", "Gitbash"]
+			"info": ["Git", "Github Version Control", "Github Actions & Projects", "GitHub Gist", "Ubuntu/WSL", "Docker & Dockerhub", "Gitbash"]
 		},
 
 		"libraries": {
