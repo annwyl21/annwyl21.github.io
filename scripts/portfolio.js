@@ -108,7 +108,13 @@ function createFlipCard(projectDiv, myProject, index){
     flipCardInner.appendChild(flipCardBack);
     flipCardBack.style.cssText = "padding: 15px 10px 0px 20px; text-align: left;";
     if (myProject.projectName == 'Sentence Translation'){
-        flipCardBack.innerHTML = `<p> 940 day Duolingo streak</p>`
+        const today = new Date();
+        const start = new Date(2021, 1, 12, 0, 0, 0, 0);
+        const msPerDay = 24*60*60*1000;
+        let daysSince = (today.getTime()-start.getTime())/ msPerDay;
+        let duolingo = Math.ceil(daysSince);
+        console.log(duolingo)
+        flipCardBack.innerHTML = `<p><span>${duolingo} day Duolingo streak</span></p>`
         flipCardBack.innerHTML += `<p>${myProject.detail}<p><span><i>${myProject.skills}</i></span>`;
     }else{
         flipCardBack.innerHTML += `<p>${myProject.detail}<p><span><i>${myProject.skills}</i></span>`;
