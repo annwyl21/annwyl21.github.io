@@ -37,6 +37,7 @@ try {
 
     response = await fetch('./scripts/project.json');
     let project = await response.json();
+    let restapi = project.restapi;
     let yahtzee = project.yahtzeeScorerProject;
     let brewqueue = project.brewqueue;
     let symptomLogger = project.symptomLogger;
@@ -45,7 +46,7 @@ try {
     let weatherApi = project.weatherApi;
     let sentenceTranslation = project.sentenceTranslation;
     let heathrowHeatmaps = project.heathrowHeatmaps;
-    projectsCollection = [yahtzee, brewqueue, heathrowHeatmaps, symptomLogger, debtComparisonCalculator, weatherApi, sentenceTranslation, rps];
+    projectsCollection = [restapi, yahtzee, brewqueue, heathrowHeatmaps, symptomLogger, debtComparisonCalculator, weatherApi, sentenceTranslation, rps];
 
     response = await fetch('./scripts/skills.json');
     let skills = await response.json();

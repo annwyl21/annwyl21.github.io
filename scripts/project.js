@@ -8,6 +8,9 @@ try {
     project = await response.json();
     
     switch(true){
+        case projectVariable=='restapi': { 
+        selectedProject=project.restapi}
+        break;
         case projectVariable=='yahtzee': { 
         selectedProject=project.yahtzeeScorerProject}
         break;
