@@ -17,7 +17,7 @@
 
 		"libraries": {
 			"title": "Frameworks & Libraries",
-			"info": ["Pytest", "Pextract", "Jest", "Flask", "Matplotlib", "Pandas", "NumPy", "NLTK", "Regex", "Bootstrap", "Beautiful Soup (BS4), Selenium"]
+			"info": ["Pytest", "Pextract", "Jest", "Flask", "Matplotlib", "Pandas", "NumPy", "NLTK", "Regex", "Bootstrap", "Beautiful Soup (BS4)", "Selenium"]
 		},
 
 		"ide": {
