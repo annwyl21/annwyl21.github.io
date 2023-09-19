@@ -124,7 +124,7 @@
 
 	"scraper": {
 		"projectName": "Scraper Tools",
-		"info": "A set of <strong>scraper tools</strong> to scrape html pages, web pages with JavaScript, pdf documents.<br>I used my cv.pdf and this portfolio page using JavaScript as examples.<br>The footer image for this page is the result of using my JavaScript scraper tool to scrape my own portfolio page.",
+		"info": "A set of <strong>scraper tools</strong> to scrape html pages, web pages with JavaScript, pdf documents.<br>I used my cv.pdf and this portfolio page using JavaScript as examples.<br>The footer image for this page is a word cloud generated using the result of scraping this portfolio page using my JavaScript scraper tool.",
 		"detail": "This project was inspired by a PyData Meet-up that I attended.",
 		"image": "./images/webscraper-main.jpg",
 		"alt": "Scraper Tools",
