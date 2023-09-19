@@ -46,7 +46,8 @@ try {
     let weatherApi = project.weatherApi;
     let sentenceTranslation = project.sentenceTranslation;
     let heathrowHeatmaps = project.heathrowHeatmaps;
-    projectsCollection = [restapi, yahtzee, brewqueue, heathrowHeatmaps, symptomLogger, debtComparisonCalculator, sentenceTranslation, rps];
+    let scraper = project.scraper;
+    projectsCollection = [restapi, yahtzee, scraper, brewqueue, heathrowHeatmaps, symptomLogger, debtComparisonCalculator, sentenceTranslation, rps];
 
     response = await fetch('./scripts/skills.json');
     let skills = await response.json();

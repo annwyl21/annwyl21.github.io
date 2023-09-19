@@ -120,5 +120,18 @@
 		"github": "https://github.com/annwyl21/FilmFlixRestAPI",
 		"primaryLink": "https://github.com/annwyl21/FilmFlixRestAPI",
 		"seeMore": "<img class='links' src='./icons/icons8-github-60.png'>See RestAPI Repo"
+	},
+
+	"scraper": {
+		"projectName": "Scraper Tools",
+		"info": "A set of <strong>scraper tools</strong> to scrape html pages, web pages with JavaScript, pdf documents.<br>I used my cv.pdf and this portfolio page using JavaScript as examples.<br>The footer image for this page is the result of using my JavaScript scraper tool to scrape my own portfolio page.",
+		"detail": "This project was inspired by a PyData Meet-up that I attended.",
+		"image": "./images/webscraper-main.jpg",
+		"alt": "Scraper Tools",
+		"skills": ["Python", "web scraper", "pdf scraper"],
+		"badges": ["Python", "web scraper", "pdf scraper"],
+		"github": "https://github.com/annwyl21/webscraper",
+		"primaryLink": "https://github.com/annwyl21/webscraper",
+		"seeMore": "<img class='links' src='./icons/icons8-github-60.png'>See Scraper Tools Repo"
 	}
 }
