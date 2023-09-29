@@ -1,3 +1,4 @@
+// NOT IN USE
 let project;
 let projectVariable = "heathrowHeatmaps";
 let selectedProject;

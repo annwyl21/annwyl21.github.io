@@ -14,7 +14,7 @@
 
 	"brewqueue": {
 		"projectName": "BrewQueue",
-		"info": "An order management system (to-do list) to manage barrista workflow.<br>Created using JavaScript, I successfully debugged critical issues, including an off-by-1 error and unpredictable card creation anomolies, using <strong>browser debugging tools</strong> to pinpoint a variable declaration oversight that JavaScript gracefully handled without explicit error, a contrast to typical Python behaviour.",
+		"info": "An order management system (to-do list) to manage barista workflow.<br>Created using JavaScript, I successfully debugged critical issues, including an off-by-1 error and unpredictable card creation anomolies, using <strong>browser debugging tools</strong> to pinpoint a variable declaration oversight that JavaScript gracefully handled without explicit error, a contrast to typical Python behaviour.",
 		"detail": "This was my Bootcamp project, initially designed using Lucid Chart and created on completion of the <span>JavaScript DOM</span> module.",
 		"image": "./images/brewqueue-main.jpg",
 		"alt": "Built to my design in LucidChart",
