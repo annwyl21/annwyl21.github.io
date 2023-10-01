@@ -47,7 +47,7 @@
 		"detail": "To develop this application, I acquired knowledge in <span>Natural Language Processing</span> and the <span>NLTK</span>, creating a preliminary summarizing tool to establish a benchmark for the API/<span>metaprompt development</span> and I used a <span>docker image</span> of the PostgreSQL database.",
 		"image": "./images/symptomLogger-main.jpg",
 		"alt": "ERD for my PostgreS database",
-		"skills": ["AI Prompt Engineering", "API", "Python", "docker Image", "PostgreSQL", "Matplotlib"],
+		"skills": ["API", "Python", "AI Prompt Engineering", "docker Image", "PostgreSQL", "Matplotlib"],
 		"badges": ["AI Prompt Engineering", "SQL"],
 		"github": "https://github.com/annwyl21/symptom_record",
 		"primaryLink": "https://github.com/annwyl21/symptom_record",
