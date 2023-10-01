@@ -5,8 +5,8 @@
 		"detail": "I used pytest and Pexpect for <span>unit testing</span>, the <span>debugger</span> tool to identify errors swiftly and an <span>Agile GitHub Project Board</span> to efficiently manage tasks and break objectives into manageable chunks.<br>This helped me to keeping the project on track and deliver my goals.",
 		"image": "./images/yahtzeeScorerProject-main.jpg",
 		"alt": "Test Driven Development for my Yahtzee Score Calculator",
-		"skills": ["Pytest", "Pexpect", "Python", "Github Actions", "Github Projects"],
-		"badges": ["TDD", "OOP", "Github"],
+		"skills": ["Pytest", "Pexpect", "Python", "GitHub Actions", "GitHub Projects"],
+		"badges": ["TDD", "OOP", "GitHub"],
 		"github": "https://github.com/annwyl21/yahtzee",
 		"primaryLink": "https://annwyl21.github.io/yahtzee_scorer/yahtzeedemo.html",
 		"seeMore": "Go to Yahtzee Scorer"
@@ -27,7 +27,7 @@
 
 	"heathrowHeatmaps": {
 		"projectName": "Heathrow Weather",
-		"info": "A series of <strong>heatmaps</strong> to visualise weather data recorded at Heathrow over the last 70 years.<br>I downloaded freely available data from the MET office into <strong>Pandas</strong> in order to create heatmaps using <strong>Matplotlib, NumPy & Seaborn</strong> libraries.<br>This project involved <strong>cleaning the data</strong>.<br>See more heatmaps in my Github Repository.",
+		"info": "A series of <strong>heatmaps</strong> to visualise weather data recorded at Heathrow over the last 70 years.<br>I downloaded freely available data from the MET office into <strong>Pandas</strong> in order to create heatmaps using <strong>Matplotlib, NumPy & Seaborn</strong> libraries.<br>This project involved <strong>cleaning the data</strong>.<br>See more heatmaps in my GitHub Repository.",
 		"detail": "An interesting puzzle that I researched and handled was the <span>Unix Epoch</span> which changed how my date data was handled.",
 		"image": "./images/heathrowHeatmaps-main.jpg",
 		"alt": "20yrs of weather data<br>(mean daily min temp)",
@@ -47,7 +47,7 @@
 		"detail": "To develop this application, I acquired knowledge in <span>Natural Language Processing</span> and the <span>NLTK</span>, creating a preliminary summarizing tool to establish a benchmark for the API/<span>metaprompt development</span> and I used a <span>docker image</span> of the PostgreSQL database.",
 		"image": "./images/symptomLogger-main.jpg",
 		"alt": "ERD for my PostgreS database",
-		"skills": ["AI Prompt Engineering", "API", "Python", "Docker Image", "PostgreSQL", "Matplotlib"],
+		"skills": ["AI Prompt Engineering", "API", "Python", "docker Image", "PostgreSQL", "Matplotlib"],
 		"badges": ["AI Prompt Engineering", "SQL"],
 		"github": "https://github.com/annwyl21/symptom_record",
 		"primaryLink": "https://github.com/annwyl21/symptom_record",
@@ -56,11 +56,11 @@
 
 	"debtComparisonCalculator": {
 		"projectName": "Debt Comparison Calculator",
-		"info": "A calculator tool to compare repayments over time of personal debt using 3 different methods of structuring debt; stack, snowball & avalanche.<br>My calculator creates 3 <strong>debt objects</strong>, for 3 given debts, and then imagines how each method could repay debt in varying time periods if the repayment amounts were lumped towards a single debt at a time.<br>On completion of this project, I created a <strong>docker image</strong>, this image is available on Dockerhub and as an <strong>Azure serverless container</strong>.",
+		"info": "A calculator tool to compare repayments over time of personal debt using 3 different methods of structuring debt; stack, snowball & avalanche.<br>My calculator creates 3 <strong>debt objects</strong>, for 3 given debts, and then imagines how each method could repay debt in varying time periods if the repayment amounts were lumped towards a single debt at a time.<br>On completion of this project, I created a <strong>docker image</strong>, this image is available on Docker Hub and as an <strong>Azure serverless container</strong>.",
 		"detail": "This project is a demonstration of my knowledge of <span>object-oriented programming</span> and was my contribution to a team project where we created <span>flask</span> website.",
 		"image": "./images/debtComparisonCalculator-main.jpg",
 		"alt": "Results for 3 repayment approaches allow a comparison",
-		"skills": ["Flask", "Python", "Docker Image", "Dockerhub", "Git"],
+		"skills": ["Flask", "Python", "docker Image", "Docker Hub", "Git"],
 		"badges": ["OOP", "Azure Serverless Container", "Version Control"],
 		"github": "https://github.com/annwyl21/debt_comparison",
 		"docker": "https://hub.docker.com/r/annwyl21/debt_comparison",
@@ -115,7 +115,7 @@
 		"detail": "<span>GitHub Actions</span> runs automated tests in Pytest on <span>pull request</span> and CRUD operations are <span>logged</span>.<br>There are also serveral layers of data validation protecting <span>database integrity</span> and resisting SQL injection attacks.",
 		"image": "./images/restapi-main.jpg",
 		"alt": "Python Microservice",
-		"skills": ["RESTful API", "Pytest", "CRUD", "Github Actions", "Logger"],
+		"skills": ["RESTful API", "Pytest", "CRUD", "GitHub Actions", "logging"],
 		"badges": ["RESTful API", "API Integration", "CRUD"],
 		"github": "https://github.com/annwyl21/FilmFlixRestAPI",
 		"primaryLink": "https://github.com/annwyl21/FilmFlixRestAPI",

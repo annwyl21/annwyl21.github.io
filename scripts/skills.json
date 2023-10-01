@@ -7,17 +7,17 @@
 
 		"database": {
 			"title": "Database Management",
-			"info": ["MySQL", "MySQL Workbench", "PostgreSQL (Docker image)", "MongoDB", "MongoDBCompass"]
+			"info": ["MySQL", "MySQL Workbench", "PostgreSQL", "MongoDB", "MongoDBCompass"]
 		},
 
 		"git": {
 			"title": "Version Control & Containerization",
-			"info": ["Git", "Github Version Control", "Github Actions & Projects", "GitHub Gist", "Ubuntu/WSL", "Docker & Dockerhub", "Gitbash"]
+			"info": ["Git", "GitHub Version Control", "GitHub Actions & Projects", "GitHub Gist", "Ubuntu/WSL", "docker & Docker Hub", "Git Bash"]
 		},
 
 		"libraries": {
 			"title": "Frameworks & Libraries",
-			"info": ["Pytest", "Pextract", "Jest", "Flask", "Matplotlib", "Pandas", "NumPy", "NLTK", "Regex", "Bootstrap", "Beautiful Soup (BS4)", "Selenium"]
+			"info": ["Pytest", "Pextract", "Jest", "Flask", "Matplotlib", "Pandas", "NLTK", "Regex", "Bootstrap", "Beautiful Soup (BS4)", "Selenium", "logging"]
 		},
 
 		"ide": {
