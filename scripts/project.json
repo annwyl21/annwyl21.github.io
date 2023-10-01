@@ -1,8 +1,8 @@
 {
 	"yahtzeeScorerProject": {
 		"projectName": "Yahtzee Scorer",
-		"info": "This scorer allows a user to play the game against the computer tracking the score in a scoreboard object.<br>This project demonstrates my understanding of <strong>object-oriented programming</strong>, ability to code the scoring logic required for yahtzee and the commit history shows that I built this project using <strong>Test Driven Development</strong> - writing the tests before writing the code.<br>For this project I used <strong>GitHub Actions</strong> to create a workflow, initiating automatic unit tests to continuously ensure the quality of my code.",
-		"detail": "I used pytest and Pexpect for <span>unit testing</span>, the <span>debugger</span> tool to identify errors swiftly and an <span>Agile GitHub Project Board</span> to efficiently manage tasks and break objectives into manageable chunks.<br>This helped me to keeping the project on track and deliver my goals.",
+		"info": "This scorer allows a user to play the game against the computer tracking the score in a scoreboard object.<br>This project demonstrates my understanding of <strong>object-oriented programming</strong>, ability to code the scoring logic required for yahtzee and the commit history shows that I built this project using <strong>Test Driven Development</strong> - writing unit tests before writing the code.<br>For this project I used <strong>GitHub Actions</strong> to create a workflow, initiating automatic unit tests to continuously ensure the quality of my code.",
+		"detail": "I used an <span>Agile GitHub Project Board</span> to efficiently manage tasks and break objectives into manageable chunks.<br>This helped me to keeping the project on track and deliver my goals.",
 		"image": "./images/yahtzeeScorerProject-main.jpg",
 		"alt": "Test Driven Development for my Yahtzee Score Calculator",
 		"skills": ["Pytest", "Pexpect", "Python", "GitHub Actions", "GitHub Projects"],
@@ -44,7 +44,7 @@
 	"symptomLogger": {
 		"projectName": "Symptom Tracker",
 		"info": "Keeping track of symptoms and pain can be difficult for people who are ill, elderly or when remembering symptoms on behalf of someone other than yourself, e.g. a child. My symptom logger is designed to support you in this challenge.<br>My project uses a metaprompt prefix in API requests to the <strong>text-davinci-003 AI model</strong> to request an on-demand summary of user-logged & timestamped symptoms stored in a <strong>PostgreSQL database</strong>.<br>A bubbleplot illustrates the frequency of symptoms over time and throughout the day, with bubble size signifying reported pain levels.",
-		"detail": "To develop this application, I acquired knowledge in <span>Natural Language Processing</span> and the <span>NLTK</span>, creating a preliminary summarizing tool to establish a benchmark for the API/<span>metaprompt development</span> and I used a <span>docker image</span> of the PostgreSQL database.",
+		"detail": "To develop this application, I learned to use <span>NLTK</span>, creating a preliminary summarizing tool to establish a benchmark for the API/<span>metaprompt development</span> and I used a <span>docker image</span> of the PostgreSQL database.",
 		"image": "./images/symptomLogger-main.jpg",
 		"alt": "ERD for my PostgreS database",
 		"skills": ["API", "Python", "AI Prompt Engineering", "docker Image", "PostgreSQL", "Matplotlib"],
