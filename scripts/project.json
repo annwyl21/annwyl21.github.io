@@ -112,10 +112,10 @@
 	"restapi": {
 		"projectName": "Python Microservice",
 		"info": "A <strong>python microservice</strong> that provides endpoints to a database of film data. The backend database that I connected to is a SQLite database.<br>My microservice can communicate with any client using json via its POST, PATCH, DELETE endpoints.<br>I built 2 example clients; a <strong>jupyter notebook</strong> using Matplotlib to graph the database data and a <strong>flask app</strong> to provide a web GUI for the CRUD operations.",
-		"detail": "This was an extension of my bootcamp project; to build a python app to handle CRUD operations on a given database. My python app is deployed on <span>replit</span> and my microservice and the web gui are both deployed on <span>render</span>.",
+		"detail": "<span>GitHub Actions</span> runs automated tests in Pytest on <span>pull request</span> and CRUD operations are <span>logged</span>.<br>There are also serveral layers of data validation protecting <span>database integrity</span> and resisting SQL injection attacks.",
 		"image": "./images/restapi-main.jpg",
 		"alt": "Python Microservice",
-		"skills": ["RESTful API", "API Integration", "CRUD"],
+		"skills": ["RESTful API", "Pytest", "CRUD", "Github Actions", "Logger"],
 		"badges": ["RESTful API", "API Integration", "CRUD"],
 		"github": "https://github.com/annwyl21/FilmFlixRestAPI",
 		"primaryLink": "https://github.com/annwyl21/FilmFlixRestAPI",
