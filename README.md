@@ -3,9 +3,11 @@
 
 # Ellen Houghton
 
-![Ellen Houghton CV wordcloud](./images/EllenHoughtonCVwordcloudAug16.png)
+My website is a JavaScript-driven, client-side rendered page, with content sourced from JSON files. Additionally, I've incorporated animated buttons using CSS for a dynamic user experience. 
 
-*Wordcloud created dynamically using text scraped from my cv html page*
+I used Selenium, a web automation tool, to programmatically scrape content from my portfolio page. With the extracted data, I generated a word cloud to visually represent the most frequently used terms and highlight the core themes of my portfolio.
+
+![Ellen Houghton CV wordcloud](./images/github_profile_image.png)
 
 ***
 I am looking for my first job as a junior software developer.

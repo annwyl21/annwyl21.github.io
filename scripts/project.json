@@ -124,11 +124,11 @@
 
 	"scraper": {
 		"projectName": "Scraper Tools",
-		"info": "A set of <strong>scraper tools</strong> to scrape html pages, web pages with JavaScript, pdf documents.<br>I used my cv.pdf and this portfolio page using JavaScript as examples.<br>The footer image for this page is a word cloud generated using the result of scraping this portfolio page using my JavaScript scraper tool.",
-		"detail": "This project was inspired by a PyData Meet-up that I attended.",
+		"info": "My website is a JavaScript-driven, client-side rendered page, with content sourced from JSON files.<br>I used Selenium, a web automation tool, to <span>programmatically scrape</span> content from my portfolio page.<br>I then generated a word cloud using the extracted data, to visually represent the most frequently used terms and highlight the core themes of my portfolio. <span>See footer bar image</span>",
+		"detail": "I have built scraper tools for <span>html, js and pdf</span> data. Extensions to this project were inspired by a PyData, London Meet-up that I attended.",
 		"image": "./images/webscraper-main.jpg",
 		"alt": "Scraper Tools",
-		"skills": ["Python", "web scraper", "pdf scraper"],
+		"skills": ["Python", "web scraper", "pdf scraper", "Selenium", "JavaScript"],
 		"badges": ["Python", "web scraper", "pdf scraper"],
 		"github": "https://github.com/annwyl21/webscraper",
 		"primaryLink": "https://github.com/annwyl21/webscraper",
