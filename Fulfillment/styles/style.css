@@ -217,12 +217,39 @@ input::placeholder {
 	opacity: 0.4;
 }
 
-@media (max-width: 600px) {
-	.orders {
-		grid-column: span 12;
+@media (max-width: 850px) {
+	
+	html {
+		font-size: 16px;
 	}
 
-	.queue {
-		grid-column: span 12;
+	.dashboard {
+		display: flex;
+		flex-direction: column;
+		margin: 5px 0;
 	}
+}
+
+@media (max-width: 600px) {
+	
+	html {
+		font-size: 12px;
+	}
+
+}
+
+@media (max-width: 500px) {
+	
+	html {
+		font-size: 10px;
+	}
+
+}
+
+@media (max-width: 450px) {
+	
+	html {
+		font-size: 7px;
+	}
+
 }
