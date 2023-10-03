@@ -1,8 +1,8 @@
 {
 	"yahtzeeScorerProject": {
 		"projectName": "Yahtzee Scorer",
-		"info": "This scorer allows a user to play the game against the computer tracking the score in a scoreboard object.<br>This project demonstrates my understanding of <strong>object-oriented programming</strong>, ability to code the scoring logic required for yahtzee and the commit history shows that I built this project using <strong>Test Driven Development</strong> - writing unit tests before writing the code.<br>For this project I used <strong>GitHub Actions</strong> to create a workflow, initiating automatic unit tests to continuously ensure the quality of my code.",
-		"detail": "I used an <span>Agile GitHub Project Board</span> to efficiently manage tasks and break objectives into manageable chunks.<br>This helped me to keeping the project on track and deliver my goals.",
+		"info": "The complex rules of Yahtzee along with the challenge of tracking the score through the game makes this an ideal challenge for a junior developer like me. The first step was to write a score calculator and create a game against a computer adversary, which I have now deployed to replit. The next evolution for this game will be to replace the computer player with family players so that I can use my app to calculate and track scores during a family game.",
+		"detail": "This project demonstrates my understanding of <strong>OOP</strong>, was built using the principles of <strong>TDD</strong> and uses <strong>GitHub Actions</strong> to initiate automatic unit tests on a pull request.",
 		"image": "./images/yahtzeeScorerProject-main.jpg",
 		"alt": "Test Driven Development for my Yahtzee Score Calculator",
 		"skills": ["Pytest", "Pexpect", "Python", "GitHub Actions", "GitHub Projects"],
