@@ -8,8 +8,8 @@
 		"skills": ["Pytest", "Pexpect", "Python", "GitHub Actions", "GitHub Projects"],
 		"badges": ["TDD", "OOP", "GitHub"],
 		"github": "https://github.com/annwyl21/yahtzee",
-		"primaryLink": "https://annwyl21.github.io/yahtzee_scorer/yahtzeedemo.html",
-		"seeMore": "Go to Yahtzee Scorer"
+		"primaryLink": "https://github.com/annwyl21/yahtzee",
+		"seeMore": "<img class='links' src='./icons/icons8-github-60.png'>Yahtzee Repo"
 	},
 
 	"brewqueue": {
