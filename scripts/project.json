@@ -1,8 +1,8 @@
 {
 	"yahtzeeScorerProject": {
 		"projectName": "Yahtzee Scorer",
-		"info": "The complex rules of Yahtzee along with the challenge of tracking the score through the game makes this an ideal challenge for a junior developer like me. The first step was to write a score calculator and create a game against a computer adversary, which I have now deployed to replit. The next evolution for this game will be to replace the computer player with family players so that I can use my app to calculate and track scores during a family game.",
-		"detail": "This project demonstrates my understanding of <strong>OOP</strong>, was built using the principles of <strong>TDD</strong> and uses <strong>GitHub Actions</strong> to initiate automatic unit tests on a pull request.",
+		"info": "The complex rules of Yahtzee along with the challenge of tracking the score through the game makes this an ideal challenge for a junior developer like me. The first step was to write a <strong>score calculator</strong> and create a game against a computer adversary, which I have now <strong>deployed</strong> to replit. The next evolution for this game will be to replace the computer player with family players so that I can use my app to calculate and track scores during a family game.",
+		"detail": "This project demonstrates my understanding of <span>OOP</span>, was built using the principles of <span>TDD</span> and uses <span>GitHub Actions</span> to initiate automatic unit tests on a pull request.",
 		"image": "./images/yahtzeeScorerProject-main.jpg",
 		"alt": "Test Driven Development for my Yahtzee Score Calculator",
 		"skills": ["Pytest", "Pexpect", "Python", "GitHub Actions", "GitHub Projects"],
@@ -42,15 +42,15 @@
 	},
 
 	"symptomLogger": {
-		"projectName": "Symptom Tracker",
-		"info": "Keeping track of symptoms and pain can be difficult for people who are ill, elderly or when remembering symptoms on behalf of someone other than yourself, e.g. a child. My symptom logger is designed to support you in this challenge.<br>My project uses a metaprompt prefix in API requests to the <strong>text-davinci-003 AI model</strong> to request an on-demand summary of user-logged & timestamped symptoms stored in a <strong>PostgreSQL database</strong>.<br>A bubbleplot illustrates the frequency of symptoms over time and throughout the day, with bubble size signifying reported pain levels.",
-		"detail": "To develop this application, I learned to use <span>NLTK</span>, creating a preliminary summarizing tool to establish a benchmark for the API/<span>metaprompt development</span> and I used a <span>docker image</span> of the PostgreSQL database.",
-		"image": "./images/symptomLogger-main.jpg",
-		"alt": "ERD for my PostgreS database",
+		"projectName": "Symptom Tracker v2.0",
+		"info": "Keeping track of symptoms and pain can be difficult for people who are ill, elderly or when remembering symptoms on behalf of someone other than yourself, e.g. a child. My symptom logger is designed to support users in this challenge.<br>My project uses a metaprompt prefix in API requests to the <strong>text-davinci-003 AI model</strong> to request an on-demand summary of user-logged & timestamped symptoms stored in a <strong>PostgreSQL database</strong>.<br>A bubbleplot illustrates the frequency of symptoms over time and throughout the day, with bubble size signifying reported pain levels.",
+		"detail": "My app has evolved from a single, large program (v1.0) into a set of smaller, independent <span>microservices</span>, making development easier and demonstrating my ability to use <span>json</span> and <span>integrate</span> different components.",
+		"image": "./images/SymptomLogger-main.png",
+		"alt": "App Design Diagram",
 		"skills": ["API", "Python", "AI Prompt Engineering", "docker Image", "PostgreSQL", "Matplotlib"],
-		"badges": ["AI Prompt Engineering", "SQL"],
-		"github": "https://github.com/annwyl21/symptom_record",
-		"primaryLink": "https://github.com/annwyl21/symptom_record",
+		"badges": ["Integration", "AI Prompt Engineering", "SQL"],
+		"github": "https://github.com/annwyl21/symptom_logger_ui",
+		"primaryLink": "https://github.com/annwyl21/symptom_logger_ui",
 		"seeMore": "<img class='links' src='./icons/icons8-github-60.png'>Symptom Log Repo"
 	},
 
@@ -124,7 +124,7 @@
 
 	"scraper": {
 		"projectName": "Scraper Tools",
-		"info": "My website is a JavaScript-driven, client-side rendered page, with content sourced from JSON files.<br>I used Selenium, a web automation tool, to <span>programmatically scrape</span> content from my portfolio page.<br>I then generated a word cloud using the extracted data, to visually represent the most frequently used terms and highlight the core themes of my portfolio. <span>See footer bar image</span>",
+		"info": "My website is a JavaScript-driven, client-side rendered page, with content sourced from JSON files.<br>I used Selenium, a web automation tool, to <strong>programmatically scrape</strong> content from my portfolio page.<br>I then generated a word cloud using the extracted data, to visually represent the most frequently used terms and highlight the core themes of my portfolio. <strong>See footer bar image</strong>",
 		"detail": "I have built scraper tools for <span>html, js and pdf</span> data. Extensions to this project were inspired by a PyData, London Meet-up that I attended.",
 		"image": "./images/webscraper-main.jpg",
 		"alt": "Scraper Tools",

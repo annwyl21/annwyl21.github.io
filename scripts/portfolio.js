@@ -47,7 +47,7 @@ try {
     let sentenceTranslation = project.sentenceTranslation;
     let heathrowHeatmaps = project.heathrowHeatmaps;
     let scraper = project.scraper;
-    projectsCollection = [restapi, brewqueue, scraper, yahtzee, heathrowHeatmaps, symptomLogger];
+    projectsCollection = [symptomLogger, restapi, brewqueue, scraper, yahtzee, heathrowHeatmaps];
 
     response = await fetch('./scripts/skills.json');
     let skills = await response.json();
