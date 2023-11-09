@@ -43,7 +43,7 @@
 
 	"symptomLogger": {
 		"projectName": "Symptom Tracker v2.0",
-		"info": "Keeping track of symptoms and pain can be difficult for people who are ill, elderly or when remembering symptoms on behalf of someone other than yourself, e.g. a child. My symptom logger is designed to support users in this challenge.<br>My project uses a metaprompt prefix in API requests to the <strong>text-davinci-003 AI model</strong> to request an on-demand summary of user-logged & timestamped symptoms stored in a <strong>PostgreSQL database</strong>.<br>A bubbleplot illustrates the frequency of symptoms over time and throughout the day, with bubble size signifying reported pain levels.",
+		"info": "Keeping track of symptoms and pain can be difficult for people who are ill, elderly or when remembering symptoms on behalf of someone other than yourself, e.g. a child. My symptom logger is designed to support users in this challenge.<br>My project used a metaprompt prefix in API requests to the <strong>text-davinci-003 AI model</strong> to request an on-demand summary of user-logged & timestamped symptoms stored in a <strong>PostgreSQL database</strong>.<br>A bubbleplot illustrated the frequency of symptoms over time and throughout the day, with bubble size signifying reported pain levels.<br>Following the Nov 2023 Open AI updates my app is being updated to use a newer model as text-davinci-003 is now being deprecated.",
 		"detail": "My app has evolved from a single, large program (v1.0) into a set of smaller, independent <span>microservices</span>, making development easier and demonstrating my ability to use <span>json</span> and <span>integrate</span> different components.",
 		"image": "./images/SymptomLogger-main.png",
 		"alt": "App Design Diagram",
