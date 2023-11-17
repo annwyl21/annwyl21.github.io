@@ -1,0 +1,117 @@
+{
+    "Personal Profile": {
+        "Graduation": "September 2023 from JustIT’s Digital Skills Bootcamp",
+        "Skills": [
+            "Python Microservice development",
+            "JavaScript web development",
+            "Extensive use of GitHub",
+            "CI/CD with GitHub Actions",
+            "Docker & Azure container usage",
+            "Portfolio on GitHub Pages"
+        ],
+        "Aspirations": "Junior Developer",
+        "Community Involvement": [
+            "Attending meetups like ChatGPT Plugins and PyData",
+            "Participating in Test Driven Development Club"
+        ],
+        "Social Media Activity": "Posting on Linked In"
+    },
+    "Education and IT Training": {
+        "Digital Skills Bootcamp": {
+            "Institute": "Just IT Training Ltd, London",
+            "Duration": "July 2023 - September 2023",
+            "Focus": "Web and Software Development"
+        },
+        "Get into Tech Course": {
+            "Duration": "January 2023 - April 2023",
+            "Description": "15-week evening classes focusing on soft skills and collaboration on GitHub"
+        },
+        "Earlier Education": {
+            "Speech and Language Therapy": {
+                "Institute": "City University",
+                "Year": "July 2005",
+                "Degree": "PG/Dip with Merit"
+            },
+            "Psychology": {
+                "Institute": "Greenwich University",
+                "Year": "July 1997",
+                "Degree": "BSc(Hons)"
+            },
+            "A-level and GCSE": "3 A-levels & 9 GCSEs Grade A-C (1992-1994)"
+        }
+    },
+    "Technical Skills": {
+        "Programming Languages": ["Python", "Java", "JavaScript", "Regex", "HTML", "CSS", "SQL"],
+        "Version Control & Containerisation": ["Git", "Docker", "Git Bash", "Ubuntu", "GitHub", "GitHub Workflow", "Docker Hub"],
+        "Database Management": ["MySQL & Workbench", "PostgreSQL", "MongoDB & Compass"],
+        "Frameworks & Libraries": ["Pytest", "Pexpect", "Jest", "Flask", "Bootstrap", "Matplotlib", "Pandas", "Numpy", "NLTK", "BS4"],
+        "IDEs": ["VSCode", "Pycharm", "Jupyter Notebook"],
+        "APIs & AI Engineering": ["Postman", "Azure Cognitive API", "AI Prompt Engineering"]
+    },
+    "Certificates": [
+        "Agile Fundamentals - Jan 2023",
+        "Cloud Computing - Jan 2023",
+        "JavaScript for Beginners - Jan 2023",
+        "IT Security Fundamentals - Jan 2023",
+        "Python for Beginners - Feb 2023",
+        "Linux Command Line - Feb 2023",
+        "How to clean data with python - Feb 2022",
+        "Getting started with natural language processing - Jan 2022",
+        "Visualise data with python - Jan 2022",
+        "Learn python 3 - Dec 2021"
+    ],
+    "Projects": {
+        "Python Microservice": "RestAPI Python Database CRUD Problem-Solving",
+        "Yahtzee": "Python OOP TDD Pytest Problem-Solving",
+        "BrewQueue": "JavaScript HTML CSS Local Storage",
+        "Symptom Record": "SQL PostgreSQL Python Flask AI prompt engineering NLTK",
+        "Debt Comparison Calculator": "Azure Container Docker Python OOP",
+        "Webscraper": "Client-side JavaScript, Selenium for content scraping",
+        "Weather Heatmaps": "Visualization of weather data using Matplotlib, NumPy & Seaborn"
+    },
+    "Employment History": {
+        "Full-time Parent and Homemaker": {
+            "Duration": "02/09-to date",
+            "Skills": [
+                "Adaptability",
+                "Commitment",
+                "Resilience",
+                "Problem-solving"
+            ]
+        },
+        "Speech and Language Therapist": {
+            "Institution": "NHS London",
+            "Duration": "2002-2009",
+            "Roles": [
+                "Speech Therapy Assistant",
+                "Speech Therapist Band 5 & 6"
+            ],
+            "Skills": [
+                "Therapy delivery",
+                "Caseload management",
+                "Collaborative work",
+                "Communication skills"
+            ]
+        },
+        "Sales & Marketing": {
+            "Duration": "1997-2002",
+            "Roles": [
+                "Marketing Manager at Insightful",
+                "Distributor Manager at Insightful",
+                "Various roles in Financial Research Sales and Administrative positions"
+            ],
+            "Skills": [
+                "Marketing management",
+                "Healthcare statistics knowledge",
+                "Programming in R and S languages"
+            ]
+        }
+    },
+    "Interests and Achievements": {
+        "Hobbies": [
+            "Speaking Spanish (1000+ day streak on Duolingo)",
+            "Family time",
+            "Walking dog"
+        ]
+    }
+}
