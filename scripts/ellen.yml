@@ -1,0 +1,64 @@
+myProfile:
+    name: Ellen Houghton
+    image: "mum.jpg"
+    altText: "Profile Image for Ellen Houghton"
+    githubLink: "https://github.com/annwyl21"
+    linkedInLink: "https://www.linkedin.com/in/annwyl21/"
+    overview: | # to preserve the spacing
+      Ellen initially worked for the NHS as a Speech & Language Therapist in London.
+
+      Ellen became interested in programming during the pandemic.
+      
+      Since taking up coding Ellen has been gaining experience in coding skills and is now working for Sparta Global as a Trainee Spartan.
+
+    workExperience: # a list of dictionaries
+      - position: Trainee Spartan
+        company: Sparta Global
+        fromMonth: Feb
+        fromYear: 2024
+        toMonth: null
+        toYear: null
+
+      - position: null
+        company: Planned Career Break
+        fromMonth: Feb
+        fromYear: 2009
+        toMonth: Feb
+        toYear: 2024
+
+      - position: Speech & Language Therapist
+        company: NHS
+        fromMonth: null
+        fromYear: null
+        toMonth: Feb
+        toYear: 2009
+
+    education:
+      - qualification: PgDip. Speech Therapy
+        institution: City University
+        completed: null
+
+      - qualification: BSc Psychology
+        institution: University
+        completed: null
+
+    skills:
+      - learning new things
+      - raising children
+      - dog care
+
+# Example accessing an element
+# import yaml
+
+# yaml_data = '''
+# education:
+#   - qualification: "PgDip. Speech Therapy"
+#     institution: "City University"
+#     completed: null
+#   - qualification: "BSc Psychology"
+#     institution: "University"
+#     completed: null
+# '''
+
+# data = yaml.safe_load(yaml_data)
+# first_qualification = data['education'][0]['qualification']

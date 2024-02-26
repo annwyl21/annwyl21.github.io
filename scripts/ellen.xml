@@ -1,0 +1,70 @@
+<myProfile>
+    <name>Ellen Houghton</name>
+    <image>mum.jpg</image>
+    <altText>Profile Image for Ellen Houghton</altText>
+    <githubLink>https://github.com/annwyl21</githubLink>
+    <linkedInLink>https://www.linkedin.com/in/annwyl21/</linkedInLink>
+
+    <overview>
+      Ellen initially worked for the NHS as a Speech &amp; Language Therapist in London.
+
+      Ellen became interested in programming during the pandemic.
+      
+      Since taking up coding Ellen has been gaining experience in coding skills and is now working for Sparta Global as a Trainee Spartan.
+    </overview>
+
+    <workExperience>
+        <experience>
+            <position>Trainee Spartan</position>
+            <company>Sparta Global</company>
+            <fromMonth>Feb</fromMonth>
+            <fromYear>2024</fromYear>
+            <toMonth></toMonth>
+            <toYear></toYear>
+        </experience>
+        <experience>
+            <position></position>
+            <company>Planned Career Break</company>
+            <fromMonth>Feb</fromMonth>
+            <fromYear>2009</fromYear>
+            <toMonth>Feb</toMonth>
+            <toYear>2024</toYear>
+        </experience>
+        <experience>
+            <position>Speech &amp; Language Therapist</position>
+            <company>NHS</company>
+            <fromMonth></fromMonth>
+            <fromYear></fromYear>
+            <toMonth>Feb</toMonth>
+            <toYear>2009</toYear>
+        </experience>
+    </workExperience>
+
+    <education>
+        <qualification>
+            <degree>PgDip. Speech Therapy</degree>
+            <institution>City University</institution>
+            <completed></completed>
+        </qualification>
+        <qualification>
+            <degree>BSc Psychology</degree>
+            <institution>University</institution>
+            <completed></completed>
+        </qualification>
+    </education>
+
+    <mySkills>
+        <skill>learning new things</skill>
+        <skill>raising children</skill>
+        <skill>dog care</skill>
+    </mySkills>
+
+</myProfile>
+
+<!-- Example accessing an element -->
+<!-- import xml.etree.ElementTree as ET
+
+xml_data = '''Your XML string here'''
+root = ET.fromstring(xml_data)
+
+first_degree = root.find('.//qualification/degree').text -->
